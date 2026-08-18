@@ -33,7 +33,7 @@
 - **[Odin Demo Program](https://github.com/odin-lang/Odin/blob/master/examples/demo/demo.odin)**: official walkthrough script demonstrating all major Odin features in code.
 - **[Understanding the Odin Programming Language](https://odinbook.com/)**: Karl Zylinski's free book on Odin fundamentals and manual memory management.
 - **[Learn Odin in Y Minutes](https://learnxinyminutes.com/odin/)**: quick syntax reference sheet covering arrays, context, allocators, and procedures.
-- **[Awesome Odin](https://github.com/odin-lang/awesome-odin)**: community-curated list of libraries, game frameworks, and tools written in Odin.
+- **[Awesome Odin](https://github.com/jakubtomsu/awesome-odin)**: community-curated list of libraries, game frameworks, and tools written in Odin.
 
 ## Graphics Programming & Shaders
 - **[LearnOpenGL](https://learnopengl.com/)**: complete guide to 3D graphics, shader pipeline, lighting, and framebuffers in OpenGL.
@@ -78,7 +78,6 @@
 - **[Modern Compiler Implementation in ML/C/Java](https://www.cs.princeton.edu/~appel/modern/)** (Andrew Appel): rigorous treatment of compiler construction and SSA form.
 
 ## Assembly, Hardware & Low-Level Reverse Engineering
-- **[PC Assembly Language](https://www.pcfacts.com/pcasm/)** (Paul Carter): gentle introduction to 32-bit x86 assembly.
 - **[x86-64 Machine Organization and Assembly Language](https://cs.brown.edu/courses/cs033/)**: lecture guides on architecture, stack frames, and assembly execution.
 - **[Reverse Engineering for Beginners](https://beginners.re/)** (Dennis Yurichev): free book detailing how compiled code translates to assembly across architectures.
 - **[Practical Malware Analysis](https://nostarch.com/malware)**: practical handbook on disassembly, debugging, and binary inspection.
