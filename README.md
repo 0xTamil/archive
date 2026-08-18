@@ -10,8 +10,6 @@
 - **[The Linux Programming Interface](https://man7.org/tlpi/)**: reference on Linux/UNIX system calls, processes, and threads.
 - **[Beej's Guide to Network Programming](https://beej.us/guide/bgnet/)**: friendly intro to sockets programming in C.
 - **[C Interfaces and Implementations](https://github.com/drh/cii)** (David R. Hanson): techniques for writing reusable data structures and modules in C.
-- **[Modern C](https://gustedt.gitlabpages.inria.fr/modern-c/)** (Jens Gustedt): guide to modern C standards (C11/C17) and idiomatic patterns.
-- **[Seacord's Effective C](https://nostarch.com/Effective_C)**: professional introduction to safe, secure, and idiomatic C programming.
 
 ## Modern Systems Languages
 
