@@ -26,7 +26,7 @@
 ### Zig
 - **[Zig Learn](https://ziglearn.org/)**: structured tutorial covering Zig fundamentals, explicit allocation, and comptime.
 - **[Zig Language Reference](https://ziglang.org/documentation/master/)**: official documentation on language specs and standard library features.
-- **[Ziglings](https://github.com/ziglings/ziglings)**: learn the Zig programming language by fixing tiny broken programs.
+- **[Ziglings](https://codeberg.org/ziglings/exercises)**: learn the Zig programming language by fixing tiny broken programs.
 - **[Learning Zig](https://pedropark99.github.io/zig-book/)**: accessible open-source book introducing low-level concepts through Zig.
 - **[Awesome Zig](https://github.com/zigcc/awesome-zig)**: comprehensive list of Zig libraries, frameworks, and projects.
 
@@ -67,7 +67,6 @@
 - **[CS50 (Harvard)](https://cs50.harvard.edu/x/)**: broad foundation covering C, algorithms, and memory.
 - **[The Missing Semester of Your CS Education (MIT)](https://missing.csail.mit.edu/)**: practical tooling skills like shell, git, and debugging.
 - **[Beej's Guide to Learning Computer Science](https://beej.us/guide/bglcs/)**: primer on how to approach programming problems.
-- **[Patterson & Hennessy: Computer Organization and Design](https://www.elsevier.com/books/computer-organization-and-design-mips-edition/patterson/978-0-12-801733-4)**: standard reference on hardware interface, RISC architecture, and processors.
 - **[Linux Kernel Architecture](https://www.kernel.org/doc/html/latest/)**: official Linux kernel documentation for drivers, subsystems, and memory layouts.
 - **[UNIX System Programming (Advanced Programming in the UNIX Environment)](http://www.apuebook.com/)**: W. Richard Stevens' masterwork on UNIX system calls and process control.
 
@@ -78,7 +77,6 @@
 - **[Build Your Own X](https://github.com/codecrafters-io/build-your-own-x)**: tutorials for building your own shell, database, HTTP server, and more.
 - **[ChibiCC](https://github.com/rui314/chibicc)**: small C11 compiler written by Rui Ueyama, structured commit-by-commit for readability.
 - **[Compilers: Principles, Techniques, and Tools (Dragon Book)](https://en.wikipedia.org/wiki/Compilers:_Principles,_Techniques,_and_Tools)**: foundational textbook on parsing, lexical analysis, and code generation.
-- **[Engineering a Compiler](https://www.eecs.hull.ac.uk/)**: modern practical reference on compiler optimization techniques and IL design.
 - **[Modern Compiler Implementation in ML/C/Java](https://www.cs.princeton.edu/~appel/modern/)** (Andrew Appel): rigorous treatment of compiler construction and SSA form.
 
 ## Assembly, Hardware & Low-Level Reverse Engineering
