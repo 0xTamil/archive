@@ -97,3 +97,4 @@
 - **[Algorithms (Sedgewick & Wayne)](https://algs4.cs.princeton.edu/home/)**: classic reference focusing on practical data structures and performance.
 
 ## License
+[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
