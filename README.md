@@ -95,3 +95,5 @@
 - **[MIT 6.006: Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)**: free course with lectures, notes, and problem sets.
 - **[Algorithm Visualizer](https://algorithm-visualizer.org/)**: interactive platform that animates algorithms from real code.
 - **[Algorithms (Sedgewick & Wayne)](https://algs4.cs.princeton.edu/home/)**: classic reference focusing on practical data structures and performance.
+
+## License
