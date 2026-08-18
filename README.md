@@ -37,6 +37,16 @@
 - **[Learn Odin in Y Minutes](https://learnxinyminutes.com/odin/)**: quick syntax reference sheet covering arrays, context, allocators, and procedures.
 - **[Awesome Odin](https://github.com/odin-lang/awesome-odin)**: community-curated list of libraries, game frameworks, and tools written in Odin.
 
+## Graphics Programming & Shaders
+- **[LearnOpenGL](https://learnopengl.com/)**: complete guide to 3D graphics, shader pipeline, lighting, and framebuffers in OpenGL.
+- **[The Book of Shaders](https://thebookofshaders.com/)**: step-by-step guide to writing fragment shaders and procedural graphics.
+- **[Ray Tracing in One Weekend](https://raytracing.github.io/)**: hands-on series for writing a custom CPU/GPU ray tracer from scratch.
+- **[Vulkan Tutorial](https://vulkan-tutorial.com/)**: comprehensive walkthrough for low-overhead, modern GPU graphics programming.
+- **[Scratchapixel](https://www.scratchapixel.com/)**: deep foundational math and algorithms behind 3D computer graphics and rendering.
+- **[WebGPU Fundamentals](https://webgpufundamentals.org/)**: practical intro to modern GPU architecture and computing specs.
+- **[Inigo Quilez Articles](https://iquilezles.org/articles/)**: masterclass on signed distance functions, noise, terrain generation, and rendering math.
+- **[Shadertoy](https://www.shadertoy.com/)**: community playground for writing, sharing, and inspecting WebGL fragment shaders.
+
 ## OS Development & Kernel Engineering
 - **[OSDev Wiki](https://wiki.osdev.org/)**: essential community wiki covering bootloaders, kernel architecture, memory management, and drivers.
 - **[OSDev Forum](https://forum.osdev.org/)**: active discussion board focused on low-level system design and bare-metal troubleshooting.
