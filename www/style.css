@@ -1,0 +1,886 @@
+/* Wikipedia Vector 2022 Modern Skin Design System */
+:root {
+    --mw-bg: #ffffff;
+    --mw-text: #202122;
+    --mw-text-muted: #54595d;
+    --mw-link: #36c;
+    --mw-link-visited: #6b4ba1;
+    --mw-link-hover: #447ff5;
+    --mw-border: #a2a9b1;
+    --mw-border-subtle: #eaecf0;
+    --mw-box-bg: #ffffff;
+    --mw-panel-bg: #f8f9fa;
+    --mw-button-bg: #f8f9fa;
+    --mw-button-hover: #e8eaed;
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-serif: "Linux Libertine", "Georgia", "Times", serif;
+    --font-mono: "DejaVu Sans Mono", "Courier New", Courier, monospace;
+    --site-max-width: 1050px;
+    --site-font-size: 15px;
+}
+
+/* Dark Theme Palette */
+body.theme-dark {
+    --mw-bg: #101418;
+    --mw-text: #eaecf0;
+    --mw-text-muted: #9e9e9e;
+    --mw-link: #4fc3f7;
+    --mw-link-visited: #b388ff;
+    --mw-link-hover: #81d4fa;
+    --mw-border: #404448;
+    --mw-border-subtle: #272c30;
+    --mw-box-bg: #101418;
+    --mw-panel-bg: #1b1f24;
+    --mw-button-bg: #22272e;
+    --mw-button-hover: #2d333b;
+}
+
+body {
+    background-color: var(--mw-bg);
+    color: var(--mw-text);
+    font-family: var(--font-sans);
+    font-size: var(--site-font-size);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+/* Global Link Styles */
+a {
+    color: var(--mw-link);
+    text-decoration: none;
+    transition: color 0.15s ease, text-decoration 0.15s ease;
+}
+
+a:visited {
+    color: var(--mw-link-visited);
+}
+
+a:hover, a:focus {
+    color: var(--mw-link-hover);
+    text-decoration: underline;
+}
+
+/* Body font size variants */
+body.font-small { --site-font-size: 13px; }
+body.font-standard { --site-font-size: 15px; }
+body.font-large { --site-font-size: 17px; }
+
+/* Page container width variants */
+body.width-standard { --site-max-width: 1050px; }
+body.width-wide { --site-max-width: 1440px; }
+
+/* Vector 2022 Header Toolbar */
+.vector-header {
+    border-bottom: 1px solid var(--mw-border-subtle);
+    padding: 10px 20px;
+    background-color: var(--mw-bg);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: transform 0.25s ease;
+}
+
+.vector-header.header-hidden {
+    transform: translateY(-100%);
+}
+
+.vector-header-container {
+    max-width: var(--site-max-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.vector-header-left, .vector-header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+}
+
+.vector-brand h1 {
+    font-family: var(--font-serif);
+    font-size: 1.6em;
+    font-weight: normal;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+/* Wikipedia Vector Icon Button (Hidden by default when sidebar is visible) */
+.vector-icon-button {
+    display: none; /* Only appears IF AND ONLY IF sidebar is hidden */
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    background-color: var(--mw-bg);
+    border: 1px solid var(--mw-border);
+    border-radius: 2px;
+    color: var(--mw-text);
+    cursor: pointer;
+    transition: border-color 0.15s, background-color 0.15s;
+}
+
+/* Appear IF AND ONLY IF sidebars are collapsed/hidden */
+body.toc-collapsed #vector-toc-menu-btn {
+    display: inline-flex;
+}
+
+body.appearance-collapsed #vector-appearance-menu-btn {
+    display: inline-flex;
+}
+
+.vector-icon-button:hover {
+    background-color: var(--mw-button-hover);
+}
+
+.vector-icon-button.active {
+    border-color: var(--mw-link);
+    box-shadow: 0 0 0 1px var(--mw-link);
+}
+
+/* Wikipedia Popover Floating Dropdown Menu */
+.vector-popover {
+    position: absolute;
+    top: 44px;
+    z-index: 1100;
+    background-color: var(--mw-bg);
+    border: 1px solid var(--mw-border);
+    border-radius: 2px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+    padding: 14px 16px;
+    min-width: 240px;
+    display: none;
+}
+
+.vector-popover.visible {
+    display: block;
+}
+
+.vector-popover-left {
+    left: 0;
+}
+
+.vector-popover-right {
+    right: 0;
+}
+
+/* Popover Arrow Indicator */
+.vector-popover::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--mw-bg);
+    border-left: 1px solid var(--mw-border);
+    border-top: 1px solid var(--mw-border);
+    transform: rotate(45deg);
+}
+
+.vector-popover-left::before { left: 11px; }
+.vector-popover-right::before { right: 11px; }
+
+.popover-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--mw-border-subtle);
+    padding-bottom: 6px;
+}
+
+.popover-header h2 {
+    font-family: var(--font-sans);
+    font-size: 1.05em;
+    font-weight: bold;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+.btn-move-sidebar {
+    background-color: #eaecf0;
+    border: none;
+    color: #202122;
+    padding: 3px 8px;
+    font-size: 12px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: var(--font-sans);
+}
+
+body.theme-dark .btn-move-sidebar {
+    background-color: #272c30;
+    color: #eaecf0;
+}
+
+.btn-move-sidebar:hover {
+    background-color: #d1d5db;
+}
+
+/* Vector Search Bar */
+.vector-search-box {
+    display: flex;
+    align-items: center;
+}
+
+.vector-search-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.vector-search-icon-svg {
+    position: absolute;
+    left: 10px;
+    color: var(--mw-text-muted);
+    pointer-events: none;
+}
+
+.vector-search-input-wrapper input {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    padding: 6px 12px 6px 32px;
+    border: 1px solid var(--mw-border);
+    border-right: none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    width: 280px;
+    background-color: var(--mw-bg);
+    color: var(--mw-text);
+    outline: none;
+}
+
+.vector-search-input-wrapper input:focus {
+    border-color: var(--mw-link);
+}
+
+.vector-search-box button {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 16px;
+    background-color: var(--mw-panel-bg);
+    border: 1px solid var(--mw-border);
+    color: var(--mw-text);
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    cursor: pointer;
+}
+
+.vector-search-box button:hover {
+    background-color: var(--mw-button-hover);
+}
+
+/* Main Grid Layout */
+.vector-main-layout {
+    max-width: var(--site-max-width);
+    margin: 20px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 240px 1fr 220px;
+    grid-gap: 30px;
+}
+
+body.toc-collapsed .vector-main-layout {
+    grid-template-columns: 1fr 220px;
+}
+
+body.appearance-collapsed .vector-main-layout {
+    grid-template-columns: 240px 1fr;
+}
+
+body.toc-collapsed.appearance-collapsed .vector-main-layout {
+    grid-template-columns: 1fr;
+}
+
+main#content {
+    min-width: 0;
+}
+
+/* Sidebar Containers */
+.vector-sidebar-contents {
+    position: sticky;
+    top: 70px;
+    align-self: start;
+}
+
+.vector-sidebar-contents.hidden,
+.vector-sidebar-appearance.hidden {
+    display: none;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--mw-border-subtle);
+    padding-bottom: 6px;
+}
+
+.sidebar-header h2 {
+    font-family: var(--font-sans);
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+.btn-hide {
+    background-color: #eaecf0;
+    border: none;
+    color: #202122;
+    padding: 2px 8px;
+    font-size: 12px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: var(--font-sans);
+}
+
+body.theme-dark .btn-hide {
+    background-color: #272c30;
+    color: #eaecf0;
+}
+
+.btn-hide:hover {
+    background-color: #d1d5db;
+}
+
+/* TOC Items */
+.vector-toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.95em;
+}
+
+.vector-toc-list li {
+    margin-bottom: 6px;
+}
+
+.vector-toc-top {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.vector-toc-top a {
+    color: var(--mw-text);
+}
+
+.toc-toggle-icon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    color: var(--mw-text-muted);
+    cursor: pointer;
+    user-select: none;
+    margin-right: 6px;
+    transition: transform 0.15s ease;
+}
+
+.toc-toggle-icon.expanded {
+    transform: rotate(90deg);
+}
+
+.vector-toc-sublist {
+    list-style: none;
+    padding-left: 18px;
+    margin: 4px 0 6px 0;
+}
+
+.vector-toc-sublist li {
+    margin-bottom: 4px;
+}
+
+/* Appearance Section */
+.vector-sidebar-appearance {
+    position: sticky;
+    top: 70px;
+    align-self: start;
+    font-size: 0.9em;
+}
+
+.appearance-section {
+    margin-bottom: 16px;
+}
+
+.appearance-section-title {
+    color: var(--mw-text-muted);
+    font-size: 0.9em;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--mw-border-subtle);
+    padding-bottom: 4px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.radio-option input[type="radio"] {
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Results Toolbar & Sort Control Styling */
+.vector-results-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 12px 0 16px 0;
+    font-size: 0.92em;
+}
+
+.vector-sort-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.vector-sort-label {
+    color: var(--mw-text-muted);
+    font-weight: 500;
+}
+
+.vector-sort-select {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    padding: 4px 10px;
+    background-color: var(--mw-bg);
+    border: 1px solid var(--mw-border);
+    color: var(--mw-text);
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.vector-sort-select:focus, .vector-sort-select:hover {
+    border-color: var(--mw-link);
+}
+
+/* Article Styling */
+article.mw-resource-article {
+    margin-bottom: 14px;
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--mw-border-subtle);
+    border-left: 3px solid transparent;
+    border-radius: 4px;
+    transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+article.mw-resource-article.kbd-focused {
+    border-left-color: var(--mw-link);
+    background-color: rgba(79, 195, 247, 0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+body.theme-dark article.mw-resource-article.kbd-focused {
+    background-color: rgba(79, 195, 247, 0.14);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+/* ArchWiki Section Headings & Bottom Border (HR Line) */
+h1.firstHeading {
+    font-family: var(--font-serif);
+    font-size: 1.8em;
+    font-weight: normal;
+    border-bottom: 1px solid var(--mw-border);
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    padding-bottom: 4px;
+}
+
+h2 {
+    font-family: var(--font-serif);
+    font-size: 1.5em;
+    font-weight: normal;
+    border-bottom: 1px solid var(--mw-border);
+    padding-bottom: 4px;
+    margin-top: 1.8em;
+    margin-bottom: 0.6em;
+    color: var(--mw-text);
+}
+
+h3 {
+    font-family: var(--font-sans);
+    font-size: 1.15em;
+    font-weight: bold;
+    border-bottom: 1px solid var(--mw-border-subtle);
+    padding-bottom: 3px;
+    margin-top: 1.2em;
+    margin-bottom: 0.4em;
+    color: var(--mw-text);
+}
+
+/* Golden ArchWiki Headline Number */
+.mw-headline-number {
+    font-family: var(--font-serif);
+    font-weight: normal;
+    color: #b58900;
+    margin-right: 8px;
+}
+
+body.theme-dark .mw-headline-number {
+    color: #d4a017;
+}
+
+.mw-headline-text {
+    color: var(--mw-text);
+    font-weight: normal;
+}
+
+article.mw-resource-article:last-child {
+    border-bottom: none;
+}
+
+article.mw-resource-article h3 {
+    display: inline;
+    margin: 0;
+    font-size: 1.05em;
+}
+
+article.mw-resource-article cite {
+    font-style: italic;
+    color: var(--mw-text-muted);
+    font-size: 0.95em;
+    margin-left: 6px;
+}
+
+article.mw-resource-article p {
+    margin: 4px 0 6px 0;
+}
+
+kbd, code {
+    font-family: var(--font-mono);
+    font-size: 0.88em;
+    background-color: var(--mw-panel-bg);
+    border: 1px solid var(--mw-border-subtle);
+    border-radius: 2px;
+    padding: 1px 4px;
+}
+
+/* Bookmark Button Styling */
+.mw-bookmark-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background-color: var(--mw-button-bg);
+    border: 1px solid var(--mw-border);
+    color: var(--mw-text);
+    padding: 2px 8px;
+    font-size: 12px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: background-color 0.15s, border-color 0.15s;
+    font-family: var(--font-sans);
+}
+
+.mw-bookmark-btn:hover {
+    background-color: var(--mw-button-hover);
+}
+
+.mw-bookmark-btn.bookmarked {
+    border-color: #d4a017;
+    background-color: #fffdf0;
+    color: #202122;
+}
+
+body.theme-dark .mw-bookmark-btn.bookmarked {
+    background-color: #2c2510;
+    border-color: #b58900;
+    color: #eaecf0;
+}
+
+/* Header Multi-Tag Container & Popover Panel */
+.vector-multi-tag-container {
+    position: relative;
+    display: inline-block;
+}
+
+.vector-multi-tag-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-sans);
+    font-size: 13px;
+    padding: 5px 10px;
+    background-color: var(--mw-bg);
+    border: 1px solid var(--mw-border);
+    border-radius: 2px;
+    color: var(--mw-text);
+    cursor: pointer;
+    transition: background-color 0.15s, border-color 0.15s;
+}
+
+.vector-multi-tag-btn:hover, .vector-multi-tag-btn.active {
+    background-color: var(--mw-button-hover);
+    border-color: var(--mw-link);
+}
+
+.multi-tag-panel {
+    width: 320px;
+    max-height: 380px;
+    overflow-y: auto;
+    padding: 12px;
+}
+
+/* ArchWiki / Wikipedia Article Subheader Navigation Tabs */
+.vector-article-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid var(--mw-border-subtle);
+    margin-bottom: 15px;
+}
+
+.vector-tabs {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+.vector-tabs li {
+    margin: 0;
+    padding: 0;
+}
+
+.vector-tabs li a {
+    display: block;
+    padding: 6px 0;
+    font-size: 0.9em;
+    color: var(--mw-link);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.15s, color 0.15s;
+}
+
+.vector-tabs li.active a {
+    color: var(--mw-text);
+    font-weight: normal;
+    border-bottom-color: var(--mw-link);
+}
+
+.vector-tabs li a:hover {
+    color: var(--mw-link-hover);
+}
+
+.tag-pill-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    background-color: var(--mw-panel-bg);
+    border: 1px solid var(--mw-border-subtle);
+    border-radius: 2px;
+    padding: 2px 6px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.15s, border-color 0.15s;
+    color: var(--mw-text);
+}
+
+.tag-pill-btn:hover {
+    background-color: var(--mw-button-hover);
+    border-color: var(--mw-link);
+    color: var(--mw-link);
+}
+
+.tag-pill-btn.active-tag {
+    background-color: var(--mw-link);
+    color: #ffffff;
+    border-color: var(--mw-link-hover);
+}
+
+.tag-count {
+    font-size: 0.82em;
+    opacity: 0.85;
+}
+
+/* InfoBox */
+.mw-infobox {
+    background-color: var(--mw-panel-bg);
+    border: 1px solid var(--mw-border);
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    font-size: 0.92em;
+}
+
+.mw-infobox dl {
+    margin: 8px 0 0 0;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-gap: 4px 16px;
+}
+
+.mw-infobox dt {
+    font-weight: bold;
+}
+
+.mw-infobox dd {
+    margin: 0;
+}
+
+footer.vector-footer {
+    border-top: 1px solid var(--mw-border);
+    margin-top: 40px;
+    padding: 20px 0 40px 0;
+    font-size: 0.88em;
+    color: var(--mw-text-muted);
+}
+
+/* Tablet Responsive Rules (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .vector-main-layout {
+        grid-template-columns: 210px 1fr !important;
+        grid-gap: 24px;
+        padding: 0 16px;
+        margin: 15px auto;
+    }
+
+    body.toc-collapsed .vector-main-layout {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Hide right appearance sidebar on tablet so main content has ample width */
+    .vector-sidebar-appearance {
+        display: none !important;
+    }
+
+    /* Show Appearance eyeglasses icon button on tablet header so user accesses popover */
+    #vector-appearance-menu-btn {
+        display: inline-flex !important;
+    }
+
+    .vector-search-input-wrapper input {
+        width: 130px;
+    }
+
+    .vector-search-input-wrapper input:focus {
+        width: 160px;
+    }
+}
+
+/* Mobile Responsive Media Queries */
+@media (max-width: 768px) {
+    .vector-header-container {
+        padding: 8px 10px;
+        gap: 6px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .vector-header-left, .vector-header-right {
+        gap: 6px;
+    }
+
+    .vector-brand h1 {
+        font-size: 1.15em;
+        white-space: nowrap;
+    }
+
+    /* Force Icon Buttons to display on mobile so popovers are accessible */
+    .vector-icon-button {
+        display: inline-flex !important;
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+    }
+
+    .vector-search-input-wrapper {
+        width: 100%;
+        max-width: 130px;
+    }
+
+    .vector-search-input-wrapper input {
+        width: 100%;
+        font-size: 12px;
+        padding-left: 24px;
+    }
+
+    .vector-search-box button {
+        display: none; /* Hide Search submit button text on mobile, use search icon */
+    }
+
+    .vector-multi-tag-btn {
+        padding: 4px 6px;
+        font-size: 11px;
+    }
+
+    /* Hide Desktop Sidebars on mobile - users open them via header popover buttons */
+    .vector-sidebar-contents,
+    .vector-sidebar-appearance {
+        display: none !important;
+    }
+
+    .vector-main-layout {
+        grid-template-columns: 1fr !important;
+        padding: 0 12px;
+        margin: 10px auto;
+    }
+
+    /* Popover adjustments on mobile */
+    .vector-popover {
+        position: fixed;
+        top: 50px;
+        left: 10px;
+        right: 10px;
+        width: auto !important;
+        max-width: calc(100vw - 20px);
+        max-height: 80vh;
+        z-index: 1000;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    }
+
+    .vector-popover-right {
+        left: 10px;
+        right: 10px;
+    }
+
+    .vector-article-toolbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    article.mw-resource-article h3 {
+        font-size: 1em;
+        line-height: 1.4;
+    }
+
+    article.mw-resource-article footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .mw-bookmark-btn {
+        margin-left: 0;
+        margin-top: 4px;
+    }
+}
