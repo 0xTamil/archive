@@ -105,7 +105,7 @@ function slugify(text) {
 function extractTags(title, description, category, subcategory) {
   const combined = `${title} ${description} ${category} ${subcategory}`.toLowerCase();
   const candidates = [
-    'c', 'rust', 'zig', 'odin', 'opengl', 'vulkan', 'webgpu', 'shaders',
+    'c', 'c++', 'rust', 'zig', 'odin', 'opengl', 'vulkan', 'webgpu', 'shaders',
     'kernel', 'os', 'x86', 'arm', 'risc-v', 'assembly', 'compiler',
     'interpreter', 'networking', 'database', 'distributed', 'algorithms',
     'graphics', 'reverse engineering', 'malware', 'memory', 'concurrency',
