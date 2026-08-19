@@ -11,14 +11,14 @@
 - **[C Interfaces and Implementations](https://github.com/drh/cii)** (David R. Hanson): techniques for writing reusable data structures and modules in C.
 
 ## C++ Programming
-- **[C++ Primer (5th Edition)](https://www.informit.com/store/c-primer-9780321714114)** (Stanley B. Lippman, Josée Lajoie, and Barbara E. Moo): The definitive comprehensive introduction to modern C++ fundamentals and standard library usage.
-- **[A Tour of C++](https://www.stroustrup.com/tour3.html)** (Bjarne Stroustrup): A concise, high-level overview of language structure and standard features by C++'s creator.
-- **[cppreference.com](https://en.cppreference.com/)**: The undisputed, detailed online reference for C++ syntax, language standards (C++11 through modern), and the standard library (STL).
-- **[LearnCpp.com](https://www.learncpp.com/)**: A free, well-structured online tutorial taking you from complete beginner to advanced topics with step-by-step examples.
-- **[Effective Modern C++](https://www.oreilly.com/library/view/effective-modern-c/9781491902203/)** (Scott Meyers): Essential guidance on writing correct, efficient, and idiomatic modern C++ (C++11/C++14).
-- **[C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)** (edited by Bjarne Stroustrup and Herb Sutter): A set of try-and-tested rules, guidelines, and best practices for writing clean, safe C++.
-- **[Compiler Explorer (godbolt.org)](https://godbolt.org/)**: An interactive online compiler tool to write C++ code and inspect the generated assembly output in real time across multiple compilers and optimization flags.
-- **[C++ FAQs](https://isocpp.org/wiki/xwiki/wiki/Main/)**: Official collection of frequently asked questions regarding C++ idioms, object-oriented design, memory management, and subtler gotchas.
+- **[C++ Primer](https://www.informit.com/store/c-primer-9780321714114)**: Comprehensive introduction to modern C++ fundamentals and the standard library.
+- **[A Tour of C++](https://www.stroustrup.com/tour3.html)**: Concise, high-level overview of the language by its creator, Bjarne Stroustrup.
+- **[cppreference.com](https://en.cppreference.com/)**: Definitive online reference for C++ syntax, standards, and the Standard Template Library (STL).
+- **[LearnCpp.com](https://www.learncpp.com/)**: Free, step-by-step tutorial covering foundational to advanced concepts.
+- **[Effective Modern C++](https://www.oreilly.com/library/view/effective-modern-c/9781491902203/)**: Essential guide to writing idiomatic, efficient C++11/14 code.
+- **[C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)**: Official best practices and rules for writing modern, safe C++.
+- **[Compiler Explorer](https://godbolt.org/)**: Interactive online tool to inspect generated assembly code across different compilers.
+- **[C++ FAQs](https://isocpp.org/wiki/xwiki/wiki/Main/)**: Official Q&A resource on memory management, design, and common pitfalls.
 
 ## Modern Systems Languages
 
