@@ -50,6 +50,24 @@
 
 ## Graphics Programming
 
+### Overview
+- **[A Brief History of Graphics](https://www.youtube.com/watch?v=QyjyWUrHsFc)**
+- **[How do Video Game Graphics Work?](https://www.youtube.com/watch?v=C8YtdC8mxTU)**
+- **[What Makes Computer Generated Images Look Real?](https://www.youtube.com/watch?v=iOlehM5kNSk)**
+- **[Scratchpixel: Learn Computer Graphics Programming](https://www.scratchapixel.com/)**
+
+### Software Rendering
+- **[Basic 2D Rasterization](https://magcius.github.io/xplain/article/rast1.html)**: interactive article explaining how pixels are drawn from 2D vector shapes.
+- **[Physically Based Rendering](https://pbr-book.org/)**: award-winning, comprehensive textbook covering modern offline ray tracing and light transport theory.
+- **[Computer Graphics from Scratch](https://www.gabrielgambetta.com/computer-graphics-from-scratch/)**: accessible guide explaining ray tracing and rasterization without complex framework dependencies.
+- **[Ray Tracing in One Weekend](https://raytracing.github.io/)**: famous, hands-on mini-book series building a C++ path tracer from scratch.
+- **[Rasterization in One Weekend](https://tayfunkayhan.wordpress.com/2018/11/24/rasterization-in-one-weekend/)**: quick walkthrough building a software-based triangle rasterizer step by step.
+- **[Tiny RayTracer](https://github.com/ssloy/tinyraytracer/wiki)**: educational project showing how to write a ray tracer in 500 lines of C++.
+- **[Tiny RayCaster](https://github.com/ssloy/tinyraycaster/wiki)**: concise tutorial building a Wolfenstein 3D-style pseudo-3D game engine.
+- **[Tiny Renderer](https://haqr.eu/tinyrenderer/)**: popular course teaching graphics programming by building an OpenGL-like CPU pipeline from scratch.
+- **[Implmenting A Tiny CPU Rasterizer](https://lisyarus.github.io/blog/posts/implementing-a-tiny-cpu-rasterizer-part-1.html)**: detailed blog series covering modern CPU rasterization math and algorithms.
+- **[Build Your Own 3D Renderer](https://avikdas.com/build-your-own-raytracer/)**: step-by-step introduction to writing a simple ray tracer in pure code.
+
 ### OpenGL
 - **[Learn OpenGL](https://learnopengl.com/)**: Comprehensive guide covering graphics fundamentals to modern 3D rendering concepts.
 - **[OpenGL Step By Step](https://ogldev.org/)**: Code-focused walkthroughs building a 3D graphics engine step by step.
