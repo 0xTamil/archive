@@ -333,7 +333,7 @@
 - **[PyPy’s Approach to VM Construction](http://www.csc.lsu.edu/~gb/csc7700/Reading/pypy-vm-construction.pdf)**: Research paper detailing architecture-independent VM generation via RPython.
 - **[Meta-Tracing, RPython and PyPy](https://ia601503.us.archive.org/32/items/vmss16/bolz.pdf)**: Presentation detailing meta-tracing JIT compilers.
 - **[Pycket: A Tracing JIT for a Functional Language](http://homes.soic.indiana.edu/samth/pycket-draft.pdf)**: Paper on implementing a tracing JIT for Racket using RPython.
-- **[Graal and Truffle](https://blog.plan99.net/graal-truffle-134d8f28fb69)**: Article discussing GraalVM and Truffle self-optimizing AST interpreters ([Reddit Discussion](https://redd.it/4tm4mj)).
+- **[Graal and Truffle](https://blog.plan99.net/graal-truffle-134d8f28fb69)**: Article discussing GraalVM and Truffle self-optimizing AST interpreters.
 - **[Writing a Language in Truffle](http://cesquivias.github.io/tags/truffle.html)**: Tutorial series building custom language runtimes using Truffle.
 - **[How to Build a Virtual Machine](https://www.youtube.com/watch?v=OjaAToVkoTw)**: Terence Parr live-codes a complete bytecode virtual machine engine.
 - **[Building an Interpreter in RPython](https://www.youtube.com/watch?v=9tDpjzPLvNY)**: Talk explaining how to leverage RPython to create fast dynamic language runtimes.
@@ -352,7 +352,7 @@
 - **[LLVM Architecture](http://www.aosabook.org/en/llvm.html)**: Architecture of Open Source Applications chapter explaining LLVM's internal design.
 - **[A Tourist’s Guide to the LLVM Source Code](https://blog.regehr.org/archives/1453)**: High-level overview explaining how to navigate the LLVM codebase.
 - **[LLVM for Graduate Students](http://www.cs.cornell.edu/~asampson/blog/llvm.html)**: Introduction to conducting research using LLVM passes and infrastructure.
-- **[LLVM Tutorial: Implementing Kaleidoscope](http://releases.llvm.org/3.6.2/docs/tutorial/LangImpl1.html)**: Official tutorial building a language using C++/OCaml/Python and LLVM ([Python Version](http://www.llvmpy.org/llvmpy-doc/dev/doc/kaleidoscope/index.html)).
+- **[LLVM Tutorial: Implementing Kaleidoscope](http://releases.llvm.org/3.6.2/docs/tutorial/LangImpl1.html)**: Official tutorial building a language using C++/OCaml/Python and LLVM.
 - **[Implementing a JIT Compiled Language with Haskell and LLVM](http://www.stephendiehl.com/llvm/)**: Walkthrough using Haskell to generate LLVM IR for a custom language.
 - **[ALIVe: Automatic LLVM InstCombine Verifier](https://blog.regehr.org/archives/1170)**: Article covering formal verification of LLVM optimization transformations.
 - **[A Retargetable C Compiler: Design and Implementation](https://www.amazon.com/dp/0805316701)**: Examines lcc, a production-quality, retargetable ANSI C compiler.
@@ -367,17 +367,17 @@
 - **[Anders Hejlsberg on Modern Compiler Construction](https://channel9.msdn.com/Blogs/Seth-Juarez/Anders-Hejlsberg-on-Modern-Compiler-Construction)**: Discussion on building modern API-driven language compilers (Roslyn).
 
 ### Others
-- **[Warren's Abstract Machine: Prolog in Haskell](https://mitpress.mit.edu/books/warrens-abstract-machine)**: Introduction to WAM for implementing logic programming languages.
-- **[A Micro-Manual for LISP - Not the Whole Truth](https://www.uraimo.com/files/MicroManual-LISP.pdf)**: John McCarthy's original minimal specification for Lisp ([Typeset Version](https://github.com/jaseemabid/micromanual)).
-- **[The Most Beautiful Program Ever Written](https://www.youtube.com/watch?v=OyfBQmvr2Hc)**: William Byrd presents a complete self-evaluating Lisp interpreter written in 15 lines of Lisp.
-- **[`MOV` is Turing-Complete](https://www.cl.cam.ac.uk/~sd601/papers/mov.pdf)**: Proof showing the x86 `mov` instruction alone is sufficient for arbitrary computation ([HN Discussion](https://news.ycombinator.com/item?id=6309631)).
-- **[The MoVfuscator](https://www.youtube.com/watch?v=R7EEoWg6Ekk)**: Compiler that compiles C code into only x86 `mov` instructions ([HN Discussion](https://news.ycombinator.com/item?id=9751312)).
-- **[Accidentally Turing Complete](http://beza1e1.tuxen.de/articles/accidentally_turing_complete.html)**: Collection of systems, formats, and UI engines that accidentally became Turing complete.
-- **[The Page-Faults Weird Machine](https://www.usenix.org/system/files/conference/woot13/woot13-bangert.pdf)**: Research paper demonstrating computation driven entirely by x86 MMU fault handling.
-- **[Machine Code Obfuscation via Instruction Set Reduction](https://kirschju.re/static/ba_jonischkeit_2016.pdf)**: Thesis on code transformation and instruction obfuscation.
-- **[A Simple Multi-Processor Computer Based on Subleq](https://arxiv.org/abs/1106.2593)**: Paper detailing execution engines built on Single Instruction Set Computers (OISC).
-- **[Programming Should Eat Itself](https://www.youtube.com/watch?v=SrKj4hYic5A)**: StrangeLoop talk on reflective programming and reflective interpreters.
-- **[An Introduction to Combinator Compilers and Graph Reduction Machines](https://www.youtube.com/watch?v=GawiQQCn3bk)**: Video walkthrough on SKI combinators and graph reduction engines.
+- **[Warren's Abstract Machine: Prolog in Haskell](https://mitpress.mit.edu/books/warrens-abstract-machine)**
+- **[A Micro-Manual for LISP - Not the Whole Truth](https://www.uraimo.com/files/MicroManual-LISP.pdf)**
+- **[The Most Beautiful Program Ever Written](https://www.youtube.com/watch?v=OyfBQmvr2Hc)**
+- **[`MOV` is Turing-Complete](https://www.cl.cam.ac.uk/~sd601/papers/mov.pdf)**ycombinator.com/item?id=6309631)).
+- **[The MoVfuscator](https://www.youtube.com/watch?v=R7EEoWg6Ekk)**
+- **[Accidentally Turing Complete](http://beza1e1.tuxen.de/articles/accidentally_turing_complete.html)**
+- **[The Page-Faults Weird Machine](https://www.usenix.org/system/files/conference/woot13/woot13-bangert.pdf)**
+- **[Machine Code Obfuscation via Instruction Set Reduction](https://kirschju.re/static/ba_jonischkeit_2016.pdf)**
+- **[A Simple Multi-Processor Computer Based on Subleq](https://arxiv.org/abs/1106.2593)**
+- **[Programming Should Eat Itself](https://www.youtube.com/watch?v=SrKj4hYic5A)**
+- **[An Introduction to Combinator Compilers and Graph Reduction Machines](https://www.youtube.com/watch?v=GawiQQCn3bk)**
 
 ## Algorithms & Visualizations
 - **[VisuAlgo](https://visualgo.net/)**: visual interactive animations showing how algorithms sort data and search structures step-by-step.
