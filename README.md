@@ -248,29 +248,26 @@
 - **[Programming Languages: Theory and Practice](http://people.cs.uchicago.edu/~blume/classes/aut2008/proglang/text/offline.pdf)**
 - **[Foundations of Programming Languages](http://www.cs.cmu.edu/~fp/courses/15312-f04/)**
 - **[Programming Languages Parts A, B, & C (Grossman)](https://www.coursera.org/learn/programming-languages)**
+- **[Crafting Interpreters](http://www.craftinginterpreters.com/)**
+- **[Compilers: Principles, Techniques and Tools (Dragon Book)](https://www.amazon.com/dp/0321486811)**
+- **[Engineering a Compiler](https://www.amazon.com/dp/012088478X)**:
+- **[Write an Interpreter in Go](https://interpreterbook.com/)**
+- **[Write a Compiler in Go](https://compilerbook.com/)**
+- **[Build Your Own Lisp](http://www.buildyourownlisp.com)**
+- **[Basics of Compiler Design](http://hjemmesider.diku.dk/~torbenm/Basics/)**
+- **[Beautiful Racket](http://beautifulracket.com)**
+- **[Create Your Own Programming Language](http://createyourproglang.com/)**
+- **[Language Implementation Patterns](https://www.amazon.com/dp/193435645X)**
+- **[Modern Compiler Implementation in ML](https://www.cs.princeton.edu/~appel/modern/ml/)**
+- **[Writing Compilers and Interpreters: A Software Engineering Approach](https://www.amazon.com/dp/0470177071)**
+- **[Writing Interpreters and Compilers for the Raspberry Pi Using Python](https://www.amazon.de/gp/product/1977509207)**
+- **[How I Wrote a Programming Language](https://medium.com/@william01110111/the-programming-language-pipeline-91d3f449c919)**
+- **[Lisperator](http://lisperator.net/pltut/)**
+- **[Little Lisp Interpreter](https://maryrosecook.com/blog/post/little-lisp-interpreter)**
+- **[lis.py v1 (How to Write a Lisp Interpreter in Python)](http://norvig.com/lispy.html)**
+- **[lis.py v2 (An Even Better Lisp Interpreter in Python)](http://norvig.com/lispy2.html)**
 
-### Introduction
-- **[Crafting Interpreters](http://www.craftinginterpreters.com/)**: Comprehensive guide to building an interpreted, full-featured scripting language ([GitHub Repo](https://github.com/munificent/craftinginterpreters) | [HN Discussion](https://news.ycombinator.com/item?id=13406081)).
-- **[Compilers: Principles, Techniques and Tools (Dragon Book)](https://www.amazon.com/dp/0321486811)**: Classic textbook on Compiler Construction.
-- **[Engineering a Compiler](https://www.amazon.com/dp/012088478X)**: Modern textbook covering SSA-Form and recent code generation research.
-- **[Write an Interpreter in Go](https://interpreterbook.com/)**: Hands-on guide building a complete bytecode interpreter from scratch using Go.
-- **[Write a Compiler in Go](https://compilerbook.com/)**: Successor book building a full compiler and VM for the Monkey language in Go.
-- **[Build Your Own Lisp](http://www.buildyourownlisp.com)**: Learn C and build your own Lisp programming language in under 1,000 lines of code.
-- **[Basics of Compiler Design](http://hjemmesider.diku.dk/~torbenm/Basics/)**: Short textbook covering fundamental parsing, translation, and runtime concepts.
-- **[Beautiful Racket](http://beautifulracket.com)**: Practical tutorial on making your own custom programming language with Racket.
-- **[Create Your Own Programming Language](http://createyourproglang.com/)**: Example-driven approach with video tutorials and source projects ([HN Discussion](https://news.ycombinator.com/item?id=813133)).
-- **[Language Implementation Patterns](https://www.amazon.com/dp/193435645X)**: Patterns behind language design and building interpreters using ANTLR.
-- **[Modern Compiler Implementation in ML](https://www.cs.princeton.edu/~appel/modern/ml/)**: Classic compiler text with ML reference implementation (Also available: [MCI in C](https://www.cs.princeton.edu/~appel/modern/c/) and [MCI in Java](https://www.cs.princeton.edu/~appel/modern/java/)).
-- **[Writing Compilers and Interpreters: A Software Engineering Approach](https://www.amazon.com/dp/0470177071)**: Java-focused approach for working engineers (Also available: [C++ Edition](https://www.amazon.com/dp/0471113530) and [C Edition](https://www.amazon.com/dp/0471555800)).
-- **[Writing Interpreters and Compilers for the Raspberry Pi Using Python](https://www.amazon.de/gp/product/1977509207)**: Guide covering Python, bytecode, assembly language, and dynamic typing.
-- **[Let’s Build A Simple Interpreter](https://ruslanspivak.com/lsbasi-part1/)**: Multi-part step-by-step tutorial series building a Pascal interpreter in Python.
-- **[How I Wrote a Programming Language](https://medium.com/@william01110111/the-programming-language-pipeline-91d3f449c919)**: Overview of the programming language execution pipeline ([Reddit Discussion](https://redd.it/62ixbc)).
-- **[Lisperator](http://lisperator.net/pltut/)**: Step-by-step guide on how to implement a custom language in JavaScript.
-- **[Little Lisp Interpreter](https://maryrosecook.com/blog/post/little-lisp-interpreter)**: Lisp interpreter with functions, lambdas, and closures in under 120 lines of JS ([GitHub Repo](https://github.com/maryrosecook/littlelisp)).
-- **[lis.py v1 (How to Write a Lisp Interpreter in Python)](http://norvig.com/lispy.html)**: Peter Norvig’s classic tutorial on building a Lisp interpreter.
-- **[lis.py v2 (An Even Better Lisp Interpreter in Python)](http://norvig.com/lispy2.html)**: Follow-up tutorial extending `lis.py` with tail calls and macros.
-
-### Parsing & Grammars
+### Parser
 - **[Parsing Techniques: A Practical Guide](https://www.amazon.com/dp/038720248X)**: Definitive guide on parsing algorithms, formal grammars, and parsing theory ([1st Edition PDF](https://dickgrune.com/Books/PTAPG_1st_Edition/)).
 - **[Packrat Parsing Thesis on PEG (B. Ford)](https://pdos.csail.mit.edu/~baford/packrat/thesis/)**: Foundational thesis introducing Parsing Expression Grammars and Packrat parsing.
 - **[Packrat Parsing (PEG) Papers and Resources](http://bford.info/packrat/)**: Collected research portal on PEG parsers by Bryan Ford.
@@ -342,7 +339,6 @@
 - **[A Tourist’s Guide to the LLVM Source Code](https://blog.regehr.org/archives/1453)**: High-level overview explaining how to navigate the LLVM codebase.
 - **[LLVM for Graduate Students](http://www.cs.cornell.edu/~asampson/blog/llvm.html)**: Introduction to conducting research using LLVM passes and infrastructure.
 - **[LLVM Tutorial: Implementing Kaleidoscope](http://releases.llvm.org/3.6.2/docs/tutorial/LangImpl1.html)**: Official tutorial building a language using C++/OCaml/Python and LLVM.
-- **[Implementing a JIT Compiled Language with Haskell and LLVM](http://www.stephendiehl.com/llvm/)**: Walkthrough using Haskell to generate LLVM IR for a custom language.
 - **[ALIVe: Automatic LLVM InstCombine Verifier](https://blog.regehr.org/archives/1170)**: Article covering formal verification of LLVM optimization transformations.
 - **[A Retargetable C Compiler: Design and Implementation](https://www.amazon.com/dp/0805316701)**: Examines lcc, a production-quality, retargetable ANSI C compiler.
 - **[Nanopass Framework for Commercial Compiler Development](https://www.cs.indiana.edu/~dyb/pubs/commercial-nanopass.pdf)**: Paper detailing compiler construction using small, modular passes.
@@ -359,11 +355,9 @@
 - **[Warren's Abstract Machine: Prolog in Haskell](https://mitpress.mit.edu/books/warrens-abstract-machine)**
 - **[A Micro-Manual for LISP - Not the Whole Truth](https://www.uraimo.com/files/MicroManual-LISP.pdf)**
 - **[The Most Beautiful Program Ever Written](https://www.youtube.com/watch?v=OyfBQmvr2Hc)**
-- **[`MOV` is Turing-Complete](https://www.cl.cam.ac.uk/~sd601/papers/mov.pdf)**
 - **[The MoVfuscator](https://www.youtube.com/watch?v=R7EEoWg6Ekk)**
 - **[Accidentally Turing Complete](http://beza1e1.tuxen.de/articles/accidentally_turing_complete.html)**
 - **[The Page-Faults Weird Machine](https://www.usenix.org/system/files/conference/woot13/woot13-bangert.pdf)**
-- **[Machine Code Obfuscation via Instruction Set Reduction](https://kirschju.re/static/ba_jonischkeit_2016.pdf)**
 - **[A Simple Multi-Processor Computer Based on Subleq](https://arxiv.org/abs/1106.2593)**
 - **[Programming Should Eat Itself](https://www.youtube.com/watch?v=SrKj4hYic5A)**
 - **[An Introduction to Combinator Compilers and Graph Reduction Machines](https://www.youtube.com/watch?v=GawiQQCn3bk)**
