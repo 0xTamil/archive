@@ -11,12 +11,11 @@
 
 ## C Programming
 - **[Beej's Guide to C Programming](https://beej.us/guide/bgc/)**: clear guide to the C standard library with code examples.
-- **[The C Book](https://publications.gbdirect.co.uk//c_book/)**: free online reference book covering foundational C concepts.
+- **[C Programming: A Modern Approach](https://knking.com/books/c2/)**: clear, comprehensive textbook widely considered the best overall guide for learning standard C.
+- **[The C Book](http://knking.com/books/c2/index.html)**: free online reference book covering foundational C concepts.
 - **[The C Programming Language (K&R)](https://en.wikipedia.org/wiki/The_C_Programming_Language)**: classic, short introductory book written by C's creators.
 - **[Learn C](https://learn-c.org/)**: interactive website to practice C code directly in your browser.
 - **[C FAQ](https://c-faq.com/)**: simple answers to tricky C questions like pointers and hidden bugs.
-- **[The Linux Programming Interface](https://man7.org/tlpi/)**: complete guide to writing system programs for Linux and UNIX.
-- **[Beej's Guide to Network Programming](https://beej.us/guide/bgnet/)**: beginner-friendly introduction to connecting programs over networks using C.
 - **[C Interfaces and Implementations](https://github.com/drh/cii)**: practical guide on building clean, reusable code modules in C.
 
 ## C++ Programming
