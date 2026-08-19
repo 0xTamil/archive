@@ -238,17 +238,6 @@
 - **[WingOS](https://github.com/Supercip971/WingOS)**: x86 hobby operating system built from scratch by DEVSE members.
 - **[SEAC](https://github.com/N-LG/SEAC)**: experimental operating system project developed by DEVSE members.
 
-## Computer Systems & Architecture
-- **[Computer Systems: A Programmer's Perspective (CS:APP)](https://csapp.cs.cmu.edu/)**: clear textbook explaining how computers run programs and manage hardware.
-- **[nand2tetris](https://www.nand2tetris.org/)**: famous course where you build a working computer from simple logic gates up to software.
-- **[Operating Systems: Three Easy Pieces (OSTEP)](https://pages.cs.wisc.edu/~remzi/OSTEP/)**: easy-to-read free book explaining how operating systems handle software tasks and memory.
-- **[xv6 (MIT)](https://pdos.csail.mit.edu/6.828/2023/xv6.html)**: simple, clean teaching operating system created by MIT for students to read and study.
-- **[MIT 6.S081: Operating System Engineering](https://pdos.csail.mit.edu/6.828/2023/schedule.html)**: public college labs where you add real features to a simple operating system.
-- **[The Missing Semester of Your CS Education (MIT)](https://missing.csail.mit.edu/)**: practical guide teaching essential tools like terminal commands, Git, and debuggers.
-- **[Linux Kernel Architecture](https://www.kernel.org/doc/html/latest/)**: official documentation explaining how the internal parts of the Linux system work.
-- **[UNIX System Programming (Advanced Programming in the UNIX Environment)](http://www.apuebook.com/)**: classic guide on writing low-level system programs for UNIX and Linux.
-
-
 # Compilers & Interpreters
 
 ### Overview
@@ -379,7 +368,7 @@
 - **[Programming Should Eat Itself](https://www.youtube.com/watch?v=SrKj4hYic5A)**
 - **[An Introduction to Combinator Compilers and Graph Reduction Machines](https://www.youtube.com/watch?v=GawiQQCn3bk)**
 
-## Algorithms & Visualizations
+## Data Structures & Algorithm (DSA)
 - **[VisuAlgo](https://visualgo.net/)**: visual interactive animations showing how algorithms sort data and search structures step-by-step.
 - **[MIT 6.006: Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)**: free university course with clear video lectures teaching basic computer algorithms.
 - **[Algorithm Visualizer](https://algorithm-visualizer.org/)**: interactive site that animates code execution visually so you can see algorithms working.
