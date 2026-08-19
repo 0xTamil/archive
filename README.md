@@ -246,7 +246,7 @@
 - **[Advanced Compiler Design and Implementation (Muchnick)](https://www.amazon.com/dp/1558603204)**
 - **[Modern Compiler Implementation in ML/C/Java (Appel)](https://www.cs.princeton.edu/~appel/modern/)**
 - **[Crafting Interpreters (Bob Nystrom)](http://www.craftinginterpreters.com/)**
-- **[Write an Interpreter in Go](https://interpreterbook.com/) & [Write a Compiler in Go](https://compilerbook.com/) (Thorsten Ball)**
+- **[Write an Interpreter in Go](https://interpreterbook.com/) & [Write a Compiler in Go](https://compilerbook.com/)**
 - **[An Incremental Approach to Compiler Construction (Abdulaziz Ghuloum)](http://scheme2006.cs.uchicago.edu/11-ghuloum.pdf)**
 - **[Let’s Build A Simple Interpreter (Ruslan Spivak)](https://ruslanspivak.com/lsbasi-part1/)**
 - **[Build Your Own Lisp (Daniel Holden)](http://www.buildyourownlisp.com)**
