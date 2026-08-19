@@ -625,6 +625,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         ];
 
         statsData.forEach(item => {
+            if (item.value === 0) return;
+
             const dt = document.createElement('dt');
             dt.textContent = item.label;
 

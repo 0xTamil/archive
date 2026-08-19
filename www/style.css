@@ -310,6 +310,10 @@ main#content {
     position: sticky;
     top: 70px;
     align-self: start;
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--mw-border-subtle) transparent;
 }
 
 .vector-sidebar-contents.hidden,
@@ -378,13 +382,24 @@ body.theme-dark .btn-hide {
 
 .toc-toggle-icon {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 18px;
+    height: 18px;
+    padding: 3px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-radius: 3px;
     color: var(--mw-text-muted);
     cursor: pointer;
     user-select: none;
     margin-right: 6px;
-    transition: transform 0.15s ease;
+    flex-shrink: 0;
+    vertical-align: middle;
+    transition: background-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.toc-toggle-icon:hover {
+    background-color: var(--mw-border-subtle);
+    color: var(--mw-text);
 }
 
 .toc-toggle-icon.expanded {
@@ -696,6 +711,7 @@ body.theme-dark .mw-bookmark-btn.bookmarked {
 .vector-tabs li a:hover {
     color: var(--mw-link-hover);
 }
+
 
 .tag-pill-btn {
     display: inline-flex;

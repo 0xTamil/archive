@@ -40,7 +40,11 @@ function parseMarkdownResources(markdownText) {
 
     if (line.startsWith('## ')) {
       const catTitle = line.replace('## ', '').trim();
-      if (catTitle === 'License') continue;
+      if (catTitle === 'License') {
+        currentCategory = null;
+        currentSubcategory = null;
+        continue;
+      }
 
       currentCategory = {
         id: slugify(catTitle),
