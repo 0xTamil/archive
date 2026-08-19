@@ -1,5 +1,14 @@
 # Learning Resources
 
+## Getting Started
+- **[The Hidden Language of Computer Hardware and Software](https://charlespetzold.com/code/)**
+- **[Exploring how computer works](https://www.youtube.com/watch?v=QZwneRb-zqA)**
+- **[A Crash Course in Computer Science](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo)**
+- **[CS50: Introduction to Computer Science](https://pll.harvard.edu/course/cs50-introduction-computer-science)**
+- **[Teach Yourself CS](https://teachyourselfcs.com/)**
+- **[Beej's Guide to Learning Computer Science](https://beej.us/guide/bglcs/)**
+- **[Open Source Society University](https://github.com/ossu/computer-science)**
+
 ## C Programming
 - **[Beej's Guide to C Programming](https://beej.us/guide/bgc/)**: clear guide to the C standard library with code examples.
 - **[The C Book](https://publications.gbdirect.co.uk//c_book/)**: free online reference book covering foundational C concepts.
@@ -174,16 +183,12 @@
 - **[Awesome OSDEV](https://github.com/devse-org/awesome-osdev)**: curated list of helpful links, guides, and tools for operating system builders.
 
 ## Computer Systems & Architecture
-- **[Open Source Society University](https://github.com/ossu/computer-science)**: complete free self-study roadmap equivalent to a full college computer science degree.
 - **[Computer Systems: A Programmer's Perspective (CS:APP)](https://csapp.cs.cmu.edu/)**: clear textbook explaining how computers run programs and manage hardware.
 - **[nand2tetris](https://www.nand2tetris.org/)**: famous course where you build a working computer from simple logic gates up to software.
 - **[Operating Systems: Three Easy Pieces (OSTEP)](https://pages.cs.wisc.edu/~remzi/OSTEP/)**: easy-to-read free book explaining how operating systems handle software tasks and memory.
 - **[xv6 (MIT)](https://pdos.csail.mit.edu/6.828/2023/xv6.html)**: simple, clean teaching operating system created by MIT for students to read and study.
 - **[MIT 6.S081: Operating System Engineering](https://pdos.csail.mit.edu/6.828/2023/schedule.html)**: public college labs where you add real features to a simple operating system.
-- **[Teach Yourself CS](https://teachyourselfcs.com/)**: clean summary of the absolute best books and courses for teaching yourself computer science.
-- **[CS50 (Harvard)](https://cs50.harvard.edu/x/)**: Harvard's world-famous introductory course on computer science, algorithms, and coding.
 - **[The Missing Semester of Your CS Education (MIT)](https://missing.csail.mit.edu/)**: practical guide teaching essential tools like terminal commands, Git, and debuggers.
-- **[Beej's Guide to Learning Computer Science](https://beej.us/guide/bglcs/)**: friendly primer explaining how to think like a programmer and solve problems.
 - **[Linux Kernel Architecture](https://www.kernel.org/doc/html/latest/)**: official documentation explaining how the internal parts of the Linux system work.
 - **[UNIX System Programming (Advanced Programming in the UNIX Environment)](http://www.apuebook.com/)**: classic guide on writing low-level system programs for UNIX and Linux.
 
