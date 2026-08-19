@@ -254,7 +254,6 @@
 ### Overview
 - **[Computer Systems: A Programmer’s Perspective](https://www.amazon.com/dp/9332573905)**
 - **[Elements of Computing Systems](https://www.amazon.com/dp/0262640686)**
-- **[Structure and Interpretation of Computer Programs (SICP)](https://mitpress.mit.edu/sicp/full-text/book/book.html)**
 - **[Programming Language Pragmatics](https://www.amazon.com/dp/0123745144)**
 - **[Programming Languages: Application and Interpretation](http://cs.brown.edu/courses/cs173/2012/book/)**
 - **[Programming Languages: Theory and Practice](http://people.cs.uchicago.edu/~blume/classes/aut2008/proglang/text/offline.pdf)**
@@ -289,7 +288,7 @@
 - **[PEG-based Transformer Front-End/Middle-End/Back-End](http://www.vpri.org/pdf/tr2010003_PEG.pdf)**: Paper by I. Piumarta demonstrating a full compiler pipeline built on PEGs.
 - **[Pratt Parsers: Expression Parsing Made Easy](http://journal.stuffwithstuff.com/2011/03/19/pratt-parsers-expression-parsing-made-easy/)**: Clear tutorial explaining top-down operator precedence parsing.
 
-### 4. Optimization & SSA
+### Optimization & SSA
 - **[Advanced Compiler Design and Implementation](https://www.amazon.com/dp/1558603204)**: In-depth treatment of Intermediate Representation, SSA, and optimization.
 - **[Building an Optimizing Compiler](https://www.amazon.com/dp/155558179X)**: Deep dive into high-level optimizer design, code generation, scheduling, and register allocation.
 - **[The SSA Book](http://ssabook.gforge.inria.fr/latest/book.pdf)**: Complete, dedicated text exploring Static Single Assignment form.
@@ -303,7 +302,7 @@
 - **[Understanding Compiler Optimization](https://www.youtube.com/watch?v=FnGCDLhaxKU)**: Video presentation walking through classical compiler optimization passes.
 - **[Compiler Optimization Tutorial](https://www.youtube.com/watch?v=SfV8aRX0YY0)**: Instructional tutorial on basic compiler optimization techniques.
 
-### 5. Semantics, Type Systems & Functional Languages
+### Semantics, Type Systems & Functional Languages
 - **[Types and Programming Languages (TAPL)](https://www.amazon.com/dp/0262162091)**: Comprehensive introduction to Type Systems and language semantics by Benjamin C. Pierce.
 - **[Advanced Topics in Types and Programming Languages](https://www.amazon.com/dp/0262162288)**: Advanced type analysis, low-level type systems, and ML-style inference.
 - **[Essentials of Programming Languages](https://www.amazon.com/dp/0260062798)**: Focuses on Semantics, Interpretation, and Continuation Passing Style (CPS).
@@ -320,7 +319,7 @@
 - **[A Tutorial Implementation of a Dependently Typed Lambda Calculus](https://www.andres-loeh.de/LambdaPi/)**: Paper introducing dependent type system implementation.
 - **[Type-Driven Development with Idris](https://www.youtube.com/watch?v=X36ye-1x_HQ)**: Talk on using dependent types to guide language and software design.
 
-### 6. Virtual Machines, JITs & Runtimes
+### Virtual Machines, JITs & Runtimes
 - **[Virtual Machines](https://www.amazon.com/dp/1852339691)**: Book on designing Virtual Machines tailored specifically for programming languages.
 - **[Virtual Machines: Versatile Platforms for Systems and Processes](https://www.amazon.com/dp/1558609105)**: Key textbook examining virtual machine technologies across OS and languages.
 - **[Advanced Design and Implementation of Virtual Machines](https://www.amazon.com/dp/146658260X)**: Holistic introduction to VM architecture, memory management, and execution engines.
@@ -343,13 +342,13 @@
 - **[MetaScala: A Tiny DIY JVM](https://skillsmatter.com/skillscasts/4916-metascala-a-tiny-diy-jvm)**: Metacircular JVM implementation written in Scala.
 - **[One VM to Rule Them All](https://www.youtube.com/watch?v=FJY96_6Y3a4)**: Deep dive presentation into the Truffle language framework.
 
-### 7. Linkers, Loaders & Binary Execution
+### Linkers, Loaders & Binary Execution
 - **[Linkers and Loaders](https://www.amazon.com/dp/1558604960)**: Definitive book on the compile-time, static, and runtime processes of linking and loading.
 - **[A Beginner's Guide to Linkers](http://www.lurklurk.org/linkers/linkers.html)**: Popular tutorial helping C/C++ developers understand symbol resolution and object files.
 - **[An Evil Copy: How the Loader Betrays You](http://www.cse.psu.edu/~trj1/papers/ndss17.pdf)**: Security research paper analyzing dynamic loading mechanics and vulnerabilities.
 - **[Python, Linkers and Virtual Memory](https://www.youtube.com/watch?v=twQKAoq2OPE)**: PyCon talk connecting high-level language execution down to hardware memory layout.
 
-### 8. Compiler Infrastructure
+### Compiler Infrastructure
 - **[LLVM Architecture](http://www.aosabook.org/en/llvm.html)**: Architecture of Open Source Applications chapter explaining LLVM's internal design.
 - **[A Tourist’s Guide to the LLVM Source Code](https://blog.regehr.org/archives/1453)**: High-level overview explaining how to navigate the LLVM codebase.
 - **[LLVM for Graduate Students](http://www.cs.cornell.edu/~asampson/blog/llvm.html)**: Introduction to conducting research using LLVM passes and infrastructure.
@@ -367,7 +366,7 @@
 - **[Write You a Haskell](http://dev.stephendiehl.com/fun/)**: In-depth tutorial on building a functional language compiler with type inference in Haskell.
 - **[Anders Hejlsberg on Modern Compiler Construction](https://channel9.msdn.com/Blogs/Seth-Juarez/Anders-Hejlsberg-on-Modern-Compiler-Construction)**: Discussion on building modern API-driven language compilers (Roslyn).
 
-### 9. Others
+### Others
 - **[Warren's Abstract Machine: Prolog in Haskell](https://mitpress.mit.edu/books/warrens-abstract-machine)**: Introduction to WAM for implementing logic programming languages.
 - **[A Micro-Manual for LISP - Not the Whole Truth](https://www.uraimo.com/files/MicroManual-LISP.pdf)**: John McCarthy's original minimal specification for Lisp ([Typeset Version](https://github.com/jaseemabid/micromanual)).
 - **[The Most Beautiful Program Ever Written](https://www.youtube.com/watch?v=OyfBQmvr2Hc)**: William Byrd presents a complete self-evaluating Lisp interpreter written in 15 lines of Lisp.
@@ -379,21 +378,6 @@
 - **[A Simple Multi-Processor Computer Based on Subleq](https://arxiv.org/abs/1106.2593)**: Paper detailing execution engines built on Single Instruction Set Computers (OISC).
 - **[Programming Should Eat Itself](https://www.youtube.com/watch?v=SrKj4hYic5A)**: StrangeLoop talk on reflective programming and reflective interpreters.
 - **[An Introduction to Combinator Compilers and Graph Reduction Machines](https://www.youtube.com/watch?v=GawiQQCn3bk)**: Video walkthrough on SKI combinators and graph reduction engines.
-
-### Courses, Specifications, Research
-- **[CLI (ECMA-335) Specification](http://www.ecma-international.org/publications/standards/Ecma-335.htm)**: Formal specification for the Common Language Infrastructure (.NET runtime).
-- **[JVM SE8 Specification](https://docs.oracle.com/javase/specs/jvms/se8/html/)**: Official technical standard defining the Java Virtual Machine architecture.
-- **[Mu Specification](https://gitlab.anu.edu.au/mu/mu-spec)**: Micro virtual machine specification for dynamic language implementation.
-- **[Compilers Construction (Cambridge)](http://www.cl.cam.ac.uk/teaching/1516/CompConstr/materials.html)**: University of Cambridge introductory compiler course materials.
-- **[Compiler Construction for Undergrads (RICE)](https://www.clear.rice.edu/comp412/Lectures/)**: Rice University course covering translation, parsing, and IR generation.
-- **[Compilers Theory (Stanford)](http://web.stanford.edu/class/cs143/)**: Stanford CS143 course on compiler design ([YouTube Playlist](https://www.youtube.com/playlist?list=PLLH73N9cB21VSVEX1aSRlNTufaLK1dTAI)).
-- **[Design and Construction of Compilers (UT Arlington)](https://lambda.uta.edu/cse5317/)**: Course covering lexical analysis, parsing, and code generation ([PDF Notes](https://lambda.uta.edu/cse5317/notes.pdf)).
-- **[Virtual Machines and Managed Runtimes (UC Berkeley CS294)](http://www.wolczko.com/CS294/)**: Advanced Berkeley course covering virtual machine architectures.
-- **[DSL Design and Implementation Summer School](http://vjovanov.github.io/dsldi-summer-school/)**: EPFL summer school on Domain Specific Language design.
-- **[Curry On! Conference](http://www.curry-on.org/)**: Premier conference on programming language design ([YouTube Channel](https://www.youtube.com/channel/UC-WICcSW1k3HsScuXxDrp0w/videos)).
-- **[LLVM Developers Meeting Channel](https://www.youtube.com/channel/UCv2_41bSAa5Y_8BacJUZfjQ)**: Video archive of talks on LLVM, Clang, and modern optimization.
-- **[Compilers Lab at Saarland University](http://compilers.cs.uni-saarland.de)**: Active compiler research group producing papers on SSA, IRs, and code generation.
-- **[C. Bolz’s Research Publications](https://scholar.google.com/citations?user=S0rpYpkAAAAJ)**: Research publications focusing on PyPy, RPython, and meta-tracing JITs.
 
 ## Algorithms & Visualizations
 - **[VisuAlgo](https://visualgo.net/)**: visual interactive animations showing how algorithms sort data and search structures step-by-step.
