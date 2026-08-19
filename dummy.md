@@ -1,3 +1,0 @@
-- **[Teach Yourself CS](https://teachyourselfcs.com/)**: clean summary of the absolute best books and courses for teaching yourself computer science.
-- **[Beej's Guide to Learning Computer Science](https://beej.us/guide/bglcs/)**: friendly primer explaining how to think like a programmer and solve problems.
-- **[Open Source Society University](https://github.com/ossu/computer-science)**: complete free self-study roadmap equivalent to a full college computer science degree.
