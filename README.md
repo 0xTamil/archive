@@ -55,6 +55,7 @@
 - **[Awesome OSDEV](https://github.com/devse-org/awesome-osdev)**: curated collection of tutorials, specifications, and reference materials for OS development.
 
 ## Computer Systems & Architecture
+- **[Open Source Society University](https://github.com/ossu/computer-science)**: a megathread to a free self-taught education in Computer Science.
 - **[Computer Systems: A Programmer's Perspective (CS:APP)](https://csapp.cs.cmu.edu/)**: how programs run on hardware, with free labs.
 - **[nand2tetris](https://www.nand2tetris.org/)**: build a computer from logic gates up to a working OS and compiler.
 - **[Operating Systems: Three Easy Pieces (OSTEP)](https://pages.cs.wisc.edu/~remzi/OSTEP/)**: textbook on virtualization, concurrency, and persistence, with projects.
