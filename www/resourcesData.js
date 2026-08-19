@@ -106,6 +106,9 @@ function parseMarkdownResources(markdownText) {
 function slugify(text) {
   return text
     .toLowerCase()
+    .replace(/\+\+/g, 'pp')       // c++ → cpp, not just c
+    .replace(/c#/g, 'csharp')     // c# → csharp
+    .replace(/\+/g, 'plus')       // remaining + signs
     .replace(/[^\w\s-]/g, '')
     .replace(/[\s_-]+/g, '-')
     .replace(/^-+|-+$/g, '');
