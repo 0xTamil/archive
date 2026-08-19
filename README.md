@@ -161,18 +161,17 @@
 
 ## OS Development
 
-### Overview & Getting Started
-- **[OSDev Wiki](https://wiki.osdev.org/)**: essential community encyclopedia on building operating systems, drivers, and memory managers.
-- **[OSDev Bare Metal Tutorials](https://wiki.osdev.org/Expanded_Main_Page)**: simple guides to writing software that runs directly on computer hardware without an OS.
-- **[Philipp Oppermann's Blog OS](https://os.phil-opp.com/)**: step-by-step guide to writing your own tiny computer operating system in Rust.
-- **[Little OS Book](https://littleosbook.github.io/)**: easy, short guide explaining how to start building an x86 operating system using C.
-- **[Writing an OS in 1,000 Lines](https://github.com/nuta/operating-system-in-1000-lines)**: minimal step-by-step guide building a functional C kernel for RISC-V.
-- **[Brokenthorn OS Development Series](http://www.brokenthorn.com/Resources/)**: classic tutorial series walking through x86 hardware, real mode, and kernel setup.
-- **[Computer Science from the Bottom Up](https://www.bottomupcs.com/)**: free online book explaining hardware, compilers, operating systems, and memory.
-- **[Writing a Unix Clone in About a Month](https://drewdevault.com/2024/05/24/2024-05-24-Bunnix.html)**: reflective article on building a tiny Unix-like operating system from scratch.
-- **[ToaruOS at 5 Years](https://www.youtube.com/watch?v=Wp5kl-NfpM8)**: presentation covering lessons learned building a complete hobby operating system.
-- **[Pépin OS - Réaliser son propre système](https://michelizza.developpez.com/realiser-son-propre-systeme/)**: (French) tutorial series covering custom OS kernel development from scratch.
-- **[Le petit livre sur le développement d'un OS](https://systeme.developpez.com/tutoriels/systeme-exploitation/petit-livre-developpement-OS/)**: (French) translation of the Little OS Book on x86 system development.
+### Overview
+- **[OSDev Wiki](https://wiki.osdev.org/)**
+- **[OSDev Forum](https://forum.osdev.org/)**
+- **[OSDev Bare Metal Tutorials](https://wiki.osdev.org/Expanded_Main_Page)**
+- **[Philipp Oppermann's Blog OS](https://os.phil-opp.com/)**
+- **[Little OS Book](https://littleosbook.github.io/)**
+- **[Writing an OS in 1,000 Lines](https://github.com/nuta/operating-system-in-1000-lines)**
+- **[Brokenthorn OS Development Series](http://www.brokenthorn.com/Resources/)**
+- **[Computer Science from the Bottom Up](https://www.bottomupcs.com/)**
+- **[Writing a Unix Clone in About a Month](https://drewdevault.com/2024/05/24/2024-05-24-Bunnix.html)**
+- **[ToaruOS at 5 Years](https://www.youtube.com/watch?v=Wp5kl-NfpM8)**
 
 ### Hardware & Architecture Specifications
 - **[Intel SDM](https://software.intel.com/content/www/us/en/develop/articles/intel-sdm.html)**: official manual for x86/x64 CPU architecture, instructions, and system programming.
@@ -239,11 +238,6 @@
 - **[skiftOS](https://github.com/skiftOS/skift)**: handmade operating system with a modern user interface created by DEVSE members.
 - **[WingOS](https://github.com/Supercip971/WingOS)**: x86 hobby operating system built from scratch by DEVSE members.
 - **[SEAC](https://github.com/N-LG/SEAC)**: experimental operating system project developed by DEVSE members.
-
-### Wikis
-- **[OSDev Forum](https://forum.osdev.org/)**: message board where people ask and answer low-level programming and OS design questions.
-- **[osdev.wiki](https://osdev.wiki/)**: modern community wiki covering low-level concepts and operating system design.
-- **[devse.wiki](https://devse.wiki/)**: (French) community wiki maintained by the DEVSE Discord server for OS developers.
 
 ## Computer Systems & Architecture
 - **[Computer Systems: A Programmer's Perspective (CS:APP)](https://csapp.cs.cmu.edu/)**: clear textbook explaining how computers run programs and manage hardware.
