@@ -248,15 +248,152 @@
 - **[Linux Kernel Architecture](https://www.kernel.org/doc/html/latest/)**: official documentation explaining how the internal parts of the Linux system work.
 - **[UNIX System Programming (Advanced Programming in the UNIX Environment)](http://www.apuebook.com/)**: classic guide on writing low-level system programs for UNIX and Linux.
 
-## Compilers, Interpreters & Tooling
-- **[Crafting Interpreters](https://craftinginterpreters.com/)**: beautifully illustrated book guiding you step-by-step to build your own programming language.
-- **[Writing An Interpreter In Go](https://interpreterbook.com/)**: fun project book where you write a custom programming language from scratch.
-- **[Writing A Compiler In Go](https://compilerbook.com/)**: companion book taking your custom programming language and compiling it into fast bytecode.
-- **[LLVM Kaleidoscope Tutorial](https://llvm.org/docs/tutorial/)**: official step-by-step tutorial on building a custom programming language compiler.
-- **[Build Your Own X](https://github.com/codecrafters-io/build-your-own-x)**: massive list of tutorials showing how to build your own databases, shells, and web servers.
-- **[ChibiCC](https://github.com/rui314/chibicc)**: tiny, clean C compiler built step-by-step so it is very easy to read and understand.
-- **[Compilers: Principles, Techniques, and Tools (Dragon Book)](https://en.wikipedia.org/wiki/Compilers:_Principles,_Techniques,_and_Tools)**: famous foundational textbook teaching how programming languages are read and translated.
-- **[Modern Compiler Implementation in ML/C/Java](https://www.cs.princeton.edu/~appel/modern/)**: clear textbook on advanced language building techniques and code optimization.
+
+# Compilers & Interpreters
+
+### Overview
+- **[Computer Systems: A Programmer’s Perspective](https://www.amazon.com/dp/9332573905)**
+- **[Elements of Computing Systems](https://www.amazon.com/dp/0262640686)**
+- **[Structure and Interpretation of Computer Programs (SICP)](https://mitpress.mit.edu/sicp/full-text/book/book.html)**
+- **[Programming Language Pragmatics](https://www.amazon.com/dp/0123745144)**
+- **[Programming Languages: Application and Interpretation](http://cs.brown.edu/courses/cs173/2012/book/)**
+- **[Programming Languages: Theory and Practice](http://people.cs.uchicago.edu/~blume/classes/aut2008/proglang/text/offline.pdf)**
+- **[Foundations of Programming Languages](http://www.cs.cmu.edu/~fp/courses/15312-f04/)**
+- **[Programming Languages Parts A, B, & C (Grossman)](https://www.coursera.org/learn/programming-languages)**
+
+### Introduction
+- **[Crafting Interpreters](http://www.craftinginterpreters.com/)**: Comprehensive guide to building an interpreted, full-featured scripting language ([GitHub Repo](https://github.com/munificent/craftinginterpreters) | [HN Discussion](https://news.ycombinator.com/item?id=13406081)).
+- **[Compilers: Principles, Techniques and Tools (Dragon Book)](https://www.amazon.com/dp/0321486811)**: Classic textbook on Compiler Construction.
+- **[Engineering a Compiler](https://www.amazon.com/dp/012088478X)**: Modern textbook covering SSA-Form and recent code generation research.
+- **[Write an Interpreter in Go](https://interpreterbook.com/)**: Hands-on guide building a complete bytecode interpreter from scratch using Go.
+- **[Write a Compiler in Go](https://compilerbook.com/)**: Successor book building a full compiler and VM for the Monkey language in Go.
+- **[Build Your Own Lisp](http://www.buildyourownlisp.com)**: Learn C and build your own Lisp programming language in under 1,000 lines of code.
+- **[Basics of Compiler Design](http://hjemmesider.diku.dk/~torbenm/Basics/)**: Short textbook covering fundamental parsing, translation, and runtime concepts.
+- **[Beautiful Racket](http://beautifulracket.com)**: Practical tutorial on making your own custom programming language with Racket.
+- **[Create Your Own Programming Language](http://createyourproglang.com/)**: Example-driven approach with video tutorials and source projects ([HN Discussion](https://news.ycombinator.com/item?id=813133)).
+- **[Language Implementation Patterns](https://www.amazon.com/dp/193435645X)**: Patterns behind language design and building interpreters using ANTLR.
+- **[Modern Compiler Implementation in ML](https://www.cs.princeton.edu/~appel/modern/ml/)**: Classic compiler text with ML reference implementation (Also available: [MCI in C](https://www.cs.princeton.edu/~appel/modern/c/) and [MCI in Java](https://www.cs.princeton.edu/~appel/modern/java/)).
+- **[Writing Compilers and Interpreters: A Software Engineering Approach](https://www.amazon.com/dp/0470177071)**: Java-focused approach for working engineers (Also available: [C++ Edition](https://www.amazon.com/dp/0471113530) and [C Edition](https://www.amazon.com/dp/0471555800)).
+- **[Writing Interpreters and Compilers for the Raspberry Pi Using Python](https://www.amazon.de/gp/product/1977509207)**: Guide covering Python, bytecode, assembly language, and dynamic typing.
+- **[Let’s Build A Simple Interpreter](https://ruslanspivak.com/lsbasi-part1/)**: Multi-part step-by-step tutorial series building a Pascal interpreter in Python.
+- **[How I Wrote a Programming Language](https://medium.com/@william01110111/the-programming-language-pipeline-91d3f449c919)**: Overview of the programming language execution pipeline ([Reddit Discussion](https://redd.it/62ixbc)).
+- **[Lisperator](http://lisperator.net/pltut/)**: Step-by-step guide on how to implement a custom language in JavaScript.
+- **[Little Lisp Interpreter](https://maryrosecook.com/blog/post/little-lisp-interpreter)**: Lisp interpreter with functions, lambdas, and closures in under 120 lines of JS ([GitHub Repo](https://github.com/maryrosecook/littlelisp)).
+- **[lis.py v1 (How to Write a Lisp Interpreter in Python)](http://norvig.com/lispy.html)**: Peter Norvig’s classic tutorial on building a Lisp interpreter.
+- **[lis.py v2 (An Even Better Lisp Interpreter in Python)](http://norvig.com/lispy2.html)**: Follow-up tutorial extending `lis.py` with tail calls and macros.
+
+### Parsing & Grammars
+- **[Parsing Techniques: A Practical Guide](https://www.amazon.com/dp/038720248X)**: Definitive guide on parsing algorithms, formal grammars, and parsing theory ([1st Edition PDF](https://dickgrune.com/Books/PTAPG_1st_Edition/)).
+- **[Packrat Parsing Thesis on PEG (B. Ford)](https://pdos.csail.mit.edu/~baford/packrat/thesis/)**: Foundational thesis introducing Parsing Expression Grammars and Packrat parsing.
+- **[Packrat Parsing (PEG) Papers and Resources](http://bford.info/packrat/)**: Collected research portal on PEG parsers by Bryan Ford.
+- **[PEG-based Transformer Front-End/Middle-End/Back-End](http://www.vpri.org/pdf/tr2010003_PEG.pdf)**: Paper by I. Piumarta demonstrating a full compiler pipeline built on PEGs.
+- **[Pratt Parsers: Expression Parsing Made Easy](http://journal.stuffwithstuff.com/2011/03/19/pratt-parsers-expression-parsing-made-easy/)**: Clear tutorial explaining top-down operator precedence parsing.
+
+### 4. Optimization & SSA
+- **[Advanced Compiler Design and Implementation](https://www.amazon.com/dp/1558603204)**: In-depth treatment of Intermediate Representation, SSA, and optimization.
+- **[Building an Optimizing Compiler](https://www.amazon.com/dp/155558179X)**: Deep dive into high-level optimizer design, code generation, scheduling, and register allocation.
+- **[The SSA Book](http://ssabook.gforge.inria.fr/latest/book.pdf)**: Complete, dedicated text exploring Static Single Assignment form.
+- **[Simple and Efficient Construction of SSA Form](http://compilers.cs.uni-saarland.de/projects/ssaconstr/)**: Paper presenting an elegant algorithm for SSA construction.
+- **[SSA-based Register Allocation](http://compilers.cs.uni-saarland.de/projects/ssara/)**: Research exploring register allocation directly on SSA representations.
+- **[Single Static Assignment Form Seminar](http://compilers.cs.uni-saarland.de/ssasem/)**: Seminar resources on SSA form and compiler optimizations.
+- **[SSA Form Video Lectures (NPTEL)](https://www.youtube.com/watch?v=Q7hlcuCGbxE)**: 3-part video lecture series on SSA construction ([Part 2](https://www.youtube.com/watch?v=FV9fq_HfPsM) | [Part 3](https://www.youtube.com/watch?v=GyYiic8trCE)).
+- **[Optimizing Compilers for Modern Architectures](https://www.amazon.com/dp/1558602860/)**: Code optimization focusing on high-performance CPU hardware gains.
+- **[Notes on Graph Algorithms Used in Optimizing Compilers](http://www.cs.umb.edu/%7Eoffner/files/flow_graph.pdf)**: Paper detailing control flow graphs and graph optimization algorithms.
+- **[A Graph Higher-Order IR](http://compilers.cs.uni-saarland.de/papers/lkh15_cgo.pdf)**: Advanced research paper on functional intermediate representations.
+- **[Understanding Compiler Optimization](https://www.youtube.com/watch?v=FnGCDLhaxKU)**: Video presentation walking through classical compiler optimization passes.
+- **[Compiler Optimization Tutorial](https://www.youtube.com/watch?v=SfV8aRX0YY0)**: Instructional tutorial on basic compiler optimization techniques.
+
+### 5. Semantics, Type Systems & Functional Languages
+- **[Types and Programming Languages (TAPL)](https://www.amazon.com/dp/0262162091)**: Comprehensive introduction to Type Systems and language semantics by Benjamin C. Pierce.
+- **[Advanced Topics in Types and Programming Languages](https://www.amazon.com/dp/0262162288)**: Advanced type analysis, low-level type systems, and ML-style inference.
+- **[Essentials of Programming Languages](https://www.amazon.com/dp/0260062798)**: Focuses on Semantics, Interpretation, and Continuation Passing Style (CPS).
+- **[Design Concepts in Programming Languages](https://www.amazon.com/dp/0262201755)**: Exploration of operational, denotational, and static/dynamic semantic techniques.
+- **[The Implementation of Functional Programming Languages](https://www.microsoft.com/en-us/research/wp-content/uploads/1987/01/slpj-book-1987-small.pdf)**: Classic book by Simon Peyton Jones on functional compilation and lambda calculus.
+- **[Compiling with Continuations](https://www.amazon.com/dp/052103311X)**: Using Continuation-Passing Style (CPS) as an Intermediate Representation for optimizations.
+- **[Compiling with Continuations: Continued](https://www.microsoft.com/en-us/research/wp-content/uploads/2007/10/compilingwithcontinuationscontinued.pdf)**: Research paper updating continuation-based compilation techniques.
+- **[How to Compile with Continuations](http://matt.might.net/articles/cps-conversion/)**: Article walking through CPS transformation algorithms.
+- **[The Essence of Compiling with Continuations](https://users.soe.ucsc.edu/~cormac/papers/pldi93.pdf)**: Paper analyzing the formal relationship between CPS and direct-style compilers.
+- **[Definitional Interpreters for Higher-Order Programming Languages](http://www.cs.uml.edu/~giam/91.531/Textbooks/definterp.pdf)**: John Reynolds' landmark paper on definitional interpreters.
+- **[Engineering Definitional Interpreters](https://www.cs.tufts.edu/~nr/pubs/interps.pdf)**: Practical techniques for structuring functional interpreters.
+- **[Hindley-Damas-Milner Walkthrough](https://github.com/quchen/articles/tree/master/hindley-milner)**: Step-by-step tutorial on implementing type inference for functional languages.
+- **[Algorithm W Step By Step](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.65.7733&rep=rep1&type=pdf)**: Detailed guide on Hindley-Milner type inference algorithms.
+- **[A Tutorial Implementation of a Dependently Typed Lambda Calculus](https://www.andres-loeh.de/LambdaPi/)**: Paper introducing dependent type system implementation.
+- **[Type-Driven Development with Idris](https://www.youtube.com/watch?v=X36ye-1x_HQ)**: Talk on using dependent types to guide language and software design.
+
+### 6. Virtual Machines, JITs & Runtimes
+- **[Virtual Machines](https://www.amazon.com/dp/1852339691)**: Book on designing Virtual Machines tailored specifically for programming languages.
+- **[Virtual Machines: Versatile Platforms for Systems and Processes](https://www.amazon.com/dp/1558609105)**: Key textbook examining virtual machine technologies across OS and languages.
+- **[Advanced Design and Implementation of Virtual Machines](https://www.amazon.com/dp/146658260X)**: Holistic introduction to VM architecture, memory management, and execution engines.
+- **[The BEAM Book](https://github.com/happi/theBeamBook)**: Detailed open book describing the Erlang Runtime System (ERTS) and the BEAM VM.
+- **[The Garbage Collection Handbook](https://www.amazon.com/dp/1420082795)**: The living classic and definitive text on automatic memory management algorithms.
+- **[Garbage Collection in an Uncooperative Environment](https://pdfs.semanticscholar.org/6434/aa10f3745dcf959cfca9c379aae120396724.pdf)**: The foundational paper behind the Boehm conservative garbage collector.
+- **[A Brief History of JIT Compilation](http://eecs.ucf.edu/~dcm/Teaching/COT4810-Spring2011/Literature/JustInTimeCompilation.pdf)**: Historical overview paper tracing Just-In-Time compilation techniques.
+- **[Adventures in JIT Compilation Series](http://eli.thegreenplace.net/2017/adventures-in-jit-compilation-part-1-an-interpreter/)**: 4-part series by Eli Bendersky covering interpreters, x64 JITs, LLVM, and Python JITs.
+- **[Introducing the B3 JIT Compiler](https://webkit.org/blog/5852/introducing-the-b3-jit-compiler/)**: WebKit project blog post detailing their low-level JIT engine.
+- **[Draining the Swamp: Micro Virtual Machines](http://drops.dagstuhl.de/opus/volltexte/2015/5034/pdf/24.pdf)**: Paper proposing low-level micro VMs as abstractions for language runtimes.
+- **[PyPy’s Approach to VM Construction](http://www.csc.lsu.edu/~gb/csc7700/Reading/pypy-vm-construction.pdf)**: Research paper detailing architecture-independent VM generation via RPython.
+- **[Meta-Tracing, RPython and PyPy](https://ia601503.us.archive.org/32/items/vmss16/bolz.pdf)**: Presentation detailing meta-tracing JIT compilers.
+- **[Pycket: A Tracing JIT for a Functional Language](http://homes.soic.indiana.edu/samth/pycket-draft.pdf)**: Paper on implementing a tracing JIT for Racket using RPython.
+- **[Graal and Truffle](https://blog.plan99.net/graal-truffle-134d8f28fb69)**: Article discussing GraalVM and Truffle self-optimizing AST interpreters ([Reddit Discussion](https://redd.it/4tm4mj)).
+- **[Writing a Language in Truffle](http://cesquivias.github.io/tags/truffle.html)**: Tutorial series building custom language runtimes using Truffle.
+- **[How to Build a Virtual Machine](https://www.youtube.com/watch?v=OjaAToVkoTw)**: Terence Parr live-codes a complete bytecode virtual machine engine.
+- **[Building an Interpreter in RPython](https://www.youtube.com/watch?v=9tDpjzPLvNY)**: Talk explaining how to leverage RPython to create fast dynamic language runtimes.
+- **[Exploring Python’s Bytecode](https://ep2016.europython.eu/media/conference/slides/exploring-python-bytecode.pdf)**: Technical slide deck breaking down CPython bytecode execution.
+- **[CPython - A Ten-Hour Codewalk](http://pgbovine.net/cpython-internals.htm)**: Comprehensive video walk-through of the CPython C source code and interpreter loop.
+- **[MetaScala: A Tiny DIY JVM](https://skillsmatter.com/skillscasts/4916-metascala-a-tiny-diy-jvm)**: Metacircular JVM implementation written in Scala.
+- **[One VM to Rule Them All](https://www.youtube.com/watch?v=FJY96_6Y3a4)**: Deep dive presentation into the Truffle language framework.
+
+### 7. Linkers, Loaders & Binary Execution
+- **[Linkers and Loaders](https://www.amazon.com/dp/1558604960)**: Definitive book on the compile-time, static, and runtime processes of linking and loading.
+- **[A Beginner's Guide to Linkers](http://www.lurklurk.org/linkers/linkers.html)**: Popular tutorial helping C/C++ developers understand symbol resolution and object files.
+- **[An Evil Copy: How the Loader Betrays You](http://www.cse.psu.edu/~trj1/papers/ndss17.pdf)**: Security research paper analyzing dynamic loading mechanics and vulnerabilities.
+- **[Python, Linkers and Virtual Memory](https://www.youtube.com/watch?v=twQKAoq2OPE)**: PyCon talk connecting high-level language execution down to hardware memory layout.
+
+### 8. Compiler Infrastructure
+- **[LLVM Architecture](http://www.aosabook.org/en/llvm.html)**: Architecture of Open Source Applications chapter explaining LLVM's internal design.
+- **[A Tourist’s Guide to the LLVM Source Code](https://blog.regehr.org/archives/1453)**: High-level overview explaining how to navigate the LLVM codebase.
+- **[LLVM for Graduate Students](http://www.cs.cornell.edu/~asampson/blog/llvm.html)**: Introduction to conducting research using LLVM passes and infrastructure.
+- **[LLVM Tutorial: Implementing Kaleidoscope](http://releases.llvm.org/3.6.2/docs/tutorial/LangImpl1.html)**: Official tutorial building a language using C++/OCaml/Python and LLVM ([Python Version](http://www.llvmpy.org/llvmpy-doc/dev/doc/kaleidoscope/index.html)).
+- **[Implementing a JIT Compiled Language with Haskell and LLVM](http://www.stephendiehl.com/llvm/)**: Walkthrough using Haskell to generate LLVM IR for a custom language.
+- **[ALIVe: Automatic LLVM InstCombine Verifier](https://blog.regehr.org/archives/1170)**: Article covering formal verification of LLVM optimization transformations.
+- **[A Retargetable C Compiler: Design and Implementation](https://www.amazon.com/dp/0805316701)**: Examines lcc, a production-quality, retargetable ANSI C compiler.
+- **[Nanopass Framework for Commercial Compiler Development](https://www.cs.indiana.edu/~dyb/pubs/commercial-nanopass.pdf)**: Paper detailing compiler construction using small, modular passes.
+- **[Nanopass Framework for Compiler Education](https://www.cs.indiana.edu/~dyb/pubs/nano-jfp.pdf)**: Educational paper explaining how to teach compilers using the Nanopass framework.
+- **[An Incremental Approach to Compiler Construction](http://scheme2006.cs.uchicago.edu/11-ghuloum.pdf)**: Abdulaziz Ghuloum's famous paper detailing building a compiler step-by-step from scratch.
+- **[Compiler Construction Using Scheme](https://www.cs.indiana.edu/~dyb/pubs/fple95.pdf)**: Paper showing functional techniques for building compilers.
+- **[Rust Compiler Walk-Through](https://gchp.ie/2016/08/09/rust-compiler-walkthrough-introduction/)**: Guided tour explaining how the `rustc` compiler processes source code.
+- **[Rust’s Upcoming MIR](https://blog.rust-lang.org/2016/04/19/MIR.html)**: Blog post explaining Rust's Mid-level Intermediate Representation design.
+- **[Rust's Incremental Compilation](https://blog.rust-lang.org/2016/09/08/incremental.html)**: Deep dive into the architecture enabling fast re-compilation in `rustc`.
+- **[Write You a Haskell](http://dev.stephendiehl.com/fun/)**: In-depth tutorial on building a functional language compiler with type inference in Haskell.
+- **[Anders Hejlsberg on Modern Compiler Construction](https://channel9.msdn.com/Blogs/Seth-Juarez/Anders-Hejlsberg-on-Modern-Compiler-Construction)**: Discussion on building modern API-driven language compilers (Roslyn).
+
+### 9. Others
+- **[Warren's Abstract Machine: Prolog in Haskell](https://mitpress.mit.edu/books/warrens-abstract-machine)**: Introduction to WAM for implementing logic programming languages.
+- **[A Micro-Manual for LISP - Not the Whole Truth](https://www.uraimo.com/files/MicroManual-LISP.pdf)**: John McCarthy's original minimal specification for Lisp ([Typeset Version](https://github.com/jaseemabid/micromanual)).
+- **[The Most Beautiful Program Ever Written](https://www.youtube.com/watch?v=OyfBQmvr2Hc)**: William Byrd presents a complete self-evaluating Lisp interpreter written in 15 lines of Lisp.
+- **[`MOV` is Turing-Complete](https://www.cl.cam.ac.uk/~sd601/papers/mov.pdf)**: Proof showing the x86 `mov` instruction alone is sufficient for arbitrary computation ([HN Discussion](https://news.ycombinator.com/item?id=6309631)).
+- **[The MoVfuscator](https://www.youtube.com/watch?v=R7EEoWg6Ekk)**: Compiler that compiles C code into only x86 `mov` instructions ([HN Discussion](https://news.ycombinator.com/item?id=9751312)).
+- **[Accidentally Turing Complete](http://beza1e1.tuxen.de/articles/accidentally_turing_complete.html)**: Collection of systems, formats, and UI engines that accidentally became Turing complete.
+- **[The Page-Faults Weird Machine](https://www.usenix.org/system/files/conference/woot13/woot13-bangert.pdf)**: Research paper demonstrating computation driven entirely by x86 MMU fault handling.
+- **[Machine Code Obfuscation via Instruction Set Reduction](https://kirschju.re/static/ba_jonischkeit_2016.pdf)**: Thesis on code transformation and instruction obfuscation.
+- **[A Simple Multi-Processor Computer Based on Subleq](https://arxiv.org/abs/1106.2593)**: Paper detailing execution engines built on Single Instruction Set Computers (OISC).
+- **[Programming Should Eat Itself](https://www.youtube.com/watch?v=SrKj4hYic5A)**: StrangeLoop talk on reflective programming and reflective interpreters.
+- **[An Introduction to Combinator Compilers and Graph Reduction Machines](https://www.youtube.com/watch?v=GawiQQCn3bk)**: Video walkthrough on SKI combinators and graph reduction engines.
+
+### Courses, Specifications, Research
+- **[CLI (ECMA-335) Specification](http://www.ecma-international.org/publications/standards/Ecma-335.htm)**: Formal specification for the Common Language Infrastructure (.NET runtime).
+- **[JVM SE8 Specification](https://docs.oracle.com/javase/specs/jvms/se8/html/)**: Official technical standard defining the Java Virtual Machine architecture.
+- **[Mu Specification](https://gitlab.anu.edu.au/mu/mu-spec)**: Micro virtual machine specification for dynamic language implementation.
+- **[Compilers Construction (Cambridge)](http://www.cl.cam.ac.uk/teaching/1516/CompConstr/materials.html)**: University of Cambridge introductory compiler course materials.
+- **[Compiler Construction for Undergrads (RICE)](https://www.clear.rice.edu/comp412/Lectures/)**: Rice University course covering translation, parsing, and IR generation.
+- **[Compilers Theory (Stanford)](http://web.stanford.edu/class/cs143/)**: Stanford CS143 course on compiler design ([YouTube Playlist](https://www.youtube.com/playlist?list=PLLH73N9cB21VSVEX1aSRlNTufaLK1dTAI)).
+- **[Design and Construction of Compilers (UT Arlington)](https://lambda.uta.edu/cse5317/)**: Course covering lexical analysis, parsing, and code generation ([PDF Notes](https://lambda.uta.edu/cse5317/notes.pdf)).
+- **[Virtual Machines and Managed Runtimes (UC Berkeley CS294)](http://www.wolczko.com/CS294/)**: Advanced Berkeley course covering virtual machine architectures.
+- **[DSL Design and Implementation Summer School](http://vjovanov.github.io/dsldi-summer-school/)**: EPFL summer school on Domain Specific Language design.
+- **[Curry On! Conference](http://www.curry-on.org/)**: Premier conference on programming language design ([YouTube Channel](https://www.youtube.com/channel/UC-WICcSW1k3HsScuXxDrp0w/videos)).
+- **[LLVM Developers Meeting Channel](https://www.youtube.com/channel/UCv2_41bSAa5Y_8BacJUZfjQ)**: Video archive of talks on LLVM, Clang, and modern optimization.
+- **[Compilers Lab at Saarland University](http://compilers.cs.uni-saarland.de)**: Active compiler research group producing papers on SSA, IRs, and code generation.
+- **[C. Bolz’s Research Publications](https://scholar.google.com/citations?user=S0rpYpkAAAAJ)**: Research publications focusing on PyPy, RPython, and meta-tracing JITs.
 
 ## Algorithms & Visualizations
 - **[VisuAlgo](https://visualgo.net/)**: visual interactive animations showing how algorithms sort data and search structures step-by-step.
