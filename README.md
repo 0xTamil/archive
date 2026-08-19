@@ -13,6 +13,7 @@
 - **[Beej's Guide to C Programming](https://beej.us/guide/bgc/)**: clear guide to the C standard library with code examples.
 - **[C Programming: A Modern Approach](https://knking.com/books/c2/)**: clear, comprehensive textbook widely considered the best overall guide for learning standard C.
 - **[The C Book](http://knking.com/books/c2/index.html)**: free online reference book covering foundational C concepts.
+
 - **[The C Programming Language (K&R)](https://en.wikipedia.org/wiki/The_C_Programming_Language)**: classic, short introductory book written by C's creators.
 - **[Learn C](https://learn-c.org/)**: interactive website to practice C code directly in your browser.
 - **[C FAQ](https://c-faq.com/)**: simple answers to tricky C questions like pointers and hidden bugs.
@@ -59,10 +60,10 @@
 ## Graphics Programming
 
 ### Overview
-- **[A Brief History of Graphics](https://www.youtube.com/watch?v=QyjyWUrHsFc)**: short video showing how digital art and 3D graphics evolved over time.
-- **[How do Video Game Graphics Work?](https://www.youtube.com/watch?v=C8YtdC8mxTU)**: easy video explaining how code turns into 3D game visuals on screens.
-- **[What Makes Computer Generated Images Look Real?](https://www.youtube.com/watch?v=iOlehM5kNSk)**: visual breakdown of light, shadows, and materials that create realistic pictures.
-- **[Scratchpixel: Learn Computer Graphics Programming](https://www.scratchapixel.com/)**: step-by-step lessons explaining the math and physics behind computer art.
+- **[A Brief History of Graphics](https://www.youtube.com/watch?v=QyjyWUrHsFc)**
+- **[How do Video Game Graphics Work?](https://www.youtube.com/watch?v=C8YtdC8mxTU)**
+- **[What Makes Computer Generated Images Look Real?](https://www.youtube.com/watch?v=iOlehM5kNSk)**
+- **[Scratchpixel: Learn Computer Graphics Programming](https://www.scratchapixel.com/)**
 
 ### Software Rendering
 - **[Basic 2D Rasterization](https://magcius.github.io/xplain/article/rast1.html)**: simple visual guide showing how computer screens color flat 2D shapes.
@@ -117,19 +118,6 @@
 - **[Vulkan's YouTube Channel](https://www.youtube.com/@Vulkan)**: official videos, developer talks, and news directly from the Vulkan design team.
 - **[Tips and Tricks: Vulkan Dos and Don’ts](https://developer.nvidia.com/blog/vulkan-dos-donts/)**: list of clear do's and don'ts from professional GPU optimization engineers.
 
-### DirectX 11
-- **[DirectX 11 Documentation](https://learn.microsoft.com/en-us/windows/win32/direct3d11/atoc-dx-graphics-direct3d-11)**: official Microsoft reference manual for DirectX 11 tools, functions, and shaders.
-- **[Learn DirectX 11](https://graphicsprogramming.github.io/learnd3d11/)**: modern open-source guide teaching 3D graphics using Direct3D 11.
-- **[DirectX 11 on Windows 10 Tutorial](https://www.rastertek.com/tutdx11win10.html)**: clear step-by-step lessons building 3D game rendering frameworks from scratch.
-- **[DirectX 11 - Braynzar Soft Tutorials](https://www.braynzarsoft.net/viewtutorial/q16390-braynzar-soft-directx-11-tutorials)**: classic beginner course covering window setups, lighting, textures, and 3D models.
-- **[Minimal D3D11, Part I](https://gist.github.com/d7samurai/261c69490cce0620d0bfc93003cd1052)**: smallest single-file example showing how to open a window and setup DirectX 11.
-- **[Minimal D3D11, Part II](https://gist.github.com/d7samurai/aee35fd5d132c51e8b0a78699cbaa1e4)**: simple minimal code file drawing a single colored triangle on screen.
-- **[Minimal D3D11, Part III](https://gist.github.com/d7samurai/abab8a580d0298cb2f34a44eec41d39d)**: simple code snippet demonstrating how to display pictures on 2D surfaces without extra complexity.
-- **[Minimal D3D11 bonus material: extra minimal triangle](https://gist.github.com/d7samurai/1e9a1f1a366740f7d8a3a20397fcfa6b)**: tiny code snippet showing the absolute shortest way to draw a triangle.
-- **[Minimal D3D11 bonus material: pixel art antialiasing](https://gist.github.com/d7samurai/9f17966ba6130a75d1bfb0f1894ed377)**: clean custom shader method to make 2D pixel art look crisp and smooth.
-- **[Minimal D3D11 sprite renderer](https://gist.github.com/d7samurai/8f91f0343c411286373161202c199b5c)**: concise code sample showing how to quickly draw 2D game images.
-- **[Minimal D3D11 sprite renderer NEO](https://gist.github.com/d7samurai/e51adec8a440126d028b87406556079b)**: updated, faster version of the simple 2D game image drawing code.
-
 ### DirectX 12
 - **[DirectX 12 Documentation](https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-graphics)**: official Microsoft reference for modern, high-speed, low-level DirectX 12 programming.
 - **[DirectX 12 Spec](https://microsoft.github.io/DirectX-Specs/)**: detailed technical rules for new DirectX 12 features and shader capabilities.
@@ -172,14 +160,90 @@
 - **[Compute Toys](https://compute.toys/)**: fun interactive playground to write and run fast WebGPU shaders online.
 
 ## OS Development
+
+### Overview & Getting Started
 - **[OSDev Wiki](https://wiki.osdev.org/)**: essential community encyclopedia on building operating systems, drivers, and memory managers.
-- **[OSDev Forum](https://forum.osdev.org/)**: message board where people ask and answer low-level programming and OS design questions.
 - **[OSDev Bare Metal Tutorials](https://wiki.osdev.org/Expanded_Main_Page)**: simple guides to writing software that runs directly on computer hardware without an OS.
 - **[Philipp Oppermann's Blog OS](https://os.phil-opp.com/)**: step-by-step guide to writing your own tiny computer operating system in Rust.
 - **[Little OS Book](https://littleosbook.github.io/)**: easy, short guide explaining how to start building an x86 operating system using C.
-- **[Roll Your Own Toy UNIX Kernel](https://stephenmarz.com/)**: practical series showing how to write a simple operating system for RISC-V processors.
-- **[ARM Kernel Development (Raspberry Pi)](https://github.com/s-matyukevich/raspberry-pi-os)**: fun guide to building your own basic operating system on a Raspberry Pi.
-- **[Awesome OSDEV](https://github.com/devse-org/awesome-osdev)**: curated list of helpful links, guides, and tools for operating system builders.
+- **[Writing an OS in 1,000 Lines](https://github.com/nuta/operating-system-in-1000-lines)**: minimal step-by-step guide building a functional C kernel for RISC-V.
+- **[Brokenthorn OS Development Series](http://www.brokenthorn.com/Resources/)**: classic tutorial series walking through x86 hardware, real mode, and kernel setup.
+- **[Computer Science from the Bottom Up](https://www.bottomupcs.com/)**: free online book explaining hardware, compilers, operating systems, and memory.
+- **[Writing a Unix Clone in About a Month](https://drewdevault.com/2024/05/24/2024-05-24-Bunnix.html)**: reflective article on building a tiny Unix-like operating system from scratch.
+- **[ToaruOS at 5 Years](https://www.youtube.com/watch?v=Wp5kl-NfpM8)**: presentation covering lessons learned building a complete hobby operating system.
+- **[Pépin OS - Réaliser son propre système](https://michelizza.developpez.com/realiser-son-propre-systeme/)**: (French) tutorial series covering custom OS kernel development from scratch.
+- **[Le petit livre sur le développement d'un OS](https://systeme.developpez.com/tutoriels/systeme-exploitation/petit-livre-developpement-OS/)**: (French) translation of the Little OS Book on x86 system development.
+
+### Hardware & Architecture Specifications
+- **[Intel SDM](https://software.intel.com/content/www/us/en/develop/articles/intel-sdm.html)**: official manual for x86/x64 CPU architecture, instructions, and system programming.
+- **[AMD64 Architecture Manuals](https://docs.amd.com/v/u/en-US/40332-PUB_4.08)**: detailed vendor reference for AMD 64-bit processors and system registers.
+- **[ARM Developer Documentation](https://developer.arm.com/documentation/)**: official technical portal for ARM CPU cores and system architecture specs.
+- **[RISC-V Architecture Specifications](https://riscv.org/technical/specifications/)**: official open manuals defining the RISC-V CPU instruction set and privileges.
+- **[ACPI Specification](https://uefi.org/sites/default/files/resources/ACPI_6_3_final_Jan30.pdf)**: official standard for hardware configuration and power management interfaces.
+- **[UEFI Specification](https://uefi.org/sites/default/files/resources/UEFI%20Spec%202.8B%20May%202020.pdf)**: complete rulebook for modern firmware initialization and boot protocols.
+- **[SMBIOS Specification](https://www.dmtf.org/sites/default/files/standards/documents/DSP0134_3.4.0.pdf)**: standard for reading system motherboard hardware details from firmware.
+- **[NVMe Express Specification](https://nvmexpress.org/wp-content/uploads/NVM-Express-1_4a-2020.03.09-Ratified.pdf)**: official technical standard for high-speed SSD storage communication.
+- **[POSIX Specification](http://www.open-std.org/jtc1/sc22/open/n4217.pdf)**: official standard defining portable operating system interfaces and system calls.
+- **[Raspberry Pi Hardware Docs](https://github.com/raspberrypi/documentation)**: official hardware datasheets and board documentation for Raspberry Pi devices.
+- **[x86 Serial Port (COM) Reference](https://www.sci.muni.cz/docs/pc/serport.txt)**: classic text reference for programming legacy x86 serial port hardware.
+
+### Kernel Architecture & Microkernels
+- **[Operating Systems: Design and Implementation](https://archive.org/details/OperatingSystemsDesignImplementation/mode/2up)**: foundational textbook by Andrew Tanenbaum detailing microkernels and MINIX 3 design.
+- **[Communication in Microkernel Systems](https://os.inf.tu-dresden.de/papers_ps/aigner_phd.pdf)**: detailed academic thesis exploring fast inter-process communication in microkernels.
+- **[Roll Your Own Toy UNIX Kernel](http://osblog.stephenmarz.com/index.html)**: practical series showing how to write a simple RISC-V operating system in Rust.
+- **[ARM Kernel Development (Raspberry Pi)](https://github.com/s-matyukevich/raspberry-pi-os)**: fun guide to building your own basic operating system on a Raspberry Pi using C.
+- **[Raspberry Pi OS Tutorials in Rust](https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials)**: step-by-step course teaching bare-metal embedded programming on the Raspberry Pi.
+- **[Linux Insides](https://github.0xax.gitbooks.io/linux-insides/content/index.html)**: online book walking through the internal initialization and source code of Linux.
+- **[MINIX 3 Presentation](https://www.youtube.com/watch?v=bx3KuE7UjGA)**: talk by Andrew Tanenbaum on microkernels and self-healing systems.
+- **[Reimplementation of NetBSD on a Microkernel](https://www.youtube.com/watch?v=jMkR9VF2GNY)**: lecture discussing microkernel arch and NetBSD service drivers.
+- **[Porting Redox OS to ARM](https://www.youtube.com/watch?v=qpazyDkuqLw)**: conference presentation detailing porting a Rust microkernel to new CPU hardware.
+- **[20 Years of L4 Microkernels](https://www.youtube.com/watch?v=RdoaFc5-1Rk)**: retrospective lecture on microkernel design evolution leading to seL4.
+
+### Memory, Multiprocessing
+- **[Uppsala Virtual Memory Lectures](https://www.youtube.com/playlist?list=PLiwt1iVUib9s2Uo5BeYmwkDFUh70fJPxX)**: university video series explaining virtual memory management and paging mechanisms.
+- **[Understanding SMP and Multi-Core](https://sudonull.com/post/9813-CPU-cores-or-what-SMP-is-and-what-it-is-eaten-with)**: clear explanation of symmetric multiprocessing and multi-core CPU handling.
+- **[x86 Instruction Reference](https://www.felixcloutier.com/x86/)**: clean, searchable online reference for x86 and amd64 CPU instructions.
+- **[uops.info Instruction Tables](https://uops.info/table.html)**: detailed execution latency, throughput, and port usage data for x86 CPUs.
+- **[AsmGrid](https://asmjit.com/asmgrid/)**: interactive cheatsheet for quickly searching assembly instruction opcodes.
+- **[ARM Assembly Basics](https://azeria-labs.com/writing-arm-assembly-part-1/)**: visual introduction to writing ARM assembly code for reverse engineering and systems work.
+
+### File Systems
+- **[Writing a File System from Scratch in Rust](https://blog.carlosgaldino.com/writing-a-file-system-from-scratch-in-rust.html)**: practical tutorial explaining how to design and build custom file systems.
+- **[Practical File System Design](https://web.archive.org/web/20170213221835/http://www.nobius.org/~dbg/practical-file-system-design.pdf)**: complete free guide on building storage systems, caches, and file layouts.
+- **[Ext2 File System Layout](https://www.nongnu.org/ext2-doc/ext2.pdf)**: comprehensive technical documentation on the classic Ext2 disk layout.
+
+### System Calls & Formats
+- **[ELF Format Reference](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format)**: overview of standard binary layout used by Linux and Unix-like operating systems.
+- **[Parsing Mach-O Files](https://lowlevelbits.org/parsing-mach-o-files/)**: guide explaining how macOS binary files are structured and parsed in code.
+- **[Mach-O File Format Reference](https://github.com/aidansteele/osx-abi-macho-file-format-reference)**: technical reference manual detailing Apple executable structures.
+- **[Linux & Windows Syscalls Table](https://syscalls.w3challs.com/)**: quick searchable index mapping system call numbers to functions across platforms.
+- **[Stephen Bourne on Unix & sh](https://www.youtube.com/watch?v=2kEJoWfobpA)**: historical interview covering early Unix development and shell design decisions.
+
+### Bootloaders
+- **[Limine Bootloader](https://github.com/limine-bootloader/limine)**: fast, modern x86/x64 bootloader supporting advanced protocols and framebuffer setup.
+- **[Limine Bare Bones](https://codeberg.org/Limine/limine-c-template)**: modern starter template for creating a C kernel with the Limine bootloader.
+- **[Rust Limine Bare Bones](https://github.com/Quentincestino/rust_limine_barebones)**: minimal starter template for writing a Rust kernel using the Limine bootloader.
+- **[CuteKit](https://github.com/cute-engineering/cutekit)**: build system and toolchain manager tailored for low-level systems and OS projects.
+
+### Community Projects
+- **[xv6 (MIT)](https://github.com/mit-pdos/xv6-public)**: simple teaching operating system created by MIT for students to read and study.
+- **[SerenityOS](http://serenityos.org/)**: modern Unix-like operating system built from scratch using C++.
+- **[Linux Kernel Source Code](https://elixir.bootlin.com/linux/latest/source)**: official searchable source code browser for the Linux kernel.
+- **[Biscuit OS](https://pdos.csail.mit.edu/projects/biscuit.html)**: research operating system kernel written in Go to explore high-level language safety.
+- **[MenuetOS](http://menuetos.net)**: tiny operating system written entirely in x86 assembly language.
+- **[Managarm](https://github.com/managarm/managarm)**: asynchronous microkernel-based operating system designed for modern hardware.
+- **[Sortix](https://gitlab.com/sortix/sortix)**: clean, self-hosting POSIX-like operating system built from scratch.
+- **[Andreas Kling (SerenityOS)](https://www.youtube.com/channel/UC3ts8coMP645hZw9JSD3pqQ)**: video channel documenting the live development of a Unix-like operating system from scratch.
+- **[StupidOS](https://git.cute.engineering/d0p1/StupidOS)**: open-source hobby operating system project created by DEVSE members.
+- **[Navy](https://github.com/navy-org/navy)**: modular microkernel-based operating system project built by DEVSE members.
+- **[skiftOS](https://github.com/skiftOS/skift)**: handmade operating system with a modern user interface created by DEVSE members.
+- **[WingOS](https://github.com/Supercip971/WingOS)**: x86 hobby operating system built from scratch by DEVSE members.
+- **[SEAC](https://github.com/N-LG/SEAC)**: experimental operating system project developed by DEVSE members.
+
+### Wikis
+- **[OSDev Forum](https://forum.osdev.org/)**: message board where people ask and answer low-level programming and OS design questions.
+- **[osdev.wiki](https://osdev.wiki/)**: modern community wiki covering low-level concepts and operating system design.
+- **[devse.wiki](https://devse.wiki/)**: (French) community wiki maintained by the DEVSE Discord server for OS developers.
 
 ## Computer Systems & Architecture
 - **[Computer Systems: A Programmer's Perspective (CS:APP)](https://csapp.cs.cmu.edu/)**: clear textbook explaining how computers run programs and manage hardware.
@@ -200,19 +264,6 @@
 - **[ChibiCC](https://github.com/rui314/chibicc)**: tiny, clean C compiler built step-by-step so it is very easy to read and understand.
 - **[Compilers: Principles, Techniques, and Tools (Dragon Book)](https://en.wikipedia.org/wiki/Compilers:_Principles,_Techniques,_and_Tools)**: famous foundational textbook teaching how programming languages are read and translated.
 - **[Modern Compiler Implementation in ML/C/Java](https://www.cs.princeton.edu/~appel/modern/)**: clear textbook on advanced language building techniques and code optimization.
-
-## Assembly, Hardware & Reverse Engineering
-- **[x86-64 Machine Organization and Assembly Language](https://cs.brown.edu/courses/cs033/)**: college lecture guides explaining CPU assembly code, stack memory, and execution.
-- **[Reverse Engineering for Beginners](https://beginners.re/)**: free book showing how compiled programs work under the hood in assembly language.
-- **[Practical Malware Analysis](https://nostarch.com/malware)**: hands-on guide to analyzing, reading, and inspecting unknown binary programs safely.
-- **[OSDev x86 Assembly Guide](https://wiki.osdev.org/X86-64)**: clear manual on low-level CPU modes and registers for system developers.
-
-## Networks, Storage & Distributed Systems
-- **[Computer Networks: A Systems Approach](https://www.systemsapproach.org/)**: clear open-source book explaining how the internet and network cables send data.
-- **[Designing Data-Intensive Applications (DDIA)](https://dataintensive.net/)**: famous guide on how modern large-scale databases and cloud storage systems work.
-- **[Database Internals](https://www.databass.dev/)**: detailed look into how databases save information, index files, and prevent data loss.
-- **[Distributed Systems (van Steen & Tanenbaum)](https://www.distributed-systems.net/)**: complete reference book on connecting multiple computers to work as one.
-- **[Raft Consensus Protocol](https://raft.github.io/)**: fun interactive animations showing how group computers agree on shared data.
 
 ## Algorithms & Visualizations
 - **[VisuAlgo](https://visualgo.net/)**: visual interactive animations showing how algorithms sort data and search structures step-by-step.
