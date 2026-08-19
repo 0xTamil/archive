@@ -102,11 +102,25 @@ To add a new resource, open `README.md` and add a bullet point under the appropr
   ```markdown
   - **[Beej's Guide to C Programming](https://beej.us/guide/bgc/)**: C standard library reference with examples.
   ```
+- **Without Description** (title-only link):
+  ```markdown
+  - **[Exploring how computer works](https://www.youtube.com/watch?v=QZwneRb-zqA)**
+  ```
+
+#### Category Description Paragraphs
+You can add introductory text below any `## Category` or `### Subcategory` header. Plain text lines (not headers or bullet items) will be displayed as a description paragraph above the resource list:
+
+```markdown
+## Getting Started
+Start here if you're new to systems programming and computer science.
+
+- **[Teach Yourself CS](https://teachyourselfcs.com/)**
+```
 
 ### 2. Automatic Tag Extraction
-The parser automatically generates tags for resources based on keywords found in titles, descriptions, and category names. Recognized keywords include:
+The parser automatically generates tags for resources based on keywords found in titles, descriptions, and category names. Tags are matched using **word-boundary detection** to avoid false positives (e.g., the tag `c` won't match words like "concurrency" or "c++"). Recognized keywords include:
 
-`c`, `rust`, `zig`, `odin`, `opengl`, `vulkan`, `webgpu`, `shaders`, `kernel`, `os`, `x86`, `arm`, `risc-v`, `assembly`, `compiler`, `interpreter`, `networking`, `database`, `distributed`, `algorithms`, `graphics`, `reverse engineering`, `malware`, `memory`, `concurrency`, `bytecode`, `garbage collection`, `sockets`, `linux`, `unix`, `raft`, `b-trees`, `lsm-trees`, `virtualization`.
+`c`, `c++`, `rust`, `zig`, `odin`, `opengl`, `vulkan`, `webgpu`, `shaders`, `kernel`, `os`, `x86`, `arm`, `risc-v`, `assembly`, `compiler`, `interpreter`, `networking`, `database`, `distributed`, `algorithms`, `graphics`, `reverse engineering`, `malware`, `memory`, `concurrency`, `bytecode`, `garbage collection`, `sockets`, `linux`, `unix`, `raft`, `b-trees`, `lsm-trees`, `virtualization`.
 
 ### 3. Testing Your Changes
 1. Edit `README.md`.
