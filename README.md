@@ -370,7 +370,7 @@
 - **[Warren's Abstract Machine: Prolog in Haskell](https://mitpress.mit.edu/books/warrens-abstract-machine)**
 - **[A Micro-Manual for LISP - Not the Whole Truth](https://www.uraimo.com/files/MicroManual-LISP.pdf)**
 - **[The Most Beautiful Program Ever Written](https://www.youtube.com/watch?v=OyfBQmvr2Hc)**
-- **[`MOV` is Turing-Complete](https://www.cl.cam.ac.uk/~sd601/papers/mov.pdf)**ycombinator.com/item?id=6309631)).
+- **[`MOV` is Turing-Complete](https://www.cl.cam.ac.uk/~sd601/papers/mov.pdf)**
 - **[The MoVfuscator](https://www.youtube.com/watch?v=R7EEoWg6Ekk)**
 - **[Accidentally Turing Complete](http://beza1e1.tuxen.de/articles/accidentally_turing_complete.html)**
 - **[The Page-Faults Weird Machine](https://www.usenix.org/system/files/conference/woot13/woot13-bangert.pdf)**
