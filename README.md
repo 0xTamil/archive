@@ -11,12 +11,18 @@
 - **[C Interfaces and Implementations](https://github.com/drh/cii)** (David R. Hanson): techniques for writing reusable data structures and modules in C.
 
 ## C++ Programming
-- **[cppreference.com](https://en.cppreference.com/)**: definitive online reference for C++ syntax, standards, and the Standard Template Library (STL).
-- **[LearnCpp.com](https://www.learncpp.com/)**: free, step-by-step tutorial covering foundational to advanced concepts.
-- **[C++ Primer](https://www.informit.com/store/c-primer-9780321714114)**: comprehensive introduction to modern C++ fundamentals and the standard library.
-- **[A Tour of C++](https://www.stroustrup.com/tour3.html)**: concise, high-level overview of the language by its creator, Bjarne Stroustrup.
-- **[C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)**: official best practices and rules for writing modern, safe C++.
-- **[Compiler Explorer](https://godbolt.org/)**: interactive online tool to inspect generated assembly code across different compilers.
+- **[How to Start C++ Development?](https://github.com/W4RH4WK/cpp-init)**: Quick-start guide covering compilers, build tools, and modern setup.
+- **[Learn C++](https://www.learncpp.com)**: Comprehensive, beginner-friendly tutorial series on core language concepts.
+- **[Hacking C++](https://hackingcpp.com/index.html)**: Visual, modern cheat sheets and idiomatic programming concepts.
+- **[C++ By Example](https://cppbyexample.com/)**: Practical code snippets demonstrating language features in action.
+- **[C++ Reference](https://en.cppreference.com/w/)**: Definitive online documentation for C++ syntax and the Standard Library.
+- **[Modern C++ Features](https://github.com/AnthonyCalandra/modern-cpp-features)**: Summaries of additions from C++11 through modern standards.
+- **[Data Structures and Algorithms Tutorial](https://www.w3schools.com/dsa/index.php)**: Beginner guide to foundational computer science algorithms and structures.
+- **[C++ Programming Exercises](https://www.w3resource.com/cpp-exercises/)**: Practice problems with code solutions to solidify basic syntax.
+- **[Project Euler](https://projecteuler.net/about)**: Challenging math and logic problems solved through programming.
+- **[Cpp Quiz](https://cppquiz.org/)**: Multiple-choice questions testing subtle standard compliance and gotchas.
+- **[Data Oriented Design Resources](https://github.com/dbartolini/data-oriented-design)**: Curation of cache-friendly, performance-focused architecture materials.
+- **[Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html)**: Classic reference for fast, low-level bitwise operations.
 
 ## Modern Systems Languages
 
