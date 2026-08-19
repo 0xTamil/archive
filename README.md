@@ -1,7 +1,6 @@
 # Learning Resources
 
-## Systems & C Programming
-- **[Crafting Interpreters](https://craftinginterpreters.com/)** (Robert Nystrom): parsing, semantics, bytecode, and garbage collection.
+## C Programming
 - **[Beej's Guide to C Programming](https://beej.us/guide/bgc/)**: C standard library reference with examples.
 - **[The C Book](https://publications.gbdirect.co.uk//c_book/)**: free online C reference by Banahan, Brady, and Doran.
 - **[The C Programming Language (K&R)](https://en.wikipedia.org/wiki/The_C_Programming_Language)**: the classic, dense intro to C by its creators.
@@ -35,7 +34,7 @@
 - **[Learn Odin in Y Minutes](https://learnxinyminutes.com/odin/)**: quick syntax reference sheet covering arrays, context, allocators, and procedures.
 - **[Awesome Odin](https://github.com/jakubtomsu/awesome-odin)**: community-curated list of libraries, game frameworks, and tools written in Odin.
 
-## Graphics Programming & Shaders
+## Graphics Programming
 - **[LearnOpenGL](https://learnopengl.com/)**: complete guide to 3D graphics, shader pipeline, lighting, and framebuffers in OpenGL.
 - **[The Book of Shaders](https://thebookofshaders.com/)**: step-by-step guide to writing fragment shaders and procedural graphics.
 - **[Ray Tracing in One Weekend](https://raytracing.github.io/)**: hands-on series for writing a custom CPU/GPU ray tracer from scratch.
@@ -45,7 +44,7 @@
 - **[Inigo Quilez Articles](https://iquilezles.org/articles/)**: masterclass on signed distance functions, noise, terrain generation, and rendering math.
 - **[Shadertoy](https://www.shadertoy.com/)**: community playground for writing, sharing, and inspecting WebGL fragment shaders.
 
-## OS Development & Kernel Engineering
+## OS Development
 - **[OSDev Wiki](https://wiki.osdev.org/)**: essential community wiki covering bootloaders, kernel architecture, memory management, and drivers.
 - **[OSDev Forum](https://forum.osdev.org/)**: active discussion board focused on low-level system design and bare-metal troubleshooting.
 - **[OSDev Bare Metal Tutorials](https://wiki.osdev.org/Expanded_Main_Page)**: walkthroughs for building minimal kernels, graphics modes, and interrupt handling.
@@ -55,7 +54,7 @@
 - **[ARM Kernel Development (Raspberry Pi)](https://github.com/s-matyukevich/raspberry-pi-os)**: step-by-step guide to OS development on ARM architecture.
 - **[Awesome OSDEV](https://github.com/devse-org/awesome-osdev)**: curated collection of tutorials, specifications, and reference materials for OS development.
 
-## Computer Systems, Architecture & Low-Level CS
+## Computer Systems & Architecture
 - **[Computer Systems: A Programmer's Perspective (CS:APP)](https://csapp.cs.cmu.edu/)**: how programs run on hardware, with free labs.
 - **[nand2tetris](https://www.nand2tetris.org/)**: build a computer from logic gates up to a working OS and compiler.
 - **[Operating Systems: Three Easy Pieces (OSTEP)](https://pages.cs.wisc.edu/~remzi/OSTEP/)**: textbook on virtualization, concurrency, and persistence, with projects.
@@ -69,6 +68,7 @@
 - **[UNIX System Programming (Advanced Programming in the UNIX Environment)](http://www.apuebook.com/)**: W. Richard Stevens' masterwork on UNIX system calls and process control.
 
 ## Compilers, Interpreters & Tooling
+- **[Crafting Interpreters](https://craftinginterpreters.com/)** (Robert Nystrom): parsing, semantics, bytecode, and garbage collection.
 - **[Writing An Interpreter In Go](https://interpreterbook.com/)**: project-based book on building an interpreter step by step.
 - **[Writing A Compiler In Go](https://compilerbook.com/)**: companion book focusing on bytecode compilers and virtual machines.
 - **[LLVM Kaleidoscope Tutorial](https://llvm.org/docs/tutorial/)**: official walkthrough of building a language front-end targeting LLVM IR.
@@ -77,7 +77,7 @@
 - **[Compilers: Principles, Techniques, and Tools (Dragon Book)](https://en.wikipedia.org/wiki/Compilers:_Principles,_Techniques,_and_Tools)**: foundational textbook on parsing, lexical analysis, and code generation.
 - **[Modern Compiler Implementation in ML/C/Java](https://www.cs.princeton.edu/~appel/modern/)** (Andrew Appel): rigorous treatment of compiler construction and SSA form.
 
-## Assembly, Hardware & Low-Level Reverse Engineering
+## Assembly, Hardware & Reverse Engineering
 - **[x86-64 Machine Organization and Assembly Language](https://cs.brown.edu/courses/cs033/)**: lecture guides on architecture, stack frames, and assembly execution.
 - **[Reverse Engineering for Beginners](https://beginners.re/)** (Dennis Yurichev): free book detailing how compiled code translates to assembly across architectures.
 - **[Practical Malware Analysis](https://nostarch.com/malware)**: practical handbook on disassembly, debugging, and binary inspection.
