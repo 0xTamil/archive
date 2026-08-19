@@ -49,14 +49,101 @@
 - **[Awesome Odin](https://github.com/jakubtomsu/awesome-odin)**: community-curated list of libraries, game frameworks, and tools written in Odin.
 
 ## Graphics Programming
-- **[LearnOpenGL](https://learnopengl.com/)**: complete guide to 3D graphics, shader pipeline, lighting, and framebuffers in OpenGL.
-- **[The Book of Shaders](https://thebookofshaders.com/)**: step-by-step guide to writing fragment shaders and procedural graphics.
-- **[Ray Tracing in One Weekend](https://raytracing.github.io/)**: hands-on series for writing a custom CPU/GPU ray tracer from scratch.
-- **[Vulkan Tutorial](https://vulkan-tutorial.com/)**: comprehensive walkthrough for low-overhead, modern GPU graphics programming.
-- **[Scratchapixel](https://www.scratchapixel.com/)**: deep foundational math and algorithms behind 3D computer graphics and rendering.
-- **[WebGPU Fundamentals](https://webgpufundamentals.org/)**: practical intro to modern GPU architecture and computing specs.
-- **[Inigo Quilez Articles](https://iquilezles.org/articles/)**: masterclass on signed distance functions, noise, terrain generation, and rendering math.
-- **[Shadertoy](https://www.shadertoy.com/)**: community playground for writing, sharing, and inspecting WebGL fragment shaders.
+
+### OpenGL
+- **[Learn OpenGL](https://learnopengl.com/)**: Comprehensive guide covering graphics fundamentals to modern 3D rendering concepts.
+- **[OpenGL Step By Step](https://ogldev.org/)**: Code-focused walkthroughs building a 3D graphics engine step by step.
+- **[OpenGL Tutorials](https://www.opengl-tutorial.org/)**: Hands-on guide to modern OpenGL (3.3+) with source code and shaders.
+- **[OpenGL Introduction](https://open.gl/introduction)**: Friendly, beginner-oriented primer on context setup, textures, and transformations.
+- **[Anton's OpenGL 4 Tutorials](https://antongerdelan.net/opengl/)**: Practical guide to intermediate and advanced 4.x features like deferred shading.
+- **[OpenGL Is Not Right-Handed](https://www.gingerbill.org/article/2024/11/10/opengl-is-not-right-handed/)**: Breakdown clearing up common misconceptions regarding coordinate systems.
+- **[Best Practices for Modern OpenGL](https://juandiegomontoya.github.io/modern_opengl.html)**: Performance optimizations and design patterns for modern API usage.
+- **[A Guide to Modern OpenGL Functions](https://github.com/fendevel/Guide-to-Modern-OpenGL-Functions)**: Cheatsheet explaining Direct State Access (DSA) and cleaner API calls.
+- **[OpenGL Tutorials](https://www.youtube.com/playlist?list=PLPaoO-vpZnumdcb4tZc4x5Q-v7CkrQ6M-)**: Video series visually explaining graphics pipeline concepts and engine setup.
+- **[Docs GL](https://docs.gl/)**: Clean, searchable reference for OpenGL 2.x through 4.x command signatures.
+- **[How to write a renderer for modern graphics APIs](https://blog.mecheye.net/2023/09/how-to-write-a-renderer-for-modern-apis/)**: Architecture advice for structuring renderers on modern driver pipelines.
+- **[MBSoftworks OpenGL Tutorials](https://www.mbsoftworks.sk/tutorials/)**: In-depth articles covering terrain, particle systems, and skyboxes.
+- **[An Intro to Modern OpenGL](https://duriansoftware.com/joe/an-intro-to-modern-opengl.-table-of-contents)**: Classic multi-part explanation of VBOs, shaders, and lighting mechanics.
+- **[OpenGL Hardware Database](https://opengl.gpuinfo.org/)**: Global database tracking GPU capability reports, limits, and extension support.
+- **[A Hitchhiker's Guide to OpenGL](https://github.com/bartvbl/A-Hitchhikers-Guide-to-OpenGL)**: Curation of math, vector geometry, and core graphics pipeline resources.
+
+### Vulkan
+- **[How to make OpenGL usage Vulkan like](https://developer.nvidia.com/opengl-vulkan)**: nvidia guide on structuring OpenGL code to mirror Vulkan's low-overhead architecture.
+- **[Transitioning from OpenGL to Vulkan](https://developer.nvidia.com/transitioning-opengl-vulkan)**: high-level overview explaining key mental shifts needed when moving to explicit APIs.
+- **[Khronos Vulkan Tutorial](https://docs.vulkan.org/tutorial/latest/00_Introduction.html)**: official Khronos walkthrough covering core instance creation through rendering pipelines.
+- **[How to Vulkan in 2026](https://www.howtovulkan.com/)**: modern guide focusing on contemporary extensions, dynamic rendering, and best practices.
+- **[Vulkan Spec](https://registry.khronos.org/vulkan/specs/1.1/html/vkspec.html)**: complete, definitive standard reference detailing every function, struct, and behavior.
+- **[Vulkan Hub](https://vkdoc.net/)**: centralized portal for API documentation, extension specs, and developer tools.
+- **[Vulkan Hardware Database](https://vulkan.gpuinfo.org/)**: community-driven database tracking feature support, limits, and extensions across devices.
+- **[API Without Secrets](https://www.intel.com/content/www/us/en/developer/articles/training/api-without-secrets-introduction-to-vulkan-part-1.html)**: intel tutorial series detailing memory management, swap chains, and pipeline setups.
+- **[Vulkan In 30 Minutes](https://renderdoc.org/vulkan-in-30-minutes.html)**: high-speed architecture summary by the creator of RenderDoc for experienced graphics developers.
+- **[Vulkan Guide](https://vkguide.dev/)**: modern, approachable tutorial series building an engine with dynamic rendering and modern C++.
+- **[Vulkan Tutorial](https://vulkan-tutorial.com/)**: popular step-by-step guide building a complete C++ renderer from scratch.
+- **[Vulkan Examples](https://github.com/SaschaWillems/Vulkan)**: extensive open-source repository demonstrating individual API features and rendering techniques.
+- **[I am Graphics and So Can You](https://www.fasterthan.life/blog/2017/7/11/i-am-graphics-and-so-can-you-part-1)**: deep-dive article series demystifying explicit graphics APIs and GPU hardware model mechanics.
+- **[Writing an Efficient Vulkan Renderer](https://zeux.io/2020/02/27/writing-an-efficient-vulkan-renderer/)**: in-depth optimization techniques covering memory allocation, pipeline caches, and command buffers.
+- **[Vulkan Synchronization Primer - Part I](https://www.jeremyong.com/vulkan/graphics/rendering/2018/11/22/vulkan-synchronization-primer/)**: clear breakdown of pipeline barriers, execution dependencies, and memory visibility.
+- **[Vulkan Synchronization Primer - Part II](https://www.jeremyong.com/vulkan/graphics/rendering/2018/11/23/vulkan-synchonization-primer-part-ii/)**: continuation exploring subpass dependencies, layout transitions, and frame synchronization.
+- **[Vulkan Lecture Series](https://www.youtube.com/playlist?list=PLmIqTlJ6KsE1Jx5HV4sd2jOe3V1KMHHgn)**: comprehensive video course covering explicit API concepts and graphics pipeline details.
+- **[Keen Games' Vulkan Backend Snapshot](https://github.com/keengames/vulkan_backend)**: real-world, production-proven engine rendering backend codebase for reference.
+- **[Learn Vulkan from code samples](https://paminerva.github.io/docs/LearnVulkan/LearnVulkan)**: minimal, self-contained C++ code snippets explaining core API building blocks.
+- **[NVIDIA Vulkan Ray Tracing Tutorial](https://github.com/nvpro-samples/vk_raytracing_tutorial_KHR/)**: step-by-step implementation guide for hardware-accelerated `VK_KHR_ray_tracing`.
+- **[Vulkan's YouTube Channel](https://www.youtube.com/@Vulkan)**: official talks, developer presentations, and ecosystem updates from Khronos.
+- **[Tips and Tricks: Vulkan Dos and Don’ts](https://developer.nvidia.com/blog/vulkan-dos-donts/)**: performance rules of thumb direct from GPU vendor optimization engineers.
+
+### DirectX 11
+- **[DirectX 11 Documentation](https://learn.microsoft.com/en-us/windows/win32/direct3d11/atoc-dx-graphics-direct3d-11)**: official Microsoft reference for the D3D11 API, shaders, and features.
+- **[Learn DirectX 11](https://graphicsprogramming.github.io/learnd3d11/)**: modern, open-source guide to graphics programming with Direct3D 11.
+- **[DirectX 11 on Windows 10 Tutorial](https://www.rastertek.com/tutdx11win10.html)**: step-by-step tutorials building 3D rendering engines from scratch.
+- **[DirectX 11 - Braynzar Soft Tutorials](https://www.braynzarsoft.net/viewtutorial/q16390-braynzar-soft-directx-11-tutorials)**: classic series covering basic windows setup to lighting and animation.
+- **[Minimal D3D11, Part I](https://gist.github.com/d7samurai/261c69490cce0620d0bfc93003cd1052)**: bare-minimum single-file code example setting up a D3D11 device and window.
+- **[Minimal D3D11, Part II](https://gist.github.com/d7samurai/aee35fd5d132c51e8b0a78699cbaa1e4)**: ultra-compact example showing how to render a basic triangle.
+- **[Minimal D3D11, Part III](https://gist.github.com/d7samurai/abab8a580d0298cb2f34a44eec41d39d)**: lightweight demonstration of textured quad rendering without unnecessary bloat.
+- **[Minimal D3D11 bonus material: extra minimal triangle](https://gist.github.com/d7samurai/1e9a1f1a366740f7d8a3a20397fcfa6b)**: stripped-down code snippet pushing triangle rendering to its smallest footprint.
+- **[Minimal D3D11 bonus material: pixel art antialiasing](https://gist.github.com/d7samurai/9f17966ba6130a75d1bfb0f1894ed377)**: clean custom shader technique for smooth pixel art filtering without blur.
+- **[Minimal D3D11 sprite renderer](https://gist.github.com/d7samurai/8f91f0343c411286373161202c199b5c)**: concise 2D sprite rendering implementation leveraging modern D3D11 features.
+- **[Minimal D3D11 sprite renderer NEO](https://gist.github.com/d7samurai/e51adec8a440126d028b87406556079b)**: updated, optimized version of the minimal 2D sprite renderer snippet.
+
+### DirectX 12
+- **[DirectX 12 Documentation](https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-graphics)**: official API documentation explaining low-level explicit graphics programming.
+- **[DirectX 12 Spec](https://microsoft.github.io/DirectX-Specs/)**: detailed technical specifications for D3D12 extensions and shader models.
+- **[Microsoft's DirectX Samples](https://github.com/microsoft/DirectX-Graphics-Samples)**: official code samples showcasing ray tracing, mesh shaders, and core API features.
+- **[A Gentle Introduction to DirectX 12](https://alextardif.com/DX12Tutorial.html)**: beginner-friendly conceptual guide explaining explicit API pipelines and concepts.
+- **[Learn DirectX 12](https://paminerva.github.io/LearnDirectX/presentation.html#)**: slide-based presentation breaking down D3D12 architecture and pipeline states.
+- **[Learn DirectX 12 Samples](https://github.com/PAMinerva/LearnDirectX-samples)**: companion code repository providing clear, progressive D3D12 examples.
+- **[Learning DirectX 12](https://www.3dgep.com/learning-directx-12-1/)**: comprehensive multi-part tutorial building a robust rendering framework.
+- **[GPU Memory Pools in D3D12](https://therealmjp.github.io/posts/gpu-memory-pool/)**: deep dive into custom memory allocators and resource heap management.
+- **[Nvidia's API Performance Blog](https://developer.nvidia.com/blog/tag/advanced-api-performance)**: optimization advice and hardware tips for low-overhead graphics APIs.
+- **[Compute with DirectX 12](https://github.com/stefanpgd/Compute-DirectX12-Tutorial)**: walkthrough on writing and dispatching GPGPU compute shaders in D3D12.
+- **[Breaking Down Barriers](https://therealmjp.github.io/posts/breaking-down-barriers-part-1-whats-a-barrier/)**: essential guide explaining resource barriers, state transitions, and synchronization.
+- **[Bindless Rendering in DirectX12 and SM6.6](https://rtarun9.github.io/blogs/bindless_rendering/)**: modern guide to descriptor indexing and bindless resource access.
+- **[Learn DirectX from code samples](https://paminerva.github.io/docs/LearnDirectX/LearnDirectX)**: bite-sized C++ code snippets explaining core D3D12 building blocks.
+
+### Metal
+- **[Metal Documentation](https://developer.apple.com/metal/)**: official Apple portal for API references, developer tools, and shading language guides.
+- **[Getting Started with Metal-cpp](https://developer.apple.com/metal/cpp/)**: guide to writing native Apple graphics code using pure C++ instead of Objective-C.
+- **[Metal Tutorial](https://metaltutorial.com/)**: approachable series covering context creation, shaders, pipeline states, and modern rendering.
+- **[30 Days of Metal](https://gist.github.com/ole/a1c95cf6a4ebbef2a7827a911301d503)**: curated daily breakdown of foundational concepts, sample projects, and resources.
+- **[MacOS Metal with C++](https://www.youtube.com/playlist?list=PLn3eTxaOtL2N8v1zUWS1fxaQVI3L3wG0w)**: video walkthrough building a cross-platform graphics application in C++.
+- **[3D Game Engine with C++ and Metal](https://www.youtube.com/playlist?list=PLjgVkKlBynWwRbyQASXbpB1fo8GuWNjYl)**: comprehensive video course building a complete 3D engine framework.
+- **[Metal By Example](https://github.com/metal-by-example)**: classic repository of sample code and hands-on graphics programming tutorials.
+- **[Metal C++ Examples](https://github.com/MattGuerrette/Metal)**: collection of idiomatic C++ projects showcasing modern pipeline techniques.
+- **[Learning Metal with metal-cpp](https://github.com/LeeTeng2001/metal-cpp-cmake)**: starter template and build configuration for cross-platform CMake builds.
+- **[Drawing Graphics on Apple Vision with the Metal Rendering API](https://github.com/gnikoloff/drawing-graphics-on-apple-vision-with-metal-rendering-api)**: guide to spatial computing render setups for visionOS platforms.
+
+### WebGL
+- **[WebGL Academy](http://www.webglacademy.com/)**: interactive browser exercises teaching 3D graphics step by step.
+- **[Learn WebGL](https://learnwebgl.brown37.net/)**: university-level textbook breaking down matrix math and pipeline concepts.
+- **[WebGL Fundamentals](https://webglfundamentals.org/)**: thorough guide explaining WebGL from core math to custom shaders.
+- **[WebGL2 Fundamentals](https://webgl2fundamentals.org/)**: updated guide covering modern features like state objects and uniform buffers.
+
+### WebGPU
+- **[Your First WebGPU App](https://codelabs.developers.google.com/your-first-webgpu-app)**: beginner Codelab setting up compute pipelines and canvas rendering.
+- **[Learn WebGPU](https://sotrh.github.io/learn-wgpu/)**: hands-on Rust tutorial building graphics applications with `wgpu`.
+- **[Learn WebGPU for C++](https://eliemichel.github.io/LearnWebGPU/)**: comprehensive C++ walkthrough for modern native graphics development.
+- **[WebGPU Fundamentals](https://webgpufundamentals.org/)**: deep explanation of low-overhead web rendering and compute pipelines.
+- **[WebGPU Unleashed](https://shi-yan.github.io/webgpuunleashed/)**: in-depth book on modern rendering techniques, WGSL shaders, and compute setups.
+- **[Compute Toys](https://compute.toys/)**: interactive web platform for writing and sharing WebGPU compute shaders.
 
 ## OS Development
 - **[OSDev Wiki](https://wiki.osdev.org/)**: essential community wiki covering bootloaders, kernel architecture, memory management, and drivers.
