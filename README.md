@@ -258,5 +258,13 @@
 - **[Build Your Own Lisp (Daniel Holden)](http://www.buildyourownlisp.com)**
 - **[Basics of Compiler Design (Torben Mogensen)](http://hjemmesider.diku.dk/~torbenm/Basics/)**
 
+## YouTube
+
+- **[TsodingDaily](https://www.youtube.com/@TsodingDaily)**
+- **[ThePrimeTimeagen](https://www.youtube.com/@ThePrimeTimeagen)**
+- **[CakeZ](https://www.youtube.com/@Cakez77)**
+- **[Artful Bytes](https://www.youtube.com/@artfulbytes)**
+- **[hoff._world](https://www.youtube.com/@hoff._world)**
+
 ## License
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
