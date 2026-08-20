@@ -1,5 +1,25 @@
 # Learning Resources 
 
+If you're completely new to low-level development, you can use this as a general guide. We gathered useful low-level programming resources here in one megathread, so you can easily come back and find what you need to study.
+
+If you are a total beginner and don't know where to start, begin with the **Getting Started** section. Study the basics until you feel somewhat comfortable, then move on to learning a programming language. We recommend starting with **C**.
+
+While learning C, practice by building your own projects. You should also learn some **DSA (Data Structures and Algorithms)** at the same time.
+
+After you have a basic understanding of C, you can decide what to do next. By "basic understanding," we mean that you understand not only general programming fundamentals, but also actual C concepts, especially **memory and how C works**.
+
+From there, you can:
+
+- Transition from C to another language based on the field you're interested in.
+- Follow the paths provided in this wiki to explore different areas.
+- Learn another language such as C++.
+- If you already have some experience, try learning another systems programming language and explore its ecosystem.
+- Or simply continue using and learning C.
+
+C gives you a strong foundation for understanding low-level programming, but you don't have to stay with it forever.
+
+Keep learning and keep exploring. This wiki is not complete yet, so also do your own research. Feel free to contribute as well. We try to organize the resources in a clear order so they are easy to navigate and study.
+
 ## Getting Started
 - **[The Hidden Language of Computer Hardware and Software](https://charlespetzold.com/code/)**
 - **[Exploring how computer works](https://www.youtube.com/watch?v=QZwneRb-zqA)**
