@@ -31,14 +31,13 @@ If you are new to low-level systems programming, follow these core steps:
 ---
 
 ## Getting Started
-- **[The Hidden Language of Computer Hardware and Software](https://charlespetzold.com/code/)**: A foundational book explaining how hardware and software work together from the ground up.
-- **[Exploring How Computers Work](https://www.youtube.com/watch?v=QZwneRb-zqA)**: A clear visual video explaining computer hardware execution.
-- **[A Crash Course in Computer Science](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo)**: A fast-paced video series introducing major computer science concepts.
-- **[CS50: Introduction to Computer Science](https://pll.harvard.edu/course/cs50-introduction-computer-science)**: Harvard's popular introductory course for computer science fundamentals.
-- **[Teach Yourself CS](https://teachyourselfcs.com/)**: A complete guide to self-studying core computer science subjects.
-- **[Beej's Guide to Learning Computer Science](https://beej.us/guide/bglcs/)**: An approachable guide covering foundational CS topics.
-- **[Open Source Society University (OSSU)](https://github.com/ossu/computer-science)**: A full open-source curriculum equivalent to a standard CS degree.
-
+- **[The Hidden Language of Computer Hardware and Software](https://charlespetzold.com/code/)**
+- **[Exploring How Computers Work](https://www.youtube.com/watch?v=QZwneRb-zqA)**
+- **[A Crash Course in Computer Science](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo)**
+- **[CS50: Introduction to Computer Science](https://pll.harvard.edu/course/cs50-introduction-computer-science)**
+- **[Teach Yourself CS](https://teachyourselfcs.com/)**
+- **[Beej's Guide to Learning Computer Science](https://beej.us/guide/bglcs/)**
+- **[Open Source Society University (OSSU)](https://github.com/ossu/computer-science)**
 ---
 
 ## Core Foundations
