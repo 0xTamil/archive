@@ -8,9 +8,9 @@ If you are new to low-level systems programming, follow these core steps:
    * **What to do:** Understand how computers read data and execute instructions. Learn basic programming rules like variables, loops, logic, and how your code actually talks to hardware components like the CPU and RAM.
    * **Why it matters:** Building a strong mental model of how computer memory and hardware work together makes learning any system language much easier later on.
 
-2. **Master C & Memory**
+2. **Master C & Memory (The Core Foundation)**
    * **What to do:** Learn the **C programming language** deeply. Focus on core low-level topics: managing memory manually, using pointers (variables that store memory addresses), doing pointer arithmetic, and allocation (`malloc` and `free`).
-   * **Why it matters:** C strips away hidden abstractions. It gives you direct control over memory, forcing you to understand exactly how software interacts with computer hardware.
+   * **Why it matters:** C is the foundational language of systems programming. It strips away hidden abstractions and gives you direct control over memory, forcing you to understand exactly how software interacts with computer hardware.
 
 3. **Build Small Projects**
    * **What to do:** Put your C knowledge to work by building tiny, practical command-line interface (CLI) tools. Build things like a custom file reader, a simple memory-logging tool, a text file parser, or a basic shell utility.
@@ -21,12 +21,12 @@ If you are new to low-level systems programming, follow these core steps:
    * **Why it matters:** Hardware has limits. Choosing the right data structure and algorithm ensures your low-level code runs fast, uses minimal RAM, and handles big workloads cleanly.
 
 5. **Pick a Specialized Field**
-   * **What to do:** Decide what kind of low-level software you want to build. Pick one focused domain to explore next.
+   * **What to do:** Decide what kind of low-level software you want to build. Pick one focused domain to explore next (such as Embedded Systems, Operating Systems, Compilers, GPGPU, or Graphics Programming).
    * **Why it matters:** Low-level programming is a massive field. Picking a specific path gives you a clear target and helps you choose the exact tools and projects to build next.
 
-6. **Learn Modern Systems Languages**
-   * **What to do:** Expand your skills beyond C by learning modern systems programming languages like **C++, Rust, Zig, or Odin**.
-   * **Why it matters:** Modern languages bring modern features like object-oriented design in C++, automatic memory safety in Rust, or cleaner syntax and explicit memory management in Zig and Odin. Knowing these makes you ready to build large, production grade applications.
+6. **Learn Modern Systems Languages (Optional)**
+   * **What to do:** Expand your skills beyond C by exploring modern systems programming languages like **C++, Rust, Zig, or Odin**—or choose to **stick with C**, as it remains fully powerful and relevant for almost all low-level domains.
+   * **Why it matters:** While C is all you strictly need, learning modern languages introduces extra toolsets like object-oriented design in C++, automatic memory safety in Rust, or streamlined syntax and memory control in Zig and Odin.
 
 ---
 
@@ -38,9 +38,19 @@ If you are new to low-level systems programming, follow these core steps:
 - **[Teach Yourself CS](https://teachyourselfcs.com/)**
 - **[Beej's Guide to Learning Computer Science](https://beej.us/guide/bglcs/)**
 - **[Open Source Society University (OSSU)](https://github.com/ossu/computer-science)**
+
 ---
 
 ## Core Foundations
+
+### C Programming (Core Foundation)
+- **[Beej's Guide to C Programming](https://beej.us/guide/bgc/)**: A clear guide to practical C development and the standard library.
+- **[C Programming: A Modern Approach](https://knking.com/books/c2/)**: A detailed textbook widely considered the best standard reference for C beginners.
+- **[The C Book](http://knking.com/books/c2/index.html)**: A free reference book covering foundational C concepts.
+- **[The C Programming Language (K&R)](https://en.wikipedia.org/wiki/The_C_Programming_Language)**: The original, concise introduction to C written by its creators.
+- **[Learn C](https://learn-c.org/)**: Interactive browser-based tutorials for writing and testing C code.
+- **[C FAQ](https://c-faq.com/)**: Practical answers to common questions, tricky bugs, and pointer memory rules.
+- **[C Interfaces and Implementations](https://github.com/drh/cii)**: Learn how to design modular and reusable C libraries.
 
 ### Data Structures & Algorithms
 - **[Data Structures and Algorithms Tutorial](https://www.w3schools.com/dsa/index.php)**: A beginner-friendly guide to organizing and processing data.
@@ -49,16 +59,9 @@ If you are new to low-level systems programming, follow these core steps:
 - **[Algorithm Visualizer](https://algorithm-visualizer.org/)**: An interactive platform that animates actual code execution step-by-step.
 - **[Algorithms (Sedgewick & Wayne)](https://algs4.cs.princeton.edu/home/)**: A detailed textbook covering classic algorithms and data structures.
 
-### Languages to Learn
+---
 
-#### C Programming
-- **[Beej's Guide to C Programming](https://beej.us/guide/bgc/)**: A clear guide to practical C development and the standard library.
-- **[C Programming: A Modern Approach](https://knking.com/books/c2/)**: A detailed textbook widely considered the best standard reference for C beginners.
-- **[The C Book](http://knking.com/books/c2/index.html)**: A free reference book covering foundational C concepts.
-- **[The C Programming Language (K&R)](https://en.wikipedia.org/wiki/The_C_Programming_Language)**: The original, concise introduction to C written by its creators.
-- **[Learn C](https://learn-c.org/)**: Interactive browser-based tutorials for writing and testing C code.
-- **[C FAQ](https://c-faq.com/)**: Practical answers to common questions, tricky bugs, and pointer memory rules.
-- **[C Interfaces and Implementations](https://github.com/drh/cii)**: Learn how to design modular and reusable C libraries.
+## Other Systems Languages (Optional)
 
 #### C++ Programming
 - **[How to Start C++ Development?](https://github.com/W4RH4WK/cpp-init)**: A practical guide to setting up compilers, build systems, and environments.
