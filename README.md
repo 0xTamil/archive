@@ -21,7 +21,7 @@ If you are new to low-level systems programming, follow these core steps:
    * **Why it matters:** Hardware has limits. Choosing the right data structure and algorithm ensures your low-level code runs fast, uses minimal RAM, and handles big workloads cleanly.
 
 5. **Pick a Specialized Field**
-   * **What to do:** Decide what kind of low-level software you want to build. Pick one focused domain to explore next (such as Embedded Systems, Operating Systems, Compilers, GPGPU, or Graphics Programming).
+   * **What to do:** Decide what kind of low-level software you want to build. Pick one focused domain to explore next.
    * **Why it matters:** Low-level programming is a massive field. Picking a specific path gives you a clear target and helps you choose the exact tools and projects to build next.
 
 6. **Learn Modern Systems Languages (Optional)**
@@ -111,7 +111,16 @@ If you are new to low-level systems programming, follow these core steps:
 
 ---
 
-### 2. Compilers & Interpreters
+### 2. FPGA & Hardware Description
+> **Overview:**  
+> Field-Programmable Gate Array (FPGA) development involves designing custom digital hardware circuits using Hardware Description Languages (HDLs) like Verilog, SystemVerilog, or VHDL. Instead of writing code that executes sequentially on a fixed CPU, you configure raw logic blocks to run thousands of operations in true hardware-level parallel. This field is widely used in high-frequency trading, aerospace, custom chip prototyping, and digital signal processing where low latency and microsecond execution matter.
+
+- **[Awesome FPGA](https://github.com/Vitorian/awesome-fpga)**: A curated list of hardware development resources, FPGA tools, HDLs, and project tutorials.
+- **[Awesome FPGA Programming](https://github.com/emanueledelsozzo/awesome-fpga-programming)**: Guides, toolchains, and learning materials for developing and compiling custom logic circuits.
+
+---
+
+### 3. Compilers & Interpreters
 > **Overview:**  
 > Compiler engineering involves creating software tools that analyze high-level source code (such as C or Python) and translate it into machine code or bytecode execution formats. Topics cover lexing, parsing, semantic checking, program optimization passes, and code generation for hardware architectures.
 
@@ -119,7 +128,7 @@ If you are new to low-level systems programming, follow these core steps:
 
 ---
 
-### 3. Operating Systems Development
+### 4. Operating Systems Development
 > **Overview:**  
 > Operating system development focuses on writing software from scratch that controls system resources. This domain covers bare-metal kernel development, memory management (virtual memory and paging), thread scheduling, device drivers, interrupt handling, and file systems.
 
@@ -127,7 +136,7 @@ If you are new to low-level systems programming, follow these core steps:
 
 ---
 
-### 4. GPGPU & Parallel Computing
+### 5. GPGPU & Parallel Computing
 > **Overview:**  
 > General-Purpose Computing on Graphics Processing Units (GPGPU) uses graphics hardware to perform heavy parallel calculations, scientific simulations, and machine learning workloads using interfaces like CUDA, OpenCL, and Vulkan Compute.
 
@@ -136,7 +145,7 @@ If you are new to low-level systems programming, follow these core steps:
 
 ---
 
-### 5. Graphics Programming
+### 6. Graphics Programming
 > **Overview:**  
 > Graphics programming involves writing low-level code that interfaces directly with GPUs to render real-time 2D and 3D scenes. It combines linear algebra, graphics pipelines, custom shader development (HLSL, GLSL), and modern rendering APIs (Vulkan, DirectX 12, Metal, WebGPU).
 
