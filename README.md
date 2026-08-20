@@ -31,6 +31,13 @@
 - **[Data Oriented Design Resources](https://github.com/dbartolini/data-oriented-design)**: resources for writing fast code that works well with computer memory.
 - **[Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html)**: famous cheat sheet for super fast low-level binary math tricks.
 
+## Data Structures & Algorithm (DSA)
+- **[Data Structures and Algorithms Tutorial](https://www.w3schools.com/dsa/index.php)**: easy beginner tutorial on basic ways to store and process data.
+- **[VisuAlgo](https://visualgo.net/)**: visual interactive animations showing how algorithms sort data and search structures step-by-step.
+- **[MIT 6.006: Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)**: free university course with clear video lectures teaching basic computer algorithms.
+- **[Algorithm Visualizer](https://algorithm-visualizer.org/)**: interactive site that animates code execution visually so you can see algorithms working.
+- **[Algorithms (Sedgewick & Wayne)](https://algs4.cs.princeton.edu/home/)**: classic book explaining essential ways to organize data and solve problems efficiently.
+
 ## Modern Systems Languages
 
 ### Rust
@@ -250,13 +257,6 @@
 - **[Let’s Build A Simple Interpreter (Ruslan Spivak)](https://ruslanspivak.com/lsbasi-part1/)**
 - **[Build Your Own Lisp (Daniel Holden)](http://www.buildyourownlisp.com)**
 - **[Basics of Compiler Design (Torben Mogensen)](http://hjemmesider.diku.dk/~torbenm/Basics/)**
-
-## Data Structures & Algorithm (DSA)
-- **[Data Structures and Algorithms Tutorial](https://www.w3schools.com/dsa/index.php)**: easy beginner tutorial on basic ways to store and process data.
-- **[VisuAlgo](https://visualgo.net/)**: visual interactive animations showing how algorithms sort data and search structures step-by-step.
-- **[MIT 6.006: Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)**: free university course with clear video lectures teaching basic computer algorithms.
-- **[Algorithm Visualizer](https://algorithm-visualizer.org/)**: interactive site that animates code execution visually so you can see algorithms working.
-- **[Algorithms (Sedgewick & Wayne)](https://algs4.cs.princeton.edu/home/)**: classic book explaining essential ways to organize data and solve problems efficiently.
 
 ## License
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
