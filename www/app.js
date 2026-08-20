@@ -625,6 +625,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         ];
 
         statsData.forEach(item => {
+            if (item.value === 0) return;
+
             const dt = document.createElement('dt');
             dt.textContent = item.label;
 
@@ -697,6 +699,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             h2.appendChild(textSpan);
             section.appendChild(h2);
 
+            // Render category description paragraph if present
+            if (group.description) {
+                const descP = document.createElement('p');
+                descP.className = 'mw-category-description';
+                descP.textContent = group.description;
+                section.appendChild(descP);
+            }
+
             if (group.subcategories && group.subcategories.length > 0) {
                 group.subcategories.forEach((sub, subIdx) => {
                     if (sub.resources.length === 0) return;
@@ -718,6 +728,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                     h3.appendChild(subNumSpan);
                     h3.appendChild(subTextSpan);
                     subSection.appendChild(h3);
+
+                    // Render subcategory description paragraph if present
+                    if (sub.description) {
+                        const subDescP = document.createElement('p');
+                        subDescP.className = 'mw-category-description';
+                        subDescP.textContent = sub.description;
+                        subSection.appendChild(subDescP);
+                    }
 
                     const ol = document.createElement('ol');
                     sub.resources.forEach(res => {
@@ -755,6 +773,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         subGroups.push({
                             id: sub.id,
                             title: sub.title,
+                            description: sub.description || '',
                             resources: subRes
                         });
                     }
@@ -765,6 +784,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 groups.push({
                     id: cat.id,
                     title: cat.title,
+                    description: cat.description || '',
                     resources: catResources,
                     subcategories: subGroups
                 });

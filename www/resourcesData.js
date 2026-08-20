@@ -31,7 +31,8 @@ function parseMarkdownResources(markdownText) {
   // Regex pattern for matching resource items:
   // - **[Title](URL)** (Author): Description
   // or - **[Title](URL)**: Description
-  const itemRegex = /^-\s+\*\*\[(.*?)\]\((.*?)\)\*\*(?:\s+\((.*?)\))?:\s*(.*)$/;
+  // or - **[Title](URL)**  (no description)
+  const itemRegex = /^-\s+\*\*\[(.*?)\]\((.*?)\)\*\*(?:\s+\((.*?)\))?(?::\s*(.*))?$/;
 
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i].trim();
@@ -39,11 +40,16 @@ function parseMarkdownResources(markdownText) {
 
     if (line.startsWith('## ')) {
       const catTitle = line.replace('## ', '').trim();
-      if (catTitle === 'License') continue;
+      if (catTitle === 'License') {
+        currentCategory = null;
+        currentSubcategory = null;
+        continue;
+      }
 
       currentCategory = {
         id: slugify(catTitle),
         title: catTitle,
+        description: '',
         subcategories: [],
         resources: []
       };
@@ -54,6 +60,7 @@ function parseMarkdownResources(markdownText) {
       currentSubcategory = {
         id: slugify(subTitle),
         title: subTitle,
+        description: '',
         resources: []
       };
       if (currentCategory) {
@@ -65,7 +72,7 @@ function parseMarkdownResources(markdownText) {
         const title = match[1].trim();
         const url = match[2].trim();
         const author = match[3] ? match[3].trim() : null;
-        const description = match[4].trim();
+        const description = match[4] ? match[4].trim() : '';
 
         const resource = {
           id: slugify(title),
@@ -83,10 +90,16 @@ function parseMarkdownResources(markdownText) {
 
         if (currentSubcategory) {
           currentSubcategory.resources.push(resource);
-        }
-        if (currentCategory) {
+        } else if (currentCategory) {
           currentCategory.resources.push(resource);
         }
+      }
+    } else if (currentCategory || currentSubcategory) {
+      // Plain text line (not a header, not a bullet) — treat as category/subcategory description
+      if (currentSubcategory) {
+        currentSubcategory.description += (currentSubcategory.description ? ' ' : '') + line;
+      } else if (currentCategory) {
+        currentCategory.description += (currentCategory.description ? ' ' : '') + line;
       }
     }
   }
@@ -97,9 +110,16 @@ function parseMarkdownResources(markdownText) {
 function slugify(text) {
   return text
     .toLowerCase()
+    .replace(/\+\+/g, 'pp')       // c++ → cpp, not just c
+    .replace(/c#/g, 'csharp')     // c# → csharp
+    .replace(/\+/g, 'plus')       // remaining + signs
     .replace(/[^\w\s-]/g, '')
     .replace(/[\s_-]+/g, '-')
     .replace(/^-+|-+$/g, '');
+}
+
+function escapeRegExp(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 function extractTags(title, description, category, subcategory) {
@@ -115,10 +135,24 @@ function extractTags(title, description, category, subcategory) {
 
   const matched = new Set();
   candidates.forEach(tag => {
-    if (combined.includes(tag)) {
+    // Use word-boundary regex to avoid partial matches (e.g. 'c' matching 'concurrency')
+    const escaped = escapeRegExp(tag);
+    const regex = new RegExp(`(?:^|[\\s,;:()\\[\\]/])${escaped}(?:$|[\\s,;:()\\[\\]/])`, 'i');
+    // Also check if the combined text starts or ends with the tag
+    if (regex.test(` ${combined} `)) {
       matched.add(tag);
     }
   });
+
+  // If 'c++' matched, don't also add 'c' from the same context
+  if (matched.has('c++') && matched.has('c')) {
+    // Only keep 'c' if it genuinely appears as standalone (not just from c++)
+    const withoutCpp = combined.replace(/c\+\+/g, '');
+    const cRegex = new RegExp(`(?:^|[\\s,;:()\\[\\]/])c(?:$|[\\s,;:()\\[\\]/])`, 'i');
+    if (!cRegex.test(` ${withoutCpp} `)) {
+      matched.delete('c');
+    }
+  }
 
   return Array.from(matched);
 }
@@ -199,7 +233,14 @@ const LearningResources = {
     this.categories = parseMarkdownResources(markdownText);
     this.resources = [];
     this.categories.forEach(cat => {
+      // Add resources directly under the category (no subcategory)
       cat.resources.forEach(res => this.resources.push(res));
+      // Add resources under each subcategory
+      if (cat.subcategories) {
+        cat.subcategories.forEach(sub => {
+          sub.resources.forEach(res => this.resources.push(res));
+        });
+      }
     });
 
     return {
