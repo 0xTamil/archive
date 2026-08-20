@@ -82,27 +82,27 @@ Keep learning and keep exploring. This wiki is not complete yet, so also do your
 - **[Learn Odin in Y Minutes](https://learnxinyminutes.com/odin/)**: one-page cheat sheet showing all basic Odin syntax at a glance.
 - **[Awesome Odin](https://github.com/jakubtomsu/awesome-odin)**: handy collection of libraries, game engines, and tools made with Odin.
 
-## Graphics Programming
+## Embedded System
 
-- **[Awesome Graphics Programming](https://gist.github.com/notnotrobby/ceef71527b4f15869133ba7b397912e9)**
+- **[Awesome Embedded](https://github.com/nhivp/Awesome-Embedded)**
+- **[Awesome Embedded Linux](https://github.com/fkromer/awesome-embedded-linux)**
+
+## Compilers & Interpreters
+
+- **[Awesome OS Compilers](https://github.com/aalhour/awesome-compilers)**
+
+## OS Development
+
+- **[Awesome OS Dev](https://github.com/devse-org/awesome-osdev)**
 
 ## GPGPU
 
 - **[Awesome GPGPU](https://github.com/jslee02/awesome-gpgpu)**
 - **[Awesome GPU](https://github.com/Jokeren/Awesome-GPU)**
 
-## OS Development
+## Graphics Programming
 
-- **[Awesome OS Dev](https://github.com/devse-org/awesome-osdev)**
-
-## Compilers & Interpreters
-
-- **[Awesome OS Compilers](https://github.com/aalhour/awesome-compilers)**
-
-## Embedded System
-
-- **[Awesome Embedded](https://github.com/nhivp/Awesome-Embedded)**
-- **[Awesome Embedded Linux](https://github.com/fkromer/awesome-embedded-linux)**
+- **[Awesome Graphics Programming](https://gist.github.com/notnotrobby/ceef71527b4f15869133ba7b397912e9)**
 
 ## YouTube
 
