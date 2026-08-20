@@ -95,11 +95,11 @@ Keep learning and keep exploring. This wiki is not complete yet, so also do your
 
 - **[Awesome OS Dev](https://github.com/devse-org/awesome-osdev)**
 
-# Compilers & Interpreters
+## Compilers & Interpreters
 
 - **[Awesome OS Compilers](https://github.com/aalhour/awesome-compilers)**
 
-# Embedded System
+## Embedded System
 
 - **[Awesome Embedded](https://github.com/nhivp/Awesome-Embedded)**
 - **[Awesome Embedded Linux](https://github.com/fkromer/awesome-embedded-linux)**
