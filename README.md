@@ -1,4 +1,4 @@
-# Awesome Archive 
+# Learning Resources 
 
 ## Getting Started
 - **[The Hidden Language of Computer Hardware and Software](https://charlespetzold.com/code/)**
