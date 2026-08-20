@@ -124,7 +124,7 @@ If you are new to low-level systems programming, follow these core steps:
 > **Overview:**  
 > Compiler development means building tools that read high-level code (like C, Rust, or Python) and turn it into binary code that computer hardware actually understands. You learn how programming languages process text, optimize performance, and turn instructions into CPU operations.
 
-- **[Awesome OS Compilers](https://github.com/aalhour/awesome-compilers)**: A collection of books, courses, frameworks, and projects for building compilers and runtime engines.
+- **[Awesome Compilers](https://github.com/aalhour/awesome-compilers)**: A collection of books, courses, frameworks, and projects for building compilers and runtime engines.
 
 ---
 
