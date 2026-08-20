@@ -1,4 +1,4 @@
-# Learning Resources
+# Awesome Archive 
 
 ## Getting Started
 - **[The Hidden Language of Computer Hardware and Software](https://charlespetzold.com/code/)**
@@ -8,6 +8,13 @@
 - **[Teach Yourself CS](https://teachyourselfcs.com/)**
 - **[Beej's Guide to Learning Computer Science](https://beej.us/guide/bglcs/)**
 - **[Open Source Society University](https://github.com/ossu/computer-science)**
+
+## Data Structures & Algorithm (DSA)
+- **[Data Structures and Algorithms Tutorial](https://www.w3schools.com/dsa/index.php)**: easy beginner tutorial on basic ways to store and process data.
+- **[VisuAlgo](https://visualgo.net/)**: visual interactive animations showing how algorithms sort data and search structures step-by-step.
+- **[MIT 6.006: Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)**: free university course with clear video lectures teaching basic computer algorithms.
+- **[Algorithm Visualizer](https://algorithm-visualizer.org/)**: interactive site that animates code execution visually so you can see algorithms working.
+- **[Algorithms (Sedgewick & Wayne)](https://algs4.cs.princeton.edu/home/)**: classic book explaining essential ways to organize data and solve problems efficiently.
 
 ## C Programming
 - **[Beej's Guide to C Programming](https://beej.us/guide/bgc/)**: clear guide to the C standard library with code examples.
@@ -30,13 +37,6 @@
 - **[Cpp Quiz](https://cppquiz.org/)**: fun multiple-choice quizzes to test your knowledge of C++ rules.
 - **[Data Oriented Design Resources](https://github.com/dbartolini/data-oriented-design)**: resources for writing fast code that works well with computer memory.
 - **[Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html)**: famous cheat sheet for super fast low-level binary math tricks.
-
-## Data Structures & Algorithm (DSA)
-- **[Data Structures and Algorithms Tutorial](https://www.w3schools.com/dsa/index.php)**: easy beginner tutorial on basic ways to store and process data.
-- **[VisuAlgo](https://visualgo.net/)**: visual interactive animations showing how algorithms sort data and search structures step-by-step.
-- **[MIT 6.006: Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)**: free university course with clear video lectures teaching basic computer algorithms.
-- **[Algorithm Visualizer](https://algorithm-visualizer.org/)**: interactive site that animates code execution visually so you can see algorithms working.
-- **[Algorithms (Sedgewick & Wayne)](https://algs4.cs.princeton.edu/home/)**: classic book explaining essential ways to organize data and solve problems efficiently.
 
 ## Modern Systems Languages
 
