@@ -25,7 +25,6 @@
 - **[C++ By Example](https://cppbyexample.com/)**: short, practical code samples showing how C++ features work.
 - **[C++ Reference](https://en.cppreference.com/w/)**: complete official dictionary for all C++ keywords and library functions.
 - **[Modern C++ Features](https://github.com/AnthonyCalandra/modern-cpp-features)**: simple summary of new features added in C++11 and newer versions.
-- **[Data Structures and Algorithms Tutorial](https://www.w3schools.com/dsa/index.php)**: easy beginner tutorial on basic ways to store and process data.
 - **[C++ Programming Exercises](https://www.w3resource.com/cpp-exercises/)**: collection of practice problems with working answers to build coding habits.
 - **[Project Euler](https://projecteuler.net/about)**: fun collection of math and logic puzzles to solve with code.
 - **[Cpp Quiz](https://cppquiz.org/)**: fun multiple-choice quizzes to test your knowledge of C++ rules.
@@ -172,7 +171,7 @@
 - **[Writing a Unix Clone in About a Month](https://drewdevault.com/2024/05/24/2024-05-24-Bunnix.html)**
 - **[ToaruOS at 5 Years](https://www.youtube.com/watch?v=Wp5kl-NfpM8)**
 
-### Hardware & Architecture Specifications
+### Specifications
 - **[Intel SDM](https://software.intel.com/content/www/us/en/develop/articles/intel-sdm.html)**: official manual for x86/x64 CPU architecture, instructions, and system programming.
 - **[AMD64 Architecture Manuals](https://docs.amd.com/v/u/en-US/40332-PUB_4.08)**: detailed vendor reference for AMD 64-bit processors and system registers.
 - **[ARM Developer Documentation](https://developer.arm.com/documentation/)**: official technical portal for ARM CPU cores and system architecture specs.
@@ -185,7 +184,7 @@
 - **[Raspberry Pi Hardware Docs](https://github.com/raspberrypi/documentation)**: official hardware datasheets and board documentation for Raspberry Pi devices.
 - **[x86 Serial Port (COM) Reference](https://www.sci.muni.cz/docs/pc/serport.txt)**: classic text reference for programming legacy x86 serial port hardware.
 
-### Kernel Architecture & Microkernels
+### Kernel Architecture
 - **[Operating Systems: Design and Implementation](https://archive.org/details/OperatingSystemsDesignImplementation/mode/2up)**: foundational textbook by Andrew Tanenbaum detailing microkernels and MINIX 3 design.
 - **[Communication in Microkernel Systems](https://os.inf.tu-dresden.de/papers_ps/aigner_phd.pdf)**: detailed academic thesis exploring fast inter-process communication in microkernels.
 - **[Roll Your Own Toy UNIX Kernel](http://osblog.stephenmarz.com/index.html)**: practical series showing how to write a simple RISC-V operating system in Rust.
@@ -197,7 +196,7 @@
 - **[Porting Redox OS to ARM](https://www.youtube.com/watch?v=qpazyDkuqLw)**: conference presentation detailing porting a Rust microkernel to new CPU hardware.
 - **[20 Years of L4 Microkernels](https://www.youtube.com/watch?v=RdoaFc5-1Rk)**: retrospective lecture on microkernel design evolution leading to seL4.
 
-### Memory, Multiprocessing
+### Memory & Multiprocessing
 - **[Uppsala Virtual Memory Lectures](https://www.youtube.com/playlist?list=PLiwt1iVUib9s2Uo5BeYmwkDFUh70fJPxX)**: university video series explaining virtual memory management and paging mechanisms.
 - **[Understanding SMP and Multi-Core](https://sudonull.com/post/9813-CPU-cores-or-what-SMP-is-and-what-it-is-eaten-with)**: clear explanation of symmetric multiprocessing and multi-core CPU handling.
 - **[x86 Instruction Reference](https://www.felixcloutier.com/x86/)**: clean, searchable online reference for x86 and amd64 CPU instructions.
@@ -253,6 +252,7 @@
 - **[Basics of Compiler Design (Torben Mogensen)](http://hjemmesider.diku.dk/~torbenm/Basics/)**
 
 ## Data Structures & Algorithm (DSA)
+- **[Data Structures and Algorithms Tutorial](https://www.w3schools.com/dsa/index.php)**: easy beginner tutorial on basic ways to store and process data.
 - **[VisuAlgo](https://visualgo.net/)**: visual interactive animations showing how algorithms sort data and search structures step-by-step.
 - **[MIT 6.006: Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)**: free university course with clear video lectures teaching basic computer algorithms.
 - **[Algorithm Visualizer](https://algorithm-visualizer.org/)**: interactive site that animates code execution visually so you can see algorithms working.
