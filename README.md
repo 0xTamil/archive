@@ -1,6 +1,6 @@
 # Learning Resources 
 
-## Low-Level Programming Roadmap
+## Roadmap
 
 If you're new to low-level programming, start with the **Getting Started** section.
 
@@ -13,7 +13,7 @@ If you're new to low-level programming, start with the **Getting Started** secti
 
 **C is a great starting point** because it helps you understand how computers and memory work.
 
-Keep practicing, building projects, and exploring!
+Keep practicing, building projects, and exploring.
 
 ## Getting Started
 - **[The Hidden Language of Computer Hardware and Software](https://charlespetzold.com/code/)**
