@@ -4,12 +4,29 @@
 
 If you are new to low-level systems programming, follow these core steps:
 
-1. **Learn Computer Fundamentals**: Learn basic programming ideas and how hardware handles data.
-2. **Master C & Memory**: Learn **C** to understand pointer arithmetic, memory allocation, and hardware interactions.
-3. **Build Small Projects**: Practice by creating small command-line utilities and simple system tools.
-4. **Study Algorithms**: Learn data structures and algorithms to write fast, efficient code.
-5. **Pick a Specialized Field**: Choose a path below that matches your interest (like embedded devices or operating systems).
-6. **Learn Modern Systems Languages**: Expand your skills with **C++, Rust, Zig, or Odin**.
+1. **Learn Computer Fundamentals**
+   * **What to do:** Understand how computers read data and execute instructions. Learn basic programming rules like variables, loops, logic, and how your code actually talks to hardware components like the CPU and RAM.
+   * **Why it matters:** Building a strong mental model of how computer memory and hardware work together makes learning any system language much easier later on.
+
+2. **Master C & Memory**
+   * **What to do:** Learn the **C programming language** deeply. Focus on core low-level topics: managing memory manually, using pointers (variables that store memory addresses), doing pointer arithmetic, and allocation (`malloc` and `free`).
+   * **Why it matters:** C strips away hidden abstractions. It gives you direct control over memory, forcing you to understand exactly how software interacts with computer hardware.
+
+3. **Build Small Projects**
+   * **What to do:** Put your C knowledge to work by building tiny, practical command-line interface (CLI) tools. Build things like a custom file reader, a simple memory-logging tool, a text file parser, or a basic shell utility.
+   * **Why it matters:** Writing code from scratch is the fastest way to catch memory leaks, fix pointer bugs, and learn how real programs interact with the operating system.
+
+4. **Study Algorithms & Data Structures (DSA)**
+   * **What to do:** Learn standard ways to organize data (like linked lists, arrays, stacks, queues, and trees) and key techniques to process that data (like sorting, searching, and recursion).
+   * **Why it matters:** Hardware has limits. Choosing the right data structure and algorithm ensures your low-level code runs fast, uses minimal RAM, and handles big workloads cleanly.
+
+5. **Pick a Specialized Field**
+   * **What to do:** Decide what kind of low-level software you want to build. Pick one focused domain to explore next—such as **Embedded Systems** (hardware microcontrollers), **Operating Systems** (kernels and drivers), **Graphics Programming** (3D rendering), **Compilers** (building your own language), or **GPGPU** (high-performance compute).
+   * **Why it matters:** Low-level programming is a massive field. Picking a specific path gives you a clear target and helps you choose the exact tools and projects to build next.
+
+6. **Learn Modern Systems Languages**
+   * **What to do:** Expand your skills beyond C by learning modern systems programming languages like **C++, Rust, Zig, or Odin**.
+   * **Why it matters:** Modern languages bring modern features—like object-oriented design in C++, automatic memory safety in Rust, or cleaner syntax and explicit memory management in Zig and Odin. Knowing these makes you ready to build large, production-grade applications.
 
 ---
 
