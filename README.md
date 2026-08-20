@@ -1,4 +1,4 @@
-# Low-Level Programming Roadmap & Learning Resources
+# Learning Resources
 
 ## Roadmap
 
@@ -25,7 +25,7 @@ If you are new to low-level systems programming, follow these core steps:
    * **Why it matters:** Low-level programming is a massive field. Picking a specific path gives you a clear target and helps you choose the exact tools and projects to build next.
 
 6. **Learn Modern Systems Languages (Optional)**
-   * **What to do:** Expand your skills beyond C by exploring modern systems programming languages like **C++, Rust, Zig, or Odin**—or choose to **stick with C**, as it remains fully powerful and relevant for almost all low-level domains.
+   * **What to do:** Expand your skills beyond C by exploring modern systems programming languages like **C++, Rust, Zig, or Odin** or choose to **stick with C**, as it remains fully powerful and relevant for almost all low-level domains.
    * **Why it matters:** While C is all you strictly need, learning modern languages introduces extra toolsets like object-oriented design in C++, automatic memory safety in Rust, or streamlined syntax and memory control in Zig and Odin.
 
 ---
