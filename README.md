@@ -21,12 +21,12 @@ If you are new to low-level systems programming, follow these core steps:
    * **Why it matters:** Hardware has limits. Choosing the right data structure and algorithm ensures your low-level code runs fast, uses minimal RAM, and handles big workloads cleanly.
 
 5. **Pick a Specialized Field**
-   * **What to do:** Decide what kind of low-level software you want to build. Pick one focused domain to explore next—such as **Embedded Systems** (hardware microcontrollers), **Operating Systems** (kernels and drivers), **Graphics Programming** (3D rendering), **Compilers** (building your own language), or **GPGPU** (high-performance compute).
+   * **What to do:** Decide what kind of low-level software you want to build. Pick one focused domain to explore next.
    * **Why it matters:** Low-level programming is a massive field. Picking a specific path gives you a clear target and helps you choose the exact tools and projects to build next.
 
 6. **Learn Modern Systems Languages**
    * **What to do:** Expand your skills beyond C by learning modern systems programming languages like **C++, Rust, Zig, or Odin**.
-   * **Why it matters:** Modern languages bring modern features—like object-oriented design in C++, automatic memory safety in Rust, or cleaner syntax and explicit memory management in Zig and Odin. Knowing these makes you ready to build large, production-grade applications.
+   * **Why it matters:** Modern languages bring modern features like object-oriented design in C++, automatic memory safety in Rust, or cleaner syntax and explicit memory management in Zig and Odin. Knowing these makes you ready to build large, production grade applications.
 
 ---
 
