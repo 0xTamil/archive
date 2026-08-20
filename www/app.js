@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // 3. Fetch Dataset
     try {
-        await API.fetchData('https://raw.githubusercontent.com/0xTamil/archive/main/README.md');
+        await API.fetchData('https://raw.githubusercontent.com/0xTamil/awesome-low-level/main/README.md');
     } catch (error) {
         console.error('Error fetching README data:', error);
         if (appMain) {
@@ -118,19 +118,49 @@ document.addEventListener('DOMContentLoaded', async () => {
         resetFiltersBtn.addEventListener('click', resetAllFilters);
     }
 
-    // Header Brand & Tab Reset
+    // Header Brand & Sub-header Tab Navigation
     const tabMain = document.getElementById('tab-main');
+    const tabRoadmap = document.getElementById('tab-roadmap');
+    const firstHeading = document.getElementById('firstHeading');
+    const resultsToolbar = document.querySelector('.vector-results-toolbar');
+
+    let activeTab = 'main';
+
     if (tabMain) {
         tabMain.addEventListener('click', (e) => {
             e.preventDefault();
-            resetAllFilters();
+            switchTab('main');
         });
+    }
+
+    if (tabRoadmap) {
+        tabRoadmap.addEventListener('click', (e) => {
+            e.preventDefault();
+            switchTab('roadmap');
+        });
+    }
+
+    function switchTab(tabName) {
+        activeTab = tabName;
+        if (tabMain) tabMain.classList.toggle('active', tabName === 'main');
+        if (tabRoadmap) tabRoadmap.classList.toggle('active', tabName === 'roadmap');
+
+        if (tabName === 'roadmap') {
+            if (firstHeading) firstHeading.textContent = 'Systems Programming Roadmap';
+            if (resultsToolbar) resultsToolbar.style.display = 'none';
+            renderRoadmap();
+        } else {
+            if (firstHeading) firstHeading.textContent = 'Learning Resources';
+            if (resultsToolbar) resultsToolbar.style.display = 'flex';
+            resetAllFilters();
+        }
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     const vectorBrand = document.querySelector('.vector-brand');
     if (vectorBrand) {
         vectorBrand.style.cursor = 'pointer';
-        vectorBrand.addEventListener('click', resetAllFilters);
+        vectorBrand.addEventListener('click', () => switchTab('main'));
     }
 
     // Top Jump Link Filter Resets
@@ -463,7 +493,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                 target.appendChild(bmxLi);
             }
 
-            API.categories.forEach(cat => {
+            // Only include categories that have resources to display
+            const categoriesWithContent = API.categories.filter(cat => {
+                const hasDirectResources = cat.resources.length > 0;
+                const hasSubResources = cat.subcategories && cat.subcategories.some(sub => sub.resources.length > 0);
+                return hasDirectResources || hasSubResources;
+            });
+
+            categoriesWithContent.forEach(cat => {
                 const li = document.createElement('li');
                 const itemWrapper = document.createElement('div');
                 itemWrapper.style.display = 'flex';
@@ -568,33 +605,94 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const allTags = API.getAllTags();
 
-        allTags.forEach(tObj => {
-            const kbd = document.createElement('kbd');
-            const isSelected = selectedTags.includes(tObj.tag);
-            kbd.className = `tag-pill-btn${isSelected ? ' active-tag' : ''}`;
-            kbd.title = `Toggle filter for tag: ${tObj.tag} (${tObj.count} resources)`;
+        const TAG_GROUPS = [
+            {
+                name: 'Languages',
+                tags: ['c', 'c++', 'rust', 'zig', 'odin', 'assembly', 'asm']
+            },
+            {
+                name: 'Topics & Concepts',
+                tags: [
+                    'algorithms', 'bare-metal', 'compiler', 'concurrency', 'embedded',
+                    'fpga', 'game-engine', 'gpgpu', 'graphics', 'hardware', 'kernel',
+                    'linux', 'memory', 'metal', 'networking', 'os', 'parallel',
+                    'rendering', 'sockets'
+                ]
+            },
+            {
+                name: 'Formats & Media',
+                tags: [
+                    'article', 'awesome-list', 'book', 'course', 'creators', 'docs',
+                    'github', 'interactive', 'youtube'
+                ]
+            }
+        ];
 
-            const labelText = document.createTextNode(`${tObj.tag} `);
-            const countSpan = document.createElement('span');
-            countSpan.className = 'tag-count';
-            countSpan.textContent = `(${tObj.count})`;
+        const mappedSet = new Set(TAG_GROUPS.flatMap(g => g.tags));
+        const unmappedTags = allTags.filter(tObj => !mappedSet.has(tObj.tag));
 
-            kbd.appendChild(labelText);
-            kbd.appendChild(countSpan);
+        const groupsToRender = TAG_GROUPS.map(g => ({
+            name: g.name,
+            items: allTags.filter(tObj => g.tags.includes(tObj.tag))
+        })).filter(g => g.items.length > 0);
 
-            kbd.addEventListener('click', (e) => {
-                e.stopPropagation();
-                const idx = selectedTags.indexOf(tObj.tag);
-                if (idx > -1) {
-                    selectedTags.splice(idx, 1);
-                } else {
-                    selectedTags.push(tObj.tag);
-                }
-                renderMultiTagCloud();
-                renderResources();
+        if (unmappedTags.length > 0) {
+            groupsToRender.push({
+                name: 'Other',
+                items: unmappedTags
+            });
+        }
+
+        groupsToRender.forEach((group, gIdx) => {
+            const groupWrapper = document.createElement('div');
+            groupWrapper.className = 'tag-group-wrapper';
+
+            const titleDiv = document.createElement('div');
+            titleDiv.className = 'tag-group-title';
+            titleDiv.textContent = group.name;
+            groupWrapper.appendChild(titleDiv);
+
+            const pillsDiv = document.createElement('div');
+            pillsDiv.className = 'tag-group-pills';
+
+            group.items.forEach(tObj => {
+                const kbd = document.createElement('kbd');
+                const isSelected = selectedTags.includes(tObj.tag);
+                kbd.className = `tag-pill-btn${isSelected ? ' active-tag' : ''}`;
+                kbd.title = `Toggle filter for tag: ${tObj.tag} (${tObj.count} resources)`;
+
+                const labelText = document.createTextNode(`${tObj.tag} `);
+                const countSpan = document.createElement('span');
+                countSpan.className = 'tag-count';
+                countSpan.textContent = `(${tObj.count})`;
+
+                kbd.appendChild(labelText);
+                kbd.appendChild(countSpan);
+
+                kbd.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const idx = selectedTags.indexOf(tObj.tag);
+                    if (idx > -1) {
+                        selectedTags.splice(idx, 1);
+                    } else {
+                        selectedTags.push(tObj.tag);
+                    }
+                    renderMultiTagCloud();
+                    renderResources();
+                });
+
+                pillsDiv.appendChild(kbd);
             });
 
-            multiTagCloudList.appendChild(kbd);
+            groupWrapper.appendChild(pillsDiv);
+
+            if (gIdx < groupsToRender.length - 1) {
+                const hr = document.createElement('hr');
+                hr.className = 'tag-group-divider';
+                groupWrapper.appendChild(hr);
+            }
+
+            multiTagCloudList.appendChild(groupWrapper);
         });
 
         if (multiTagBtnLabel) {
@@ -803,12 +901,26 @@ document.addEventListener('DOMContentLoaded', async () => {
         const header = document.createElement('header');
         const h3 = document.createElement('h3');
 
+        const resType = res.type || 'article';
+        const resLabel = res.typeLabel || 'Link';
+
         const aTitle = document.createElement('a');
         aTitle.href = res.url;
         aTitle.target = '_blank';
         aTitle.rel = 'noopener noreferrer';
-        aTitle.textContent = res.title;
-        aTitle.title = `Open external link: ${res.title}`;
+        aTitle.title = `[${resLabel}] Open link: ${res.title}`;
+        aTitle.className = 'resource-link';
+
+        const iconSpan = document.createElement('i');
+        iconSpan.className = `${getResourceIconClass(resType)} resource-type-icon`;
+        iconSpan.setAttribute('aria-hidden', 'true');
+        aTitle.appendChild(iconSpan);
+
+        const titleText = document.createElement('span');
+        titleText.className = 'resource-title-text';
+        titleText.textContent = res.title;
+        aTitle.appendChild(titleText);
+
         h3.appendChild(aTitle);
         header.appendChild(h3);
 
@@ -841,8 +953,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const kbd = document.createElement('kbd');
                 const isSelected = selectedTags.includes(tag);
                 kbd.className = `tag-pill-btn${isSelected ? ' active-tag' : ''}`;
-                kbd.textContent = tag;
                 kbd.title = `Toggle filter for tag: ${tag}`;
+                kbd.textContent = tag;
                 kbd.addEventListener('click', () => {
                     const tIdx = selectedTags.indexOf(tag);
                     if (tIdx > -1) {
@@ -965,5 +1077,107 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
         updateBookmarkCounts();
         return isNowBookmarked;
+    }
+
+    function getResourceIconClass(type) {
+        switch (type) {
+            case 'youtube':       return 'fab fa-youtube';
+            case 'github':        return 'fab fa-github';
+            case 'awesome-list':  return 'fas fa-star';
+            case 'book':          return 'fas fa-book-open';
+            case 'course':        return 'fas fa-graduation-cap';
+            case 'interactive':   return 'fas fa-terminal';
+            case 'docs':          return 'fas fa-file-lines';
+            case 'article':
+            default:              return 'fas fa-globe';
+        }
+    }
+
+    function renderRoadmap() {
+        if (!appMain) return;
+        appMain.innerHTML = '';
+
+        const roadmapData = API.roadmap || { intro: '', steps: [] };
+
+        const section = document.createElement('section');
+        section.className = 'mw-roadmap-section';
+
+        if (roadmapData.intro) {
+            const pIntro = document.createElement('p');
+            pIntro.className = 'mw-category-description';
+            pIntro.style.fontStyle = 'normal';
+            pIntro.style.fontSize = '1.05em';
+            pIntro.style.marginBottom = '20px';
+            pIntro.textContent = roadmapData.intro;
+            section.appendChild(pIntro);
+        }
+
+        const ol = document.createElement('ol');
+        ol.className = 'mw-roadmap-list';
+
+        roadmapData.steps.forEach(step => {
+            const li = document.createElement('li');
+            li.className = 'mw-roadmap-item';
+
+            const article = document.createElement('article');
+            article.className = 'mw-resource-article mw-roadmap-card';
+
+            const header = document.createElement('header');
+            const h3 = document.createElement('h3');
+
+            const numSpan = document.createElement('span');
+            numSpan.className = 'mw-headline-number';
+            numSpan.textContent = `Step ${step.number}.`;
+
+            const textSpan = document.createElement('span');
+            textSpan.className = 'mw-headline-text';
+            textSpan.textContent = step.title;
+
+            h3.appendChild(numSpan);
+            h3.appendChild(textSpan);
+            header.appendChild(h3);
+            article.appendChild(header);
+
+            if (step.whatToDo) {
+                article.appendChild(createFormattedParagraph('What to do: ', step.whatToDo));
+            }
+
+            if (step.whyItMatters) {
+                article.appendChild(createFormattedParagraph('Why it matters: ', step.whyItMatters));
+            }
+
+            li.appendChild(article);
+            ol.appendChild(li);
+        });
+
+        section.appendChild(ol);
+        appMain.appendChild(section);
+    }
+
+    function createFormattedParagraph(prefixLabel, rawText) {
+        const p = document.createElement('p');
+        p.className = 'roadmap-block';
+        const strongPrefix = document.createElement('strong');
+        strongPrefix.textContent = prefixLabel;
+        p.appendChild(strongPrefix);
+
+        const regex = /(\*\*.*?\*\*|`.*?`)/g;
+        const parts = rawText.split(regex);
+
+        parts.forEach(part => {
+            if (part.startsWith('**') && part.endsWith('**')) {
+                const b = document.createElement('strong');
+                b.textContent = part.slice(2, -2);
+                p.appendChild(b);
+            } else if (part.startsWith('`') && part.endsWith('`')) {
+                const c = document.createElement('code');
+                c.textContent = part.slice(1, -1);
+                p.appendChild(c);
+            } else {
+                p.appendChild(document.createTextNode(part));
+            }
+        });
+
+        return p;
     }
 });
