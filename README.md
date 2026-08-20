@@ -43,7 +43,7 @@ If you are new to low-level systems programming, follow these core steps:
 
 ## Core Foundations
 
-### C Programming (Core Foundation)
+### C Programming
 - **[Beej's Guide to C Programming](https://beej.us/guide/bgc/)**: A clear guide to practical C development and the standard library.
 - **[C Programming: A Modern Approach](https://knking.com/books/c2/)**: A detailed textbook widely considered the best standard reference for C beginners.
 - **[The C Book](http://knking.com/books/c2/index.html)**: A free reference book covering foundational C concepts.
@@ -144,7 +144,7 @@ If you are new to low-level systems programming, follow these core steps:
 
 ---
 
-## Recommended Media & Creators
+## Recommended Creators
 
 Technical channels focusing on low-level systems engineering, software architecture, mathematics, and engine design:
 
