@@ -153,6 +153,15 @@ If you are new to low-level systems programming, follow these core steps:
 
 ---
 
+### 7. Game Engine Development
+> **Overview:**  
+> Game engine development involves building the core underlying software framework that powers interactive 3D and 2D games. You write low-level systems for real-time rendering, physics simulation, audio, asset loading, and entity management. It demands strict performance optimization, efficient CPU cache usage, and seamless integration with hardware graphics APIs.
+
+- **[Awesome Game Engine Dev](https://github.com/stevinz/awesome-game-engine-dev)**: A curated collection of books, tutorials, libraries, and resources for building custom game engines from scratch.
+- **[Awesome Game Engines](https://github.com/ChessMax/awesome-game-engines)**: An organized directory of open-source game engines, architecture designs, and reference implementations to study.
+
+---
+
 ## Recommended Creators
 
 Technical channels focusing on low-level systems engineering, software architecture, mathematics, and engine design:
