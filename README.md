@@ -111,7 +111,7 @@ If you are new to low-level systems programming, follow these core steps:
 
 ---
 
-### 2. FPGA & Hardware Description
+### 2. FPGA Programming
 > **Overview:**  
 > Field-Programmable Gate Array (FPGA) development involves designing custom digital hardware circuits using Hardware Description Languages (HDLs) like Verilog, SystemVerilog, or VHDL. Instead of writing code that executes sequentially on a fixed CPU, you configure raw logic blocks to run thousands of operations in true hardware-level parallel. This field is widely used in high-frequency trading, aerospace, custom chip prototyping, and digital signal processing where low latency and microsecond execution matter.
 
