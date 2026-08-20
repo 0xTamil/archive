@@ -162,7 +162,7 @@ If you are new to low-level systems programming, follow these core steps:
 
 ---
 
-### 8. Network Programming
+### 8. Network System Programming
 > **Overview:**  
 > Network systems programming involves writing software that sends raw data packets across networks at maximum speed. You work directly with network sockets, protocol stacks (TCP/UDP, HTTP), asynchronous IO, and custom packet processing. It is key for building high-performance web servers, routing software, and multiplayer game servers.
 
