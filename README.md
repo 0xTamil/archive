@@ -169,6 +169,7 @@ If you are new to low-level systems programming, follow these core steps:
 - **[Awesome Networking](https://github.com/facyber/awesome-networking)**: A beginner-friendly collection of books, courses, protocols, and tutorials for learning general computer networking concepts.
 - **[Awesome Computer Networking](https://github.com/nyquist/awesome-networking)**: A detailed list of tools, design guides, and resources for designing, operating, and monitoring enterprise network systems.
 - **[Awesome Network Programmability](https://github.com/cisco-ie/awesome-network-programmability)**: A collection of tools, libraries, and guides focused on automating network devices and writing network software.
+- **[Awesome Game Networking](https://github.com/rumaniel/Awesome-Game-Networking)**: A curated list of resources, libraries, and articles for building multiplayer network systems, covering topics like client-side prediction, lag compensation, and state synchronization
 
 ---
 
