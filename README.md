@@ -2,82 +2,82 @@
 
 ## Roadmap
 
-If you are new to low-level programming, follow these simple steps:
+If you are new to low-level systems programming, follow these core steps:
 
-1. **Learn the Basics**: Understand how basic programming and computers work.
-2. **Learn C & Memory**: Learn **C** to understand pointers, computer memory, and how code talks to hardware.
-3. **Build Small Projects**: Practice by making simple command-line tools.
-4. **Study Algorithms**: Learn basic data structures and algorithms to write fast, efficient code.
-5. **Choose a Field**: Pick one specialized area below based on what you want to build.
-6. **Learn More Languages**: Try **C++, Rust, Zig, or Odin** to build larger projects.
+1. **Learn Computer Fundamentals**: Learn basic programming ideas and how hardware handles data.
+2. **Master C & Memory**: Learn **C** to understand pointer arithmetic, memory allocation, and hardware interactions.
+3. **Build Small Projects**: Practice by creating small command-line utilities and simple system tools.
+4. **Study Algorithms**: Learn data structures and algorithms to write fast, efficient code.
+5. **Pick a Specialized Field**: Choose a path below that matches your interest (like embedded devices or operating systems).
+6. **Learn Modern Systems Languages**: Expand your skills with **C++, Rust, Zig, or Odin**.
 
 ---
 
 ## Getting Started
-- **[The Hidden Language of Computer Hardware and Software](https://charlespetzold.com/code/)**: A great beginner book on how computers turn electricity into working programs.
-- **[Exploring How Computers Work](https://www.youtube.com/watch?v=QZwneRb-zqA)**: A short video showing how parts of a computer work together.
-- **[A Crash Course in Computer Science](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo)**: Easy videos explaining main computer science ideas.
-- **[CS50: Introduction to Computer Science](https://pll.harvard.edu/course/cs50-introduction-computer-science)**: Harvard's famous free beginner course for computer science.
-- **[Teach Yourself CS](https://teachyourselfcs.com/)**: A simple guide on what topics to study on your own.
-- **[Beej's Guide to Learning Computer Science](https://beej.us/guide/bglcs/)**: A friendly guide to computer science basics.
-- **[Open Source Society University (OSSU)](https://github.com/ossu/computer-science)**: A free collection of online courses that cover a full college degree in CS.
+- **[The Hidden Language of Computer Hardware and Software](https://charlespetzold.com/code/)**: A foundational book explaining how hardware and software work together from the ground up.
+- **[Exploring How Computers Work](https://www.youtube.com/watch?v=QZwneRb-zqA)**: A clear visual video explaining computer hardware execution.
+- **[A Crash Course in Computer Science](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo)**: A fast-paced video series introducing major computer science concepts.
+- **[CS50: Introduction to Computer Science](https://pll.harvard.edu/course/cs50-introduction-computer-science)**: Harvard's popular introductory course for computer science fundamentals.
+- **[Teach Yourself CS](https://teachyourselfcs.com/)**: A complete guide to self-studying core computer science subjects.
+- **[Beej's Guide to Learning Computer Science](https://beej.us/guide/bglcs/)**: An approachable guide covering foundational CS topics.
+- **[Open Source Society University (OSSU)](https://github.com/ossu/computer-science)**: A full open-source curriculum equivalent to a standard CS degree.
 
 ---
 
 ## Core Foundations
 
 ### Data Structures & Algorithms
-- **[Data Structures and Algorithms Tutorial](https://www.w3schools.com/dsa/index.php)**: Easy lessons on storing and sorting data.
-- **[VisuAlgo](https://visualgo.net/)**: Moving pictures that show how algorithms process information step by step.
-- **[MIT 6.006: Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)**: Free college video lessons on solving code problems.
-- **[Algorithm Visualizer](https://algorithm-visualizer.org/)**: An interactive tool that shows code running visually.
-- **[Algorithms (Sedgewick & Wayne)](https://algs4.cs.princeton.edu/home/)**: A classic textbook that teaches how to organize data cleanly.
+- **[Data Structures and Algorithms Tutorial](https://www.w3schools.com/dsa/index.php)**: A beginner-friendly guide to organizing and processing data.
+- **[VisuAlgo](https://visualgo.net/)**: Animated visual tools showing how algorithms sort and search data.
+- **[MIT 6.006: Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)**: Free university lectures covering algorithmic design and efficiency.
+- **[Algorithm Visualizer](https://algorithm-visualizer.org/)**: An interactive platform that animates actual code execution step-by-step.
+- **[Algorithms (Sedgewick & Wayne)](https://algs4.cs.princeton.edu/home/)**: A detailed textbook covering classic algorithms and data structures.
 
 ### Languages to Learn
 
 #### C Programming
-- **[Beej's Guide to C Programming](https://beej.us/guide/bgc/)**: A simple and practical guide to writing C code.
-- **[C Programming: A Modern Approach](https://knking.com/books/c2/)**: The best book for complete beginners learning C.
-- **[The C Book](http://knking.com/books/c2/index.html)**: Free website explaining basic C rules.
-- **[The C Programming Language (K&R)](https://en.wikipedia.org/wiki/The_C_Programming_Language)**: A short, famous book written by the creators of C.
-- **[Learn C](https://learn-c.org/)**: Practice C code directly inside your web browser.
-- **[C FAQ](https://c-faq.com/)**: Quick answers to common C mistakes and questions.
-- **[C Interfaces and Implementations](https://github.com/drh/cii)**: Learn how to write clean, reusable C code.
+- **[Beej's Guide to C Programming](https://beej.us/guide/bgc/)**: A clear guide to practical C development and the standard library.
+- **[C Programming: A Modern Approach](https://knking.com/books/c2/)**: A detailed textbook widely considered the best standard reference for C beginners.
+- **[The C Book](http://knking.com/books/c2/index.html)**: A free reference book covering foundational C concepts.
+- **[The C Programming Language (K&R)](https://en.wikipedia.org/wiki/The_C_Programming_Language)**: The original, concise introduction to C written by its creators.
+- **[Learn C](https://learn-c.org/)**: Interactive browser-based tutorials for writing and testing C code.
+- **[C FAQ](https://c-faq.com/)**: Practical answers to common questions, tricky bugs, and pointer memory rules.
+- **[C Interfaces and Implementations](https://github.com/drh/cii)**: Learn how to design modular and reusable C libraries.
 
 #### C++ Programming
-- **[How to Start C++ Development?](https://github.com/W4RH4WK/cpp-init)**: Quick guide to setting up C++ on your computer.
-- **[Learn C++](https://www.learncpp.com)**: Step-by-step free website covering basic to advanced C++.
-- **[Hacking C++](https://hackingcpp.com/index.html)**: Visual diagrams and cheat sheets for learning modern C++.
-- **[C++ By Example](https://cppbyexample.com/)**: Short code examples showing how features work.
-- **[C++ Reference](https://en.cppreference.com/w/)**: The official dictionary for all C++ commands.
-- **[Modern C++ Features](https://github.com/AnthonyCalandra/modern-cpp-features)**: Simple list of new features added to modern C++.
-- **[C++ Programming Exercises](https://www.w3resource.com/cpp-exercises/)**: Small practice problems with solutions.
-- **[Project Euler](https://projecteuler.net/about)**: Fun math and logic puzzles to solve with code.
-- **[Cpp Quiz](https://cppquiz.org/)**: Multiple-choice quizzes to test your C++ knowledge.
-- **[Data-Oriented Design Resources](https://github.com/dbartolini/data-oriented-design)**: How to write code that runs faster on computer hardware.
-- **[Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html)**: Famous list of fast math tricks using bits and binary.
+- **[How to Start C++ Development?](https://github.com/W4RH4WK/cpp-init)**: A practical guide to setting up compilers, build systems, and environments.
+- **[Learn C++](https://www.learncpp.com)**: Comprehensive step-by-step tutorials covering beginner to advanced C++.
+- **[Hacking C++](https://hackingcpp.com/index.html)**: Visual diagrams and cheat sheets for modern C++ standards.
+- **[C++ By Example](https://cppbyexample.com/)**: Concise code snippets demonstrating modern C++ syntax and features.
+- **[C++ Reference](https://en.cppreference.com/w/)**: The official standard dictionary for all C++ keywords and standard library modules.
+- **[Modern C++ Features](https://github.com/AnthonyCalandra/modern-cpp-features)**: A practical summary of features added in C++11 and newer versions.
+- **[C++ Programming Exercises](https://www.w3resource.com/cpp-exercises/)**: Coding challenges with worked solutions to test your understanding.
+- **[Project Euler](https://projecteuler.net/about)**: Logic and mathematics problems designed to be solved with code.
+- **[Cpp Quiz](https://cppquiz.org/)**: Multiple-choice quizzes testing your knowledge of exact C++ language rules.
+- **[Data-Oriented Design Resources](https://github.com/dbartolini/data-oriented-design)**: Resources on structuring memory layout for maximum CPU performance.
+- **[Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html)**: A famous collection of fast bitwise math operations and low-level tricks.
 
 #### Rust
-- **[The Rust Programming Language](https://doc.rust-lang.org/book/)**: The official book that teaches Rust and safe memory use.
-- **[Rustlings](https://github.com/rust-lang/rustlings)**: Small hands-on practice exercises to learn Rust syntax.
-- **[Rust by Example](https://doc.rust-lang.org/rust-by-example/)**: Code examples you can run and edit in your browser.
-- **[Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/)**: Learn memory tricks in Rust by building simple list structures.
-- **[The Rustonomicon](https://doc.rust-lang.org/nomicon/)**: Advanced guide on managing memory manually in Rust.
-- **[Awesome Rust](https://github.com/rust-unofficial/awesome-rust)**: A list of helpful tools, frameworks, and libraries for Rust.
+- **[The Rust Programming Language](https://doc.rust-lang.org/book/)**: The official book covering memory safety, ownership, and concurrency.
+- **[Rustlings](https://github.com/rust-lang/rustlings)**: Small hands-on programming exercises to practice Rust syntax.
+- **[Rust by Example](https://doc.rust-lang.org/rust-by-example/)**: Runnable code examples demonstrating how Rust features work.
+- **[Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/)**: Learn advanced memory handling in Rust by building list structures.
+- **[The Rustonomicon](https://doc.rust-lang.org/nomicon/)**: An advanced guide to writing unsafe Rust and raw memory operations.
+- **[Awesome Rust](https://github.com/rust-unofficial/awesome-rust)**: A curated list of popular Rust libraries, frameworks, and tools.
 
 #### Zig
-- **[Zig Learn](https://ziglearn.org/)**: Simple step-by-step guide to writing Zig code.
-- **[Zig Language Reference](https://ziglang.org/documentation/master/)**: Official manual detailing all Zig rules and syntax.
-- **[Ziglings](https://codeberg.org/ziglings/exercises)**: Fix broken programs to practice learning Zig.
-- **[Learning Zig](https://pedropark99.github.io/zig-book/)**: Free book teaching low-level concepts with Zig.
-- **[Awesome Zig](https://github.com/zigcc/awesome-zig)**: A community list of useful Zig tools and projects.
+- **[Zig Learn](https://ziglearn.org/)**: A structured step-by-step guide to Zig syntax and manual memory control.
+- **[Zig Language Reference](https://ziglang.org/documentation/master/)**: The official specification covering Zig tools and language features.
+- **[Ziglings](https://codeberg.org/ziglings/exercises)**: Interactive broken-code exercises designed to teach you Zig syntax.
+- **[Learning Zig](https://pedropark99.github.io/zig-book/)**: A clear guide explaining low-level systems concepts using Zig.
+- **[Awesome Zig](https://github.com/zigcc/awesome-zig)**: A community repository of useful tools, engines, and starter projects.
 
 #### Odin
-- **[Odin Overview](https://odin-lang.org/docs/overview/)**: Quick introduction to Odin features and rules.
-- **[Odin Demo Program](https://github.com/odin-lang/Odin/blob/master/examples/demo/demo.odin)**: One single code file that shows almost everything Odin can do.
-- **[Understanding the Odin Programming Language](https://odinbook.com/)**: Free book on building software with Odin.
-- **[Learn Odin in Y Minutes](https://learnxinyminutes.com/odin/)**: A one-page cheat sheet for Odin syntax.
-- **[Awesome Odin](https://github.com/jakubtomsu/awesome-odin)**: Collection of tools and game engines built with Odin.
+- **[Odin Overview](https://odin-lang.org/docs/overview/)**: A fast overview of Odin's syntax, design goals, and memory control.
+- **[Odin Demo Program](https://github.com/odin-lang/Odin/blob/master/examples/demo/demo.odin)**: A single code file demonstrating almost every feature in Odin.
+- **[Understanding the Odin Programming Language](https://odinbook.com/)**: A free introductory book on developing systems with Odin.
+- **[Learn Odin in Y Minutes](https://learnxinyminutes.com/odin/)**: A concise syntax cheat sheet for quick reference.
+- **[Awesome Odin](https://github.com/jakubtomsu/awesome-odin)**: A collection of game engines, libraries, and resources built with Odin.
 
 ---
 
@@ -85,49 +85,49 @@ If you are new to low-level programming, follow these simple steps:
 
 ### 1. Embedded Systems
 > **Overview:**  
-> Embedded programming means writing code that runs directly on small chips, microcontrollers, and hardware devices (like smart appliances, cars, or robots) instead of normal computers.
+> Embedded systems engineering focuses on writing code that runs directly on microcontrollers, sensor chips, and custom hardware targets instead of standard personal computers. It involves working directly with hardware communication protocols (SPI, I2C, UART) and real-time operating systems (RTOS).
 
-- **[Awesome Embedded](https://github.com/nhivp/Awesome-Embedded)**: Links and tutorials for programming small devices and hardware chips.
-- **[Awesome Embedded Linux](https://github.com/fkromer/awesome-embedded-linux)**: Tools for putting custom Linux systems on small hardware.
+- **[Awesome Embedded](https://github.com/nhivp/Awesome-Embedded)**: Resources for bare-metal programming, microcontrollers, and low-level firmware.
+- **[Awesome Embedded Linux](https://github.com/fkromer/awesome-embedded-linux)**: Tools and guides for configuring custom Linux platforms on target hardware.
 
 ---
 
 ### 2. Compilers & Interpreters
 > **Overview:**  
-> Compiler development means building tools that take human-written code (like C or Python) and translate it into machine code (0s and 1s) that the CPU understands.
+> Compiler engineering involves creating software tools that analyze high-level source code (such as C or Python) and translate it into machine code or bytecode execution formats. Topics cover lexing, parsing, semantic checking, program optimization passes, and code generation for hardware architectures.
 
-- **[Awesome OS Compilers](https://github.com/aalhour/awesome-compilers)**: Books, tools, and courses for building your own programming language.
-
----
-
-### 3. Operating Systems (OS)
-> **Overview:**  
-> Operating system development means building software like Linux or Windows from scratch. You learn how to control computer memory, CPU tasks, hard drives, and hardware devices.
-
-- **[Awesome OS Dev](https://github.com/devse-org/awesome-osdev)**: Guides and projects for building your own operating system from zero.
+- **[Awesome OS Compilers](https://github.com/aalhour/awesome-compilers)**: A collection of books, courses, frameworks, and projects for building compilers and runtime engines.
 
 ---
 
-### 4. GPGPU (Graphics Card Computing)
+### 3. Operating Systems Development
 > **Overview:**  
-> GPGPU means using a graphics card (GPU) to do heavy mathematical calculations, artificial intelligence, and scientific work instead of just drawing graphics.
+> Operating system development focuses on writing software from scratch that controls system resources. This domain covers bare-metal kernel development, memory management (virtual memory and paging), thread scheduling, device drivers, interrupt handling, and file systems.
 
-- **[Awesome GPGPU](https://github.com/jslee02/awesome-gpgpu)**: Resources for running fast math programs on graphics cards.
-- **[Awesome GPU](https://github.com/Jokeren/Awesome-GPU)**: A big list of guides on how GPU hardware works.
+- **[Awesome OS Dev](https://github.com/devse-org/awesome-osdev)**: Specifications, technical tutorials, and project repositories for building custom operating systems.
+
+---
+
+### 4. GPGPU & Parallel Computing
+> **Overview:**  
+> General-Purpose Computing on Graphics Processing Units (GPGPU) uses graphics hardware to perform heavy parallel calculations, scientific simulations, and machine learning workloads using interfaces like CUDA, OpenCL, and Vulkan Compute.
+
+- **[Awesome GPGPU](https://github.com/jslee02/awesome-gpgpu)**: Frameworks, technical guides, and libraries for general-purpose parallel computing on GPUs.
+- **[Awesome GPU](https://github.com/Jokeren/Awesome-GPU)**: A detailed collection of resources on GPU hardware architecture and parallel optimization.
 
 ---
 
 ### 5. Graphics Programming
 > **Overview:**  
-> Graphics programming means writing code that talks to graphics cards to draw 2D pictures, 3D shapes, game worlds, and lighting effects on screen in real time.
+> Graphics programming involves writing low-level code that interfaces directly with GPUs to render real-time 2D and 3D scenes. It combines linear algebra, graphics pipelines, custom shader development (HLSL, GLSL), and modern rendering APIs (Vulkan, DirectX 12, Metal, WebGPU).
 
-- **[Awesome Graphics Programming](https://gist.github.com/notnotrobby/ceef71527b4f15869133ba7b397912e9)**: Handpicked tutorials and guides for learning 3D graphics code.
+- **[Awesome Graphics Programming](https://gist.github.com/notnotrobby/ceef71527b4f15869133ba7b397912e9)**: Curated math tutorials, rendering guides, and engine development links.
 
 ---
 
-## Helpful Creators & Channels
+## Recommended Media & Creators
 
-Great YouTube channels that teach systems code, game logic, computer math, and low-level development:
+Technical channels focusing on low-level systems engineering, software architecture, mathematics, and engine design:
 
 - **[TsodingDaily](https://www.youtube.com/@TsodingDaily)**
 - **[ThePrimeTimeagen](https://www.youtube.com/@ThePrimeTimeagen)**
