@@ -8,7 +8,7 @@ If you are new to low-level systems programming, follow these core steps:
    * **What to do:** Understand how computers read data and execute instructions. Learn basic programming rules like variables, loops, logic, and how your code actually talks to hardware components like the CPU and RAM.
    * **Why it matters:** Building a strong mental model of how computer memory and hardware work together makes learning any system language much easier later on.
 
-2. **Master C & Memory (The Core Foundation)**
+2. **Learn C & Memory**
    * **What to do:** Learn the **C programming language** deeply. Focus on core low-level topics: managing memory manually, using pointers (variables that store memory addresses), doing pointer arithmetic, and allocation (`malloc` and `free`).
    * **Why it matters:** C is the foundational language of systems programming. It strips away hidden abstractions and gives you direct control over memory, forcing you to understand exactly how software interacts with computer hardware.
 
@@ -16,7 +16,7 @@ If you are new to low-level systems programming, follow these core steps:
    * **What to do:** Put your C knowledge to work by building tiny, practical command-line interface (CLI) tools. Build things like a custom file reader, a simple memory-logging tool, a text file parser, or a basic shell utility.
    * **Why it matters:** Writing code from scratch is the fastest way to catch memory leaks, fix pointer bugs, and learn how real programs interact with the operating system.
 
-4. **Study Algorithms & Data Structures (DSA)**
+4. **Study Algorithms & Data Structures**
    * **What to do:** Learn standard ways to organize data (like linked lists, arrays, stacks, queues, and trees) and key techniques to process that data (like sorting, searching, and recursion).
    * **Why it matters:** Hardware has limits. Choosing the right data structure and algorithm ensures your low-level code runs fast, uses minimal RAM, and handles big workloads cleanly.
 
@@ -193,15 +193,14 @@ Technical channels focusing on low-level systems engineering, software architect
 ## Web Interface
 
 Browse all resources in an interactive Wikipedia-style reference at:
-
-🌐 **[https://0xtamil.github.io/awesome-low-level/](https://0xtamil.github.io/awesome-low-level/)**
+ **[https://0xtamil.github.io/awesome-low-level/](https://0xtamil.github.io/awesome-low-level/)**
 
 Features:
-- **Search & Filter** — Full-text search and multi-tag filtering (by language, topic, or format)
-- **Roadmap** — Structured 6-step learning path for beginners
-- **Bookmarks** — Save resources locally for quick access
-- **Dark/Light Mode** — Wikipedia Vector 2022-style theme with appearance controls
-- **Mobile Responsive** — Full-width search bar and optimized layout for mobile
+- **Search & Filter**: Full-text search and multi-tag filtering (by language, topic, or format)
+- **Roadmap**: Structured 6-step learning path for beginners
+- **Bookmarks**: Save resources locally for quick access
+- **Dark/Light Mode**: Wikipedia Vector 2022-style theme with appearance controls
+- **Mobile Responsive**: Full-width search bar and optimized layout for mobile
 
 ---
 
