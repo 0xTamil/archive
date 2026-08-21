@@ -2,7 +2,7 @@
 
 ## Roadmap
 
-If you are new to low-level systems programming, follow these core steps:
+If you are new to low-level programming, follow these core steps:
 
 1. **Learn Computer Fundamentals**
    * **What to do:** Understand how computers read data and execute instructions. Learn basic programming rules like variables, loops, logic, and how your code actually talks to hardware components like the CPU and RAM.
