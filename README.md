@@ -190,5 +190,20 @@ Technical channels focusing on low-level systems engineering, software architect
 
 ---
 
+## Web Interface
+
+Browse all resources in an interactive Wikipedia-style reference at:
+
+🌐 **[https://0xtamil.github.io/awesome-low-level/](https://0xtamil.github.io/awesome-low-level/)**
+
+Features:
+- **Search & Filter** — Full-text search and multi-tag filtering (by language, topic, or format)
+- **Roadmap** — Structured 6-step learning path for beginners
+- **Bookmarks** — Save resources locally for quick access
+- **Dark/Light Mode** — Wikipedia Vector 2022-style theme with appearance controls
+- **Mobile Responsive** — Full-width search bar and optimized layout for mobile
+
+---
+
 ## License
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
