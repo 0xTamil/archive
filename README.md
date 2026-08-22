@@ -46,7 +46,7 @@ If you are new to low-level programming, follow these core steps:
 ### C Programming
 - **[Beej's Guide to C Programming](https://beej.us/guide/bgc/)**: A clear guide to practical C development and the standard library.
 - **[C Programming: A Modern Approach](https://knking.com/books/c2/)**: A detailed textbook widely considered the best standard reference for C beginners.
-- **[The C Book](http://knking.com/books/c2/index.html)**: A free reference book covering foundational C concepts.
+- **[The C Book](http://knking.com/books/c2/index.html)**: A reference book covering foundational C concepts.
 - **[The C Programming Language (K&R)](https://en.wikipedia.org/wiki/The_C_Programming_Language)**: The original, concise introduction to C written by its creators.
 - **[Learn C](https://learn-c.org/)**: Interactive browser-based tutorials for writing and testing C code.
 - **[C FAQ](https://c-faq.com/)**: Practical answers to common questions, tricky bugs, and pointer memory rules.
@@ -94,7 +94,7 @@ If you are new to low-level programming, follow these core steps:
 ### Odin
 - **[Odin Overview](https://odin-lang.org/docs/overview/)**: A fast overview of Odin's syntax, design goals, and memory control.
 - **[Odin Demo Program](https://github.com/odin-lang/Odin/blob/master/examples/demo/demo.odin)**: A single code file demonstrating almost every feature in Odin.
-- **[Understanding the Odin Programming Language](https://odinbook.com/)**: A free introductory book on developing systems with Odin.
+- **[Understanding the Odin Programming Language](https://odinbook.com/)**: An introductory book on developing systems with Odin.
 - **[Learn Odin in Y Minutes](https://learnxinyminutes.com/odin/)**: A concise syntax cheat sheet for quick reference.
 - **[Awesome Odin](https://github.com/jakubtomsu/awesome-odin)**: A collection of game engines, libraries, and resources built with Odin.
 
