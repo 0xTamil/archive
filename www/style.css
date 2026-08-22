@@ -960,6 +960,7 @@ footer.vector-footer {
     /* Full-width Search Box below header top bar on mobile */
     .vector-search-box {
         order: 3;
+        flex-basis: 100%;
         width: 100%;
         margin-top: 4px;
     }
@@ -977,6 +978,7 @@ footer.vector-footer {
     .vector-search-input-wrapper input {
         width: 100%;
         flex: 1;
+        min-width: 0;
         font-size: 14px;
         padding: 8px 12px 8px 34px;
         box-sizing: border-box;
@@ -987,11 +989,17 @@ footer.vector-footer {
         padding: 8px 14px;
         font-size: 13px;
         white-space: nowrap;
+        flex-shrink: 0;
     }
 
     .vector-multi-tag-btn {
         padding: 5px 8px;
         font-size: 12px;
+    }
+
+    /* Hide "move to sidebar" buttons on mobile — sidebars aren't available */
+    .btn-move-sidebar {
+        display: none !important;
     }
 
     /* Hide Desktop Sidebars on mobile - users open them via header popover buttons */
@@ -1006,22 +1014,28 @@ footer.vector-footer {
         margin: 10px auto;
     }
 
-    /* Popover adjustments on mobile */
+    /* Popover adjustments on mobile — positioned below the taller header with search bar */
     .vector-popover {
         position: fixed;
-        top: 96px;
+        top: 108px;
         left: 10px;
         right: 10px;
         width: auto !important;
         max-width: calc(100vw - 20px);
-        max-height: 75vh;
+        max-height: calc(100vh - 120px);
         z-index: 1100;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+        overflow-y: auto;
     }
 
     .vector-popover-right {
         left: 10px;
         right: 10px;
+    }
+
+    /* Hide popover arrow on mobile since positioning is different */
+    .vector-popover::before {
+        display: none;
     }
 
     .vector-article-toolbar {

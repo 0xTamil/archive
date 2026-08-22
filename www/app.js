@@ -145,13 +145,44 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (tabMain) tabMain.classList.toggle('active', tabName === 'main');
         if (tabRoadmap) tabRoadmap.classList.toggle('active', tabName === 'roadmap');
 
+        // Update the TOC popover header title
+        const tocPopoverTitle = vectorTocPopover ? vectorTocPopover.querySelector('.popover-header h2') : null;
+        const tocPopoverTopLink = vectorTocPopover ? vectorTocPopover.querySelector('.vector-toc-top') : null;
+        const tocPopoverMoveBtn = vectorTocPopover ? vectorTocPopover.querySelector('.btn-move-sidebar') : null;
+        const infobox = document.querySelector('.mw-infobox');
+        const multiTagContainer = document.getElementById('multi-tag-container');
+
         if (tabName === 'roadmap') {
             if (firstHeading) firstHeading.textContent = 'Systems Programming Roadmap';
             if (resultsToolbar) resultsToolbar.style.display = 'none';
+            // Hide Content sidebar and show roadmap TOC in its place
+            if (sidebarContents) sidebarContents.classList.add('hidden');
+            document.body.classList.add('toc-collapsed');
+            document.body.classList.add('roadmap-active');
+            // Update popover header to "Roadmap"
+            if (tocPopoverTitle) tocPopoverTitle.textContent = 'Roadmap';
+            if (tocPopoverTopLink) tocPopoverTopLink.style.display = 'none';
+            if (tocPopoverMoveBtn) tocPopoverMoveBtn.style.display = 'none';
+            // Hide resource-specific UI elements
+            if (infobox) infobox.style.display = 'none';
+            if (multiTagContainer) multiTagContainer.style.display = 'none';
+            updateTocForRoadmap();
             renderRoadmap();
         } else {
             if (firstHeading) firstHeading.textContent = 'Learning Resources';
             if (resultsToolbar) resultsToolbar.style.display = 'flex';
+            // Restore Content sidebar and original TOC
+            document.body.classList.remove('roadmap-active');
+            if (sidebarContents) sidebarContents.classList.remove('hidden');
+            document.body.classList.remove('toc-collapsed');
+            // Restore popover header to "Contents"
+            if (tocPopoverTitle) tocPopoverTitle.textContent = 'Contents';
+            if (tocPopoverTopLink) tocPopoverTopLink.style.display = '';
+            if (tocPopoverMoveBtn) tocPopoverMoveBtn.style.display = '';
+            // Show resource-specific UI elements
+            if (infobox) infobox.style.display = '';
+            if (multiTagContainer) multiTagContainer.style.display = '';
+            initCategoryNav();
             resetAllFilters();
         }
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -1091,6 +1122,35 @@ document.addEventListener('DOMContentLoaded', async () => {
             case 'article':
             default:              return 'fas fa-globe';
         }
+    }
+
+    /**
+     * Update TOC popover to show roadmap steps instead of resource categories
+     */
+    function updateTocForRoadmap() {
+        const targets = [popoverTocList].filter(Boolean);
+        targets.forEach(target => {
+            target.innerHTML = '';
+            const roadmapData = API.roadmap || { intro: '', steps: [] };
+            roadmapData.steps.forEach(step => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = '#';
+                a.textContent = `Step ${step.number}. ${step.title}`;
+                a.title = `Jump to roadmap step: ${step.title}`;
+                a.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    closeAllPopovers();
+                    // Find the roadmap card by step number
+                    const cards = document.querySelectorAll('.mw-roadmap-card');
+                    if (cards[step.number - 1]) {
+                        cards[step.number - 1].scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+                li.appendChild(a);
+                target.appendChild(li);
+            });
+        });
     }
 
     function renderRoadmap() {
